@@ -1,0 +1,411 @@
+/**********　トップへ戻るボタン　**********/
+
+.top-link {
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  background-color: #0bdd;
+  color: white;
+  padding: 10px 20px;
+  text-align: center;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: bold;
+  z-index: 3;
+}
+
+.top-link:hover {
+  background-color: #0056b3;
+}
+
+/**********　ヘッダー　お問い合わせボタン　**********/
+/* アイコンコンテナのスタイル */
+.icon-container {
+  display: flex; /* 横並びにする */
+  align-items: center; /* 中央揃えにする */
+}
+
+/* アイコンリンクのスタイル */
+.icon-link {
+  display: inline-block;
+  border: 2px solid transparent; /* デフォルトの縁の色 */
+  border-radius: 50%; /* 丸にする */
+  padding: 15px; /* アイコン周りの余白 */
+  margin: 0 10px; /* アイコン間の余白 */
+  background: white; /* 背景色を白に */
+  text-decoration: none; /* 下線を消す */
+  transition: border-color 0.3s; /* 色変更のアニメーションを追加 */
+}
+
+/* 電話アイコンのスタイル */
+.phone-icon {
+  color: #4CAF50; /* アイコンの色 */
+  border-color: #4CAF50;
+}
+
+
+/* メールアイコンのスタイル */
+.email-icon {
+  color: #2196F3; /* アイコンの色 */
+  border-color: #2196F3;
+}
+
+
+/* フォントアイコンのサイズ */
+.fas {
+  font-size: 180%; /* アイコンのサイズ */
+}
+
+
+
+/**********　ハンバーガーボタン　**********/
+.hamburger-menu-container {
+  height: auto;
+  padding-left: 7%;
+}
+.menu-icon {
+  display: inline-block;
+  cursor: pointer;
+  position: fixed;
+  top: 56px;
+  left: 1%;
+  z-index: 2001; /* 他の要素より上に表示させる */
+  padding: 20px;
+}
+
+.menu-icon-line {
+  display: block;
+  width: 30px;
+  height: 3px;
+  background: #333;
+  position: absolute;
+  transition: all 0.3s ease-in-out;
+}
+
+.menu-icon-line:before,
+.menu-icon-line:after {
+  content: '';
+  width: 100%;
+  height: 3px;
+  background: #333;
+  position: absolute;
+  transition: all 0.3s ease-in-out;
+}
+
+.menu-icon-line:before {
+  top: -10px;
+}
+
+.menu-icon-line:after {
+  top: 10px;
+}
+
+/* チェックボックスのスタイルを隠す */
+.menu-toggle {
+  display: none;
+}
+
+/* チェックボックスがチェックされた時のハンバーガーアイコンとメニューの動作 */
+.menu-toggle:checked + .menu-icon .menu-icon-line {
+  background: transparent;
+}
+
+.menu-toggle:checked + .menu-icon .menu-icon-line:before {
+  transform: rotate(-45deg);
+  top: 0;
+}
+
+.menu-toggle:checked + .menu-icon .menu-icon-line:after {
+  transform: rotate(45deg);
+  top: 0;
+}
+
+.menu-toggle:checked + .menu-icon span,
+.menu-toggle:checked + .menu-icon span:before,
+.menu-toggle:checked + .menu-icon span:after {
+  background-color: white;
+}
+
+/* ナビゲーションメニューのスタイリング */
+.menu {
+  position: absolute;
+  top: 50px;
+  left: 0;
+  width: 20%;
+  height: 500%;
+  background: #333;
+  box-shadow: 0 3px 5px rgba(0,0,0,0.2);
+  transform: scaleY(0);
+  transform-origin: top;
+  transition: transform 0.3s ease-in-out;
+  z-index: 2000;
+  opacity: 0.95;
+}
+
+.menu ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.menu-option-top {
+  height: 8%;
+  border-bottom: 1px solid #e4e4e4;
+}
+
+.menu-option {
+  border-bottom: 1px solid #e4e4e4;
+}
+
+.menu-option a {
+  display: block;
+  padding: 15px 20px;
+  color: white;
+  text-decoration: none;
+  transition: background 0.3s ease-in-out;
+  text-align: right;
+}
+
+.menu-option a:hover {
+  background: #ddd;
+}
+
+/* メニューの表示/非表示 */
+.menu-toggle:checked ~ .menu {
+  transform: scaleY(1);
+}
+
+/**********　無料相談はこちら　ボタン　**********/
+a.btn_25 {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	position: relative;
+	overflow: hidden;
+	text-decoration: none;
+	height: 4rem;
+	width: 128px;
+	margin: auto;
+	padding: 0 4rem;
+	border-radius: 100vw;
+	background: black;
+	background-size: 400%;
+	color: #fff;
+}
+a.btn_25:hover::before {
+  transform: scaleX(1);
+}
+a.btn_25:hover {
+	color: #fff;
+}
+a.btn_25 span {
+  position: relative;
+  z-index: 1;
+  white-space: nowrap;
+}
+a.btn_25::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform: scaleX(0);
+  transform-origin: 0 50%;
+  width: 100%;
+  height: inherit;
+  border-radius: inherit;
+  background: linear-gradient(
+    82.3deg,
+    rgba(39, 172, 217, 1) 10.8%,
+    rgba(18, 83, 229, 1) 94.3%
+  );
+  transition: all 0.475s;
+}
+
+/**********　プラン無料相談　ボタン　**********/
+
+.container6-1 a.btn_25,
+.container6-2 a.btn_25,
+.container6-3 a.btn_25 {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	position: relative;
+	overflow: hidden;
+	text-decoration: none;
+	height: 3rem;
+	width: 100px;
+	margin: auto;
+	padding: 0 2rem;
+	border-radius: 100vw;
+	background: black;
+	background-size: 400%;
+	color: #fff;
+}
+
+.container6-1 span,
+.container6-2 span,
+.container6-3 span {
+    font-size: 75%;
+}
+
+/**********　完成までの流れ無料相談　ボタン　**********/
+.container5 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/**********　サンプル一覧、その他質問はこちら　ボタン　**********/
+.container7 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: auto;
+  margin-top: 90px;
+  margin-bottom: 30px;
+}
+
+.circle_btn05 {
+  position: relative;
+  display: inline-block;
+  
+}
+
+.circle_btn05 .circle_btn05-txt {
+  height: 48px;
+  line-height: 48px;
+  padding-right: 72px;
+  color: initial; /* 文字色 */
+  text-decoration: none;
+  font-weight: bold; /* 文字の太さ */
+}
+
+.circle_btn05 .circle_btn05-icon {
+  width: 48px;
+  height: 48px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  pointer-events: none;
+}
+
+.circle_btn05 .circle_btn05-icon .circle_btn05-circle {
+  transition: transform 1s cubic-bezier(.23,1,.32,1);
+  height: 48px;
+}
+
+.circle_btn05 .circle_btn05-icon .circle_btn05-circle svg {
+  transition: transform .75s cubic-bezier(.215,.61,.355,1);
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+.circle_btn05 .circle_btn05-icon .circle_btn05-circle svg path {
+  stroke-width: 2;
+  transition: stroke-width .75s cubic-bezier(.215,.61,.355,1);
+}
+
+.circle_btn05 .circle_btn05-icon .circle_btn05-arrow {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  display: inline-flex;
+}
+
+.circle_btn05 .circle_btn05-icon .circle_btn05-arrow svg path {
+  stroke-width: 2;
+  stroke: #4D9BC1; /* 矢印の色 */
+}
+
+.circle_btn05 .circle_btn05-circle-itm {
+  background-color: #4D9BC1; /* 丸の色 */
+  height:48px;
+}
+
+/* マウスオーバーした際のデザイン */
+.circle_btn05:hover .circle_btn05-txt {
+  transform: translateX(-12px);
+  transition: transform .5s cubic-bezier(.39,.575,.565,1);
+}
+
+.circle_btn05:hover .circle_btn05-icon .circle_btn05-circle {
+  transform: rotate(1turn);
+  transition: transform .75s cubic-bezier(.23,1,.32,1);
+}
+
+.circle_btn05:hover .circle_btn05-icon .circle_btn05-circle svg {
+  transform: scale(1.5);
+}
+
+
+
+/********** お問い合わせフォームページ **********/
+/********** 入力確認へ　ボタン **********/
+
+button {
+  width: 200px;
+  height: 50px;
+  background-color: black;
+  color: white;
+  font-size: 20px;
+  cursor: pointer;
+  /* カーソルをポインタに */
+}
+
+.button1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: auto;
+  margin-top: 40px;
+  margin-bottom: 60px;
+}
+
+/********** 入力完了ボタン　レイアウト **********/
+.confirmSubmit-container {
+  display: flex;
+  justify-content: center;
+  /* 水平方向の中央に配置 */
+  align-items: center;
+  /* 垂直方向の中央に配置 */
+  margin-bottom: 50px;
+  margin-top: 50px;
+}
+
+/********** TOPページへ　ボタン **********/
+.button2 {
+  display: inline-block;
+  width: 100%;
+  max-width: 110px; /* ボタン幅 */
+  position: relative;
+  background: #4D9BC1; /* 背景色 */
+  border: 2px solid #4D9BC1;
+  padding: 0.4em 2em;
+  font-weight: bold;
+  color: #fff; /* 文字色 */
+  text-decoration: none;
+  text-align: center;
+  transition-duration: 0.3s;
+}
+
+.button2:before {
+  content: '';
+  width: 8px;
+  height: 8px;
+  border: 0;
+ 
+  position: absolute;
+  top: 50%;
+  left: 25px;
+  margin-top: -6px;
+}
+
+/* マウスオーバーした際のデザイン */
+.button2:hover {
+  background: #fff; /* 背景色 */
+  color: #4D9BC1; /* 文字色 */
+}

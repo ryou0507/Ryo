@@ -16,10 +16,6 @@
 
     <meta name="description" content="事業を始めたばかりでホームページがない、またはリニューアルを考えている企業へ。おしゃれで機能的で安価なホームページ制作で、お客様のビジネスをより魅力的なものに！">
     <meta name="keywords" content="ホームページ">
-    <link rel="stylesheet" href="deco.css">
-    <link rel="stylesheet" href="button.css">
-    <link rel="stylesheet" href="layuot.css">
-    <link rel="stylesheet" href="responsive.css">
     <script src="anime.js"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>

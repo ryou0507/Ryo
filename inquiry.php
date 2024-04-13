@@ -1,31 +1,21 @@
-<!DOCTYPE html>
+<?php
 
-<html>
+/**
+ * メインのテンプレートファイル
+ *
+ * これは WordPress テーマで最も一般的なテンプレートファイルであり、
+ * テーマに必要なファイルの2つのうちの1つです（もう1つは style.css です）。
+ * クエリによってより特定のファイルが一致しない場合に、ページを表示するために使用されます。
+ * たとえば、home.php ファイルが存在しない場合にホームページをまとめます。
+ *
+ * @link https://developer.wordpress.org/themes/basics/template-hierarchy/
+ *
+ * @package Your_Theme_Name
+ */
 
-<head>
-  <meta charset="utf-8">
-  <title>お問い合わせ</title>
+get_header(); // ヘッダーの読み込み
 
-  <!-- Google Tag Manager -->
-<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-  new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-  j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-  'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-  })(window,document,'script','dataLayer','GTM-NLHZNZDS');</script>
-  <!-- End Google Tag Manager -->
-
-  <meta name="description" content="ホームページ制作に関する無料相談はこちらから。迅速かつ丁寧に対応いたします。お電話での対応も致しますので、お気軽にご相談下さい。">
-  <meta name="keywords" content="">
-  <link rel="stylesheet" href="deco.css">
-  <link rel="stylesheet" href="button.css">
-  <link rel="stylesheet" href="layuot.css">
-  <link rel="stylesheet" href="responsive.css">
-  <script src="anime.js"></script>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css">
-</head>
+?>
 
 <body>
   <!-- Google Tag Manager (noscript) -->
@@ -231,35 +221,6 @@
 
   </main>
 
-  <footer>
-    <div class="container1">
-        <p>〇事業概要</p>
-        <ul>
-            <li><a href="index.html#flow">制作依頼の流れ</a></li>
-            <li><a href="pricing.html">料金表</a></li>
-            <li><a href="sample.html">サンプル一覧</a></li>
-            <li><a href="FAQ.html">よくある質問</a></li>
-        </ul>
-    </div>
-
-    <div class="container2">
-        <p>〇運営情報</p>
-        <ul>
-            <li><a href="info.html">運営者概要</a></li>
-            <li><a href="#お知らせのリンク">お知らせ</a></li>
-            <li><a href="policy.html">プライバシーポリシー</a></li>
-        </ul>
-    </div>
-
-    <div class="container3">
-        <p>〇お客様ページ</p>
-        <ul>
-            <li><a href="#コラムのリンク">お役立ち情報</a></li>
-            <li><a href="inquiry.html">お問い合わせ</a></li>
-        </ul>
-    </div>
-</footer>
-
-</body>
-
-</html>
+  <?php
+    get_footer(); // フッターの読み込み
+    ?>

@@ -1,9 +1,26 @@
+<?php
+
+/**
+ * メインのテンプレートファイル
+ *
+ * これは WordPress テーマで最も一般的なテンプレートファイルであり、
+ * テーマに必要なファイルの2つのうちの1つです（もう1つは style.css です）。
+ * クエリによってより特定のファイルが一致しない場合に、ページを表示するために使用されます。
+ * たとえば、home.php ファイルが存在しない場合にホームページをまとめます。
+ *
+ * @link https://developer.wordpress.org/themes/basics/template-hierarchy/
+ *
+ * @package Your_Theme_Name
+ */
+
+get_header(); // ヘッダーの読み込み
+?>
+
 
 <body>
-<!-- Google Tag Manager (noscript) -->
-<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NLHZNZDS"
-height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-<!-- End Google Tag Manager (noscript) -->
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NLHZNZDS" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
 
     <!-- ページの最上部にアンカーを設置 -->
     <a id="top"></a>
@@ -16,25 +33,24 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         <div class="head-wrapper">
             <div class="left">
                 <div class="hamburger-menu-container">
-                    <input class="menu-toggle" type="checkbox" id="menu-toggle"/>
+                    <input class="menu-toggle" type="checkbox" id="menu-toggle" />
                     <label for="menu-toggle" class="menu-icon">
-                      <span class="menu-icon-line"></span>
+                        <span class="menu-icon-line"></span>
                     </label>
                     <nav class="menu">
-                      <ul>
-                        <li class="menu-option-top"><a></a></li>
-                        <li class="menu-option"><a href="info.html">運営者概要</a></li>
-                        <li class="menu-option"><a href="#お知らせ">お知らせ</a></li>
-                        <li class="menu-option"><a href="#お役立ち情報">お役立ち情報</a></li>
-                        <li class="menu-option"><a href="inquiry.html">お問い合わせ</a></li>
-                      </ul>
+                        <ul>
+                            <li class="menu-option-top"><a></a></li>
+                            <li class="menu-option"><a href="info.html">運営者概要</a></li>
+                            <li class="menu-option"><a href="#お知らせ">お知らせ</a></li>
+                            <li class="menu-option"><a href="#お役立ち情報">お役立ち情報</a></li>
+                            <li class="menu-option"><a href="inquiry.html">お問い合わせ</a></li>
+                        </ul>
                     </nav>
-                  </div>
+                </div>
             </div>
             <div class="center">
                 <a href="index.html">
-                    <img src="https://lh3.googleusercontent.com/pw/AP1GczPpPBJdDHhE-08tnyv3KNgp6l_E1TuspfIxyhw3zIMNSIiZvRMawqtJyS6D2RkzLq7_dXx8UvivUm7ZHS0lFFeWxPb9eSTCenIEZACeMowrstsnqjEI2xaqp3KN62tRy9ZvmrYqMXo5o4KT0Knu87PC=w500-h500-s-no-gm?authuser=0"
-                        alt="ホームページ制作ならホムクリのロゴ">
+                    <img src="https://lh3.googleusercontent.com/pw/AP1GczPpPBJdDHhE-08tnyv3KNgp6l_E1TuspfIxyhw3zIMNSIiZvRMawqtJyS6D2RkzLq7_dXx8UvivUm7ZHS0lFFeWxPb9eSTCenIEZACeMowrstsnqjEI2xaqp3KN62tRy9ZvmrYqMXo5o4KT0Knu87PC=w500-h500-s-no-gm?authuser=0" alt="ホームページ制作ならホムクリのロゴ">
                 </a>
             </div>
             <div class="right">
@@ -59,7 +75,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                 <ul>
                     <li><a href="index.html">TOP </a></li>
                     <li><a href="#flow">依頼の流れ </a></li>
-                    <li><a href="pricing.html">料金表 </a></li>
+                    <li><a href="<?php echo get_template_directory_uri(); ?>/pricing.php">料金表</a></li>
                     <li><a href="sample.html">サンプル一覧 </a></li>
                     <li><a href="FAQ.html">よくある質問 </a></li>
                 </ul>
@@ -72,8 +88,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <main>
         <div class="top-wrapper">
             <div class="centered-image1">
-                <img
-                    src="https://lh3.googleusercontent.com/pw/AP1GczO_mFHjFI0juXiR2EsC4LoMvJjBzEdDA5ztpqEc9DTgBD6CdMh4Pwzv78tsGoZrGe_VCqXbQ6AKedZHnjaw3H_Kew48aUgt_7juHZ85HxuZ5Nb-J0RXk8-hp_tby0ejqjgT-Crlw93Au3dI2n45sbj5=w1638-h1502-s-no-gm?authuser=0">
+                <img src="https://lh3.googleusercontent.com/pw/AP1GczO_mFHjFI0juXiR2EsC4LoMvJjBzEdDA5ztpqEc9DTgBD6CdMh4Pwzv78tsGoZrGe_VCqXbQ6AKedZHnjaw3H_Kew48aUgt_7juHZ85HxuZ5Nb-J0RXk8-hp_tby0ejqjgT-Crlw93Au3dI2n45sbj5=w1638-h1502-s-no-gm?authuser=0">
                 <h1>ホームページ制作なら<br><span>ホムクリ</span></h1>
                 <p>お客様のご要望に合わせて<br>完全オリジナルデザインで制作。<br>結果につながるハイクオリティなホームページを<br>ホムクリのモットーである最速最短でご提供いたします。</p>
             </div>
@@ -89,8 +104,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                     <div class="text-part"><span class="large-letter">手</span>間はかけたくないけどなるべくコストを抑えたい。</div>
                 </div>
                 <div class="centered-image">
-                    <img
-                        src="https://lh3.googleusercontent.com/pw/AP1GczMV8DlhVe2rwZQPC1M6djYUNDTt5YblE5BaqLdvYa5b7Ng1ztsVbjpawyiqXrqOCzpYrXpQnKHNR2qeiC-JLAGStINkcFIAvaeoqVAYtvAWQc3U6hs1b3YHfciTDJgcAR4NlnPa7QYTCrks8Wys6y0V=w500-h420-s-no-gm?authuser=0">
+                    <img src="https://lh3.googleusercontent.com/pw/AP1GczMV8DlhVe2rwZQPC1M6djYUNDTt5YblE5BaqLdvYa5b7Ng1ztsVbjpawyiqXrqOCzpYrXpQnKHNR2qeiC-JLAGStINkcFIAvaeoqVAYtvAWQc3U6hs1b3YHfciTDJgcAR4NlnPa7QYTCrks8Wys6y0V=w500-h420-s-no-gm?authuser=0">
                 </div>
             </div>
 
@@ -112,14 +126,10 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                             専門的な知識がない方でも、ご安心ください。
                             ホムクリはお客様の事業の個性を引き立て、ビジネスの成功を加速させる魅力的なホームページをお届けします。</p>
                     </div>
-                    <div class="image-box1"><img
-                            src="https://lh3.googleusercontent.com/pw/AP1GczNyB7yXZRlHazTMFsETBFGZu7Yiud2DSwzSahT6C06q5PwU_kkveZ6IyZJTY-iXSHizgyFVwMX_z76YQG8DEqKOxd6pKUx4-sGZaMN1rDegNEHYcEq78RruvOI3ScIiVupLIX4dV8RSmKyOHndwgIM2=w500-h500-s-no-gm?authuser=0"
-                            alt=""></div>
+                    <div class="image-box1"><img src="https://lh3.googleusercontent.com/pw/AP1GczNyB7yXZRlHazTMFsETBFGZu7Yiud2DSwzSahT6C06q5PwU_kkveZ6IyZJTY-iXSHizgyFVwMX_z76YQG8DEqKOxd6pKUx4-sGZaMN1rDegNEHYcEq78RruvOI3ScIiVupLIX4dV8RSmKyOHndwgIM2=w500-h500-s-no-gm?authuser=0" alt=""></div>
                 </div>
                 <div class="content-box">
-                    <div class="image-box2"><img
-                            src="https://lh3.googleusercontent.com/pw/AP1GczMbZFrvdolh8I8S_HmgNHvErEvHG9sTP1IrmJu8qKQL_gdoG7LwBQEqTQZX3j-gTHFFihGx3zO77x1quXuTCVyp4gfW1_KttuY8-exqRroSPlWcxnnF1gBkR_TqburEa_DRi9M3BttHIu5UWv1OFgyj=w500-h500-s-no-gm?authuser=0"
-                            alt=""></div>
+                    <div class="image-box2"><img src="https://lh3.googleusercontent.com/pw/AP1GczMbZFrvdolh8I8S_HmgNHvErEvHG9sTP1IrmJu8qKQL_gdoG7LwBQEqTQZX3j-gTHFFihGx3zO77x1quXuTCVyp4gfW1_KttuY8-exqRroSPlWcxnnF1gBkR_TqburEa_DRi9M3BttHIu5UWv1OFgyj=w500-h500-s-no-gm?authuser=0" alt=""></div>
                     <div class="text-box2">
                         <h3>02/<span class="font_red">最短7日</span>で納品が可能</h3>
                         <p>速さも、ホムクリの自慢です。<br><br>
@@ -136,14 +146,10 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                             訪問者が忘れられない魅力的なサイトで、お客様のビジネスを際立たせることに注力し、お客様の想いと市場の最新動向を組み合わせ、他とは違うホームページを通じてビジネスの可能性を最大限に引き出します。
                         </p>
                     </div>
-                    <div class="image-box1"><img
-                            src="https://lh3.googleusercontent.com/pw/AP1GczN4YdVb3BlUoVQIkN-7IoQdjDtoV8Gs-YKzHjJIITzwfPOBpunvWKJUuAbCTFfl0o_-NeaJ5_fcTR5zOR1zVZwDaZnOI0xCt53hgKL9Pvq3cE9cEYOON96xax5bYmO7dFigFQJdu5r80I-OdtQAqQZx=w500-h500-s-no-gm?authuser=0"
-                            alt=""></div>
+                    <div class="image-box1"><img src="https://lh3.googleusercontent.com/pw/AP1GczN4YdVb3BlUoVQIkN-7IoQdjDtoV8Gs-YKzHjJIITzwfPOBpunvWKJUuAbCTFfl0o_-NeaJ5_fcTR5zOR1zVZwDaZnOI0xCt53hgKL9Pvq3cE9cEYOON96xax5bYmO7dFigFQJdu5r80I-OdtQAqQZx=w500-h500-s-no-gm?authuser=0" alt=""></div>
                 </div>
                 <div class="content-box">
-                    <div class="image-box2"><img
-                            src="https://lh3.googleusercontent.com/pw/AP1GczMrk0JyvXuhUqEPNau_El8byDgPHaQD2mUqWN8rpZWYA2J0De7yarpN6s8CZSin_kq-mt2TxHAwTHvUTegspaT_spG_g08b7a6hLW8QGkXPxt_vMa7Nqs4-MknROoTvijBtH_9HwJCBlQwZIICaGdAG=w500-h500-s-no-gm?authuser=0"
-                            alt=""></div>
+                    <div class="image-box2"><img src="https://lh3.googleusercontent.com/pw/AP1GczMrk0JyvXuhUqEPNau_El8byDgPHaQD2mUqWN8rpZWYA2J0De7yarpN6s8CZSin_kq-mt2TxHAwTHvUTegspaT_spG_g08b7a6hLW8QGkXPxt_vMa7Nqs4-MknROoTvijBtH_9HwJCBlQwZIICaGdAG=w500-h500-s-no-gm?authuser=0" alt=""></div>
                     <div class="text-box2">
                         <h3>04/SEOライティングで<span class="font_red">集客効果UP</span></h3>
                         <p>ホムクリのSEO対策サービスで、お客様のホームページの集客力を大幅に向上させましょう。<br><br>
@@ -161,14 +167,10 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                             お客様一人ひとりの需要に合わせたきめ細やかなアドバイスで、ホームページの運営をよりスムーズにし、さらなる成長を促します。
                             ホームページを作った後も、心置きなく事業に専念できるよう全面的にバックアップします。</p>
                     </div>
-                    <div class="image-box1"><img
-                            src="https://lh3.googleusercontent.com/pw/AP1GczNGAymtmFyGp6jMb3TRnt65Oerj-696Dpi9Qk7_uIk8lFifSOksMaUgWg8V-Fd6Y04BCle2nwiO-ViYwwJxdv8zNANdM2exjqh8mrQHvEEz02pY5_ZzdKRpLe0vammhfXImPtifnf_brwfaAQSNVHFG=w500-h500-s-no-gm?authuser=0"
-                            alt=""></div>
+                    <div class="image-box1"><img src="https://lh3.googleusercontent.com/pw/AP1GczNGAymtmFyGp6jMb3TRnt65Oerj-696Dpi9Qk7_uIk8lFifSOksMaUgWg8V-Fd6Y04BCle2nwiO-ViYwwJxdv8zNANdM2exjqh8mrQHvEEz02pY5_ZzdKRpLe0vammhfXImPtifnf_brwfaAQSNVHFG=w500-h500-s-no-gm?authuser=0" alt=""></div>
                 </div>
                 <div class="content-box">
-                    <div class="image-box2"><img
-                            src="https://lh3.googleusercontent.com/pw/AP1GczMILlx5pc6jRK4sU7pcf4QjOiGyVTtb-9lfRZGXuR_U9miEyK90QHPq5yoN2QytRpsdGeRFGmjfnc1Ce28CQQzGJQOV2hcykOirzeOHk-c2sJJy9HfEqFi4DiCMudUJwuHTQ5ps5RAjzX469oV64f2J=w500-h500-s-no-gm?authuser=0"
-                            alt=""></div>
+                    <div class="image-box2"><img src="https://lh3.googleusercontent.com/pw/AP1GczMILlx5pc6jRK4sU7pcf4QjOiGyVTtb-9lfRZGXuR_U9miEyK90QHPq5yoN2QytRpsdGeRFGmjfnc1Ce28CQQzGJQOV2hcykOirzeOHk-c2sJJy9HfEqFi4DiCMudUJwuHTQ5ps5RAjzX469oV64f2J=w500-h500-s-no-gm?authuser=0" alt=""></div>
                     <div class="text-box2">
                         <h3>06/ホームページ公開後も<span class="font_red">安心のアフターサポート</span></h3>
                         <p>ホームページの公開後も、ホムクリはお客様をしっかりサポートします。<br><br>
@@ -192,20 +194,12 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                     他のホームページデザインにも興味がある方は、ぜひサンプル一覧をご覧ください。</p>
                 <div class="sample-images">
                     <div class="image-group">
-                        <img class="image-PC fadeInOnScroll"
-                            src="https://lh3.googleusercontent.com/pw/AP1GczNcW2oHVrTrZsdHyowv0K2vlfR177TYU36m4Kp9f-snta8acw_sGlSQRb-p4joUaBejGj_WHxsoeGO5rgFspUEo1wZTIRcl0Er0T5myWVKwvc6E35autAa16eE22ZUlL4BIMCBwG6gB4bT6Q_F2l3rH=w1080-h657-s-no-gm?authuser=0"
-                            alt="着物レンタルホームページのパソコンでのサンプル">
-                        <img class="image-phone fadeInOnScroll"
-                            src="https://lh3.googleusercontent.com/pw/AP1GczPH_rKUv2oUWko_plZ4swiKawU8nqXvUfHMaksoA6zlMj6HywrfIvfuKTLxZP7GmqYYnMObbGGvO1LleR7TepD_6LTyDCXxhqE-BopuEdbxgbuzZRy2OuoQYRh4JpP_gby6C6jJET7oeQ77KFQuEsXZkw=w365-h684-s-no-gm?authuser=0"
-                            alt="着物レンタルホームページのスマホでのサンプル">
+                        <img class="image-PC fadeInOnScroll" src="https://lh3.googleusercontent.com/pw/AP1GczNcW2oHVrTrZsdHyowv0K2vlfR177TYU36m4Kp9f-snta8acw_sGlSQRb-p4joUaBejGj_WHxsoeGO5rgFspUEo1wZTIRcl0Er0T5myWVKwvc6E35autAa16eE22ZUlL4BIMCBwG6gB4bT6Q_F2l3rH=w1080-h657-s-no-gm?authuser=0" alt="着物レンタルホームページのパソコンでのサンプル">
+                        <img class="image-phone fadeInOnScroll" src="https://lh3.googleusercontent.com/pw/AP1GczPH_rKUv2oUWko_plZ4swiKawU8nqXvUfHMaksoA6zlMj6HywrfIvfuKTLxZP7GmqYYnMObbGGvO1LleR7TepD_6LTyDCXxhqE-BopuEdbxgbuzZRy2OuoQYRh4JpP_gby6C6jJET7oeQ77KFQuEsXZkw=w365-h684-s-no-gm?authuser=0" alt="着物レンタルホームページのスマホでのサンプル">
                     </div>
                     <div class="image-group">
-                        <img class="image-PC fadeInOnScroll"
-                            src="https://lh3.googleusercontent.com/pw/AP1GczNvDTjve06GIB2JmChpwl7xzueyiKMvrVyMFQuCcgATmp4IEyxVKUUd3wg8m260YTA86JYaPtgn0p_r3lVgVtWBFkwygIXGl1MfNEwmxbgKXmCI69_7VTWkTz70R90WgRgbS91kwD9--YOaUko6OCnp=w1080-h665-s-no-gm?authuser=0"
-                            alt="カフェのホームページのパソコンでのサンプル">
-                        <img class="image-phone fadeInOnScroll"
-                            src="https://lh3.googleusercontent.com/pw/AP1GczP0cf5pJsf_MYDzmMYd72lShYfNYs7EcybX4iSpGglKSzkmwktRy0_2tWav-EzkobvacULvIi8QaCR7Pq5ZJfh43FoCNI0Pi3nLLO3J24oWe1O-yo8z-BJmHdOmcjuO9q8n03t9gCLFoeaHUhQiqhg24g=w365-h683-s-no-gm?authuser=0"
-                            alt="カフェのホームページのスマホでのサンプル">
+                        <img class="image-PC fadeInOnScroll" src="https://lh3.googleusercontent.com/pw/AP1GczNvDTjve06GIB2JmChpwl7xzueyiKMvrVyMFQuCcgATmp4IEyxVKUUd3wg8m260YTA86JYaPtgn0p_r3lVgVtWBFkwygIXGl1MfNEwmxbgKXmCI69_7VTWkTz70R90WgRgbS91kwD9--YOaUko6OCnp=w1080-h665-s-no-gm?authuser=0" alt="カフェのホームページのパソコンでのサンプル">
+                        <img class="image-phone fadeInOnScroll" src="https://lh3.googleusercontent.com/pw/AP1GczP0cf5pJsf_MYDzmMYd72lShYfNYs7EcybX4iSpGglKSzkmwktRy0_2tWav-EzkobvacULvIi8QaCR7Pq5ZJfh43FoCNI0Pi3nLLO3J24oWe1O-yo8z-BJmHdOmcjuO9q8n03t9gCLFoeaHUhQiqhg24g=w365-h683-s-no-gm?authuser=0" alt="カフェのホームページのスマホでのサンプル">
                     </div>
                 </div>
             </div>
@@ -220,12 +214,9 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                     <a href="sample.html" class="circle_btn05-txt">サンプル一覧はこちら</a>
                     <div class="circle_btn05-icon">
                         <div class="circle_btn05-circle">
-                            <svg width="48" height="48" viewBox="0 0 48 48" fill="none"
-                                xmlns="http://www.w3.org/2000/svg">
+                            <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <mask id="644189">
-                                    <path
-                                        d="M43.7571 14.445C54.0966 36.6284 26.334 56.7459 8.47304 39.5132C-8.25498 22.2711 10.2249 -5.00596 32.2464 3.65796"
-                                        stroke="#ffffff" stroke-width="2" stroke-linecap="round"></path>
+                                    <path d="M43.7571 14.445C54.0966 36.6284 26.334 56.7459 8.47304 39.5132C-8.25498 22.2711 10.2249 -5.00596 32.2464 3.65796" stroke="#ffffff" stroke-width="2" stroke-linecap="round"></path>
                                 </mask>
                                 <foreignObject x="0" y="0" width="48" height="48" mask="url(#644189)">
                                     <div class="circle_btn05-circle-itm"></div><!-- 丸の色 -->
@@ -233,15 +224,12 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                             </svg>
                         </div>
                         <div class="circle_btn05-arrow">
-                            <svg width="16" height="13" viewBox="0 0 16 13" fill="none"
-                                xmlns="http://www.w3.org/2000/svg">
+                            <svg width="16" height="13" viewBox="0 0 16 13" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <g>
                                     <path d="M0 6.5H14.6036" stroke="black" stroke-width="2" stroke-miterlimit="10">
                                     </path>
-                                    <path d="M9.72588 11.5533L14.6036 6.5" stroke="black" stroke-width="2"
-                                        stroke-miterlimit="10" stroke-linecap="square"></path>
-                                    <path d="M9.72588 1.43652L14.6036 6.5" stroke="black" stroke-width="2"
-                                        stroke-miterlimit="10" stroke-linecap="square"></path>
+                                    <path d="M9.72588 11.5533L14.6036 6.5" stroke="black" stroke-width="2" stroke-miterlimit="10" stroke-linecap="square"></path>
+                                    <path d="M9.72588 1.43652L14.6036 6.5" stroke="black" stroke-width="2" stroke-miterlimit="10" stroke-linecap="square"></path>
                                 </g>
                             </svg>
                         </div>
@@ -359,12 +347,9 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                         <a href="pricing.html" class="circle_btn05-txt">料金詳細はこちら</a>
                         <div class="circle_btn05-icon">
                             <div class="circle_btn05-circle">
-                                <svg width="48" height="48" viewBox="0 0 48 48" fill="none"
-                                    xmlns="http://www.w3.org/2000/svg">
+                                <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
                                     <mask id="644189">
-                                        <path
-                                            d="M43.7571 14.445C54.0966 36.6284 26.334 56.7459 8.47304 39.5132C-8.25498 22.2711 10.2249 -5.00596 32.2464 3.65796"
-                                            stroke="#ffffff" stroke-width="2" stroke-linecap="round"></path>
+                                        <path d="M43.7571 14.445C54.0966 36.6284 26.334 56.7459 8.47304 39.5132C-8.25498 22.2711 10.2249 -5.00596 32.2464 3.65796" stroke="#ffffff" stroke-width="2" stroke-linecap="round"></path>
                                     </mask>
                                     <foreignObject x="0" y="0" width="48" height="48" mask="url(#644189)">
                                         <div class="circle_btn05-circle-itm"></div><!-- 丸の色 -->
@@ -372,15 +357,12 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                                 </svg>
                             </div>
                             <div class="circle_btn05-arrow">
-                                <svg width="16" height="13" viewBox="0 0 16 13" fill="none"
-                                    xmlns="http://www.w3.org/2000/svg">
+                                <svg width="16" height="13" viewBox="0 0 16 13" fill="none" xmlns="http://www.w3.org/2000/svg">
                                     <g>
                                         <path d="M0 6.5H14.6036" stroke="black" stroke-width="2" stroke-miterlimit="10">
                                         </path>
-                                        <path d="M9.72588 11.5533L14.6036 6.5" stroke="black" stroke-width="2"
-                                            stroke-miterlimit="10" stroke-linecap="square"></path>
-                                        <path d="M9.72588 1.43652L14.6036 6.5" stroke="black" stroke-width="2"
-                                            stroke-miterlimit="10" stroke-linecap="square"></path>
+                                        <path d="M9.72588 11.5533L14.6036 6.5" stroke="black" stroke-width="2" stroke-miterlimit="10" stroke-linecap="square"></path>
+                                        <path d="M9.72588 1.43652L14.6036 6.5" stroke="black" stroke-width="2" stroke-miterlimit="10" stroke-linecap="square"></path>
                                     </g>
                                 </svg>
                             </div>
@@ -399,8 +381,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                             <p>50,000円～</p>
                         </div>
                         <div class="image-box-option">
-                            <img src="https://lh3.googleusercontent.com/pw/AP1GczNOpmLNNS7jQKHXgDsIn25Lveo6uXbTmBCnWyPHWdfbvQO7KxLJrKFJhGb3vZgrswh7CCFUTHFh4Ks3MP3pEHbr90hBPt80bP_grmbTOvIASdA8v6pqSCp9atxACkkFZGcIxgm0GUmz7pf-cocmhD9L=w499-h500-s-no-gm?authuser=0"
-                                alt="ホームページのロゴ制作を現したロゴ">
+                            <img src="https://lh3.googleusercontent.com/pw/AP1GczNOpmLNNS7jQKHXgDsIn25Lveo6uXbTmBCnWyPHWdfbvQO7KxLJrKFJhGb3vZgrswh7CCFUTHFh4Ks3MP3pEHbr90hBPt80bP_grmbTOvIASdA8v6pqSCp9atxACkkFZGcIxgm0GUmz7pf-cocmhD9L=w499-h500-s-no-gm?authuser=0" alt="ホームページのロゴ制作を現したロゴ">
                         </div>
                     </div>
                     <div class="content-box-option">
@@ -409,8 +390,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                             <p>40,000円～</p>
                         </div>
                         <div class="image-box-option">
-                            <img src="https://lh3.googleusercontent.com/pw/AP1GczNz_yiwxPT3FXOLonWiPzyJZRN_uQ7cu48FCNGQqflhSPb3QPvVp38Vn5aiXIf8jwXW1aTmJbfV56thwHhZ85kuAtHfuwEuyn2X9wemVCCN_depsNEfpdCYhS7N0Ex3ln1COxYmmAt9cX4oHNe-RtM3=w452-h419-s-no-gm?authuser=0"
-                                alt="LP制作を現したロゴ">
+                            <img src="https://lh3.googleusercontent.com/pw/AP1GczNz_yiwxPT3FXOLonWiPzyJZRN_uQ7cu48FCNGQqflhSPb3QPvVp38Vn5aiXIf8jwXW1aTmJbfV56thwHhZ85kuAtHfuwEuyn2X9wemVCCN_depsNEfpdCYhS7N0Ex3ln1COxYmmAt9cX4oHNe-RtM3=w452-h419-s-no-gm?authuser=0" alt="LP制作を現したロゴ">
                         </div>
                     </div>
                     <div class="content-box-option">
@@ -419,8 +399,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                             <p>10,000円/1記事</p>
                         </div>
                         <div class="image-box-option">
-                            <img src="https://lh3.googleusercontent.com/pw/AP1GczMznMcLvEH6CIbBL2U94D4NbRfRJBYnNf2IRvp-NFboyrbEubbKxTI0JSDzf3Ty5mWEYxgWU0ma3Db4Fh4r_s9BQP5CoLPKOEOj6xVIwobMBwGcQoA6WXxrtP90-1Sx1CmjD5L9d_DqQt5le4BDjwhD=w449-h453-s-no-gm?authuser=0"
-                                alt="SEO記事代行を現したロゴ">
+                            <img src="https://lh3.googleusercontent.com/pw/AP1GczMznMcLvEH6CIbBL2U94D4NbRfRJBYnNf2IRvp-NFboyrbEubbKxTI0JSDzf3Ty5mWEYxgWU0ma3Db4Fh4r_s9BQP5CoLPKOEOj6xVIwobMBwGcQoA6WXxrtP90-1Sx1CmjD5L9d_DqQt5le4BDjwhD=w449-h453-s-no-gm?authuser=0" alt="SEO記事代行を現したロゴ">
                         </div>
                     </div>
                     <div class="content-box-option">
@@ -429,8 +408,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                             <p>月額5,000円</p>
                         </div>
                         <div class="image-box-option">
-                            <img src="https://lh3.googleusercontent.com/pw/AP1GczOZiY2u0yzNw1Bqam31CfOgu66drWoe1pEUhA67djEWj_hqCdMzwO6LNWWf8Gbh2mpAGLjwjZuFupaO-ab7QzwoKQMgxJUuHsCNa2bJpRKK2pdAOyqoM1sfudFDn9Gvof3D6B8BAqgN-NK9ryFjr5t9=w462-h510-s-no-gm?authuser=0"
-                                alt="ホームページの保守管理サービスを現したロゴ">
+                            <img src="https://lh3.googleusercontent.com/pw/AP1GczOZiY2u0yzNw1Bqam31CfOgu66drWoe1pEUhA67djEWj_hqCdMzwO6LNWWf8Gbh2mpAGLjwjZuFupaO-ab7QzwoKQMgxJUuHsCNa2bJpRKK2pdAOyqoM1sfudFDn9Gvof3D6B8BAqgN-NK9ryFjr5t9=w462-h510-s-no-gm?authuser=0" alt="ホームページの保守管理サービスを現したロゴ">
                         </div>
                     </div>
                     <div class="content-box-option">
@@ -439,8 +417,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                             <p>1,000円/1画像</p>
                         </div>
                         <div class="image-box-option">
-                            <img src="https://lh3.googleusercontent.com/pw/AP1GczPkmKH3LOZ4wB7x1tw2iR5hqb-exRJnDwjYDfMI3EX_wddcn3lw1OtEjxvtm5n1ipIBMbbITbdRrTW8Ob8WoKIw2Thsrqn91up6k6TW9z8_qQOlO5RIVheOpRD8BqIbXs3wosfpcIlEuVzd3tTi0fIg=w474-h364-s-no-gm?authuser=0"
-                                alt="ホームページに使う画像の作成を現したロゴ">
+                            <img src="https://lh3.googleusercontent.com/pw/AP1GczPkmKH3LOZ4wB7x1tw2iR5hqb-exRJnDwjYDfMI3EX_wddcn3lw1OtEjxvtm5n1ipIBMbbITbdRrTW8Ob8WoKIw2Thsrqn91up6k6TW9z8_qQOlO5RIVheOpRD8BqIbXs3wosfpcIlEuVzd3tTi0fIg=w474-h364-s-no-gm?authuser=0" alt="ホームページに使う画像の作成を現したロゴ">
                         </div>
                     </div>
                     <div class="content-box-option">
@@ -449,8 +426,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                             <p>4,000円</p>
                         </div>
                         <div class="image-box-option">
-                            <img src="https://lh3.googleusercontent.com/pw/AP1GczPi-vzvQCOsBQKM4n1A3wKNtBA-u0lt_gpYl4ItTJy_CBO9xAFeNFBWBY9TeliPxMzMz461pVt5oc6ryindZ6rw6W0xw47grurYqniySLZcL5O8O0s5F3QH7OzKLxeb_LmSmlGOprsGAC279BGPr1poIQ=w526-h474-s-no-gm?authuser=0"
-                                alt="ホームページのアクセス解析ツール設置を現したロゴ">
+                            <img src="https://lh3.googleusercontent.com/pw/AP1GczPi-vzvQCOsBQKM4n1A3wKNtBA-u0lt_gpYl4ItTJy_CBO9xAFeNFBWBY9TeliPxMzMz461pVt5oc6ryindZ6rw6W0xw47grurYqniySLZcL5O8O0s5F3QH7OzKLxeb_LmSmlGOprsGAC279BGPr1poIQ=w526-h474-s-no-gm?authuser=0" alt="ホームページのアクセス解析ツール設置を現したロゴ">
                         </div>
                     </div>
                     <div class="content-box-option">
@@ -459,8 +435,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                             <p>10,000円/1P</p>
                         </div>
                         <div class="image-box-option">
-                            <img src="https://lh3.googleusercontent.com/pw/AP1GczPIv0795_9BWdaRv06-HdlZv-E5c7L0V7ShRGmZ56GM6CkpfgDjQYic8smoJ5iOJ9N14ySJ4c4_ZVl7gZ889UJJCPb91LPBP7nJxvmwcfORSNlbWQ1QsdN7XfakanWX0ZB0rUYtRAUdC6zLUmZV_ZLV=w490-h484-s-no-gm?authuser=0"
-                                alt="ホームページを英語切り替えを現したロゴ">
+                            <img src="https://lh3.googleusercontent.com/pw/AP1GczPIv0795_9BWdaRv06-HdlZv-E5c7L0V7ShRGmZ56GM6CkpfgDjQYic8smoJ5iOJ9N14ySJ4c4_ZVl7gZ889UJJCPb91LPBP7nJxvmwcfORSNlbWQ1QsdN7XfakanWX0ZB0rUYtRAUdC6zLUmZV_ZLV=w490-h484-s-no-gm?authuser=0" alt="ホームページを英語切り替えを現したロゴ">
                         </div>
                     </div>
 
@@ -481,8 +456,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                     <div class="timeline-item">
                         <div class="timeline-icon">
                             <!-- 最初の画像 -->
-                            <img src="https://lh3.googleusercontent.com/pw/AP1GczNKvcv57dBa6l3ZiFnaZyoqFACw-MT3TUrhADQTN0CP3YOx10ID4DFjmuiWdth_TwFq_NN7ahhSrwuUYIVsDFs_4lUPKx3Ylfg-ENdT2ghcnaFWBCKYWbUJqeZ1ED8LunVjkV2GsU1NxeWkWQbJpPGi=w605-h595-s-no-gm?authuser=0"
-                                alt="お申込みを現したロゴ">
+                            <img src="https://lh3.googleusercontent.com/pw/AP1GczNKvcv57dBa6l3ZiFnaZyoqFACw-MT3TUrhADQTN0CP3YOx10ID4DFjmuiWdth_TwFq_NN7ahhSrwuUYIVsDFs_4lUPKx3Ylfg-ENdT2ghcnaFWBCKYWbUJqeZ1ED8LunVjkV2GsU1NxeWkWQbJpPGi=w605-h595-s-no-gm?authuser=0" alt="お申込みを現したロゴ">
                         </div>
                         <div class="timeline-content">
                             <h3 class="timeline-title">①お申込み受付</h3>
@@ -491,8 +465,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                     </div>
                     <div class="timeline-item">
                         <div class="timeline-icon">
-                            <img src="https://lh3.googleusercontent.com/pw/AP1GczPo0f8ZynTT9RS3VmSn2GOb3EGuWuKGlVaYY3YmGZNPrba5d8j6y-h-5KfWGEhxkYgTNOzM_jzOtYIkEFWqnd1wMQDJzW_I3zzebiKZ11XwS9GpzB5d7dGTcYMM8zEu9RAzPHx8IsXgT87IRhFePrvm=w613-h610-s-no-gm?authuser=0"
-                                alt="ミーティング、ヒアリングを現したロゴ">
+                            <img src="https://lh3.googleusercontent.com/pw/AP1GczPo0f8ZynTT9RS3VmSn2GOb3EGuWuKGlVaYY3YmGZNPrba5d8j6y-h-5KfWGEhxkYgTNOzM_jzOtYIkEFWqnd1wMQDJzW_I3zzebiKZ11XwS9GpzB5d7dGTcYMM8zEu9RAzPHx8IsXgT87IRhFePrvm=w613-h610-s-no-gm?authuser=0" alt="ミーティング、ヒアリングを現したロゴ">
                         </div>
                         <div class="timeline-content">
                             <h3 class="timeline-title">②初回ミーティング・<br class="mobile-break">ヒアリング</h3>
@@ -501,8 +474,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                     </div>
                     <div class="timeline-item">
                         <div class="timeline-icon">
-                            <img src="https://lh3.googleusercontent.com/pw/AP1GczOqZkOWOkmuh7ecIgg7ZaxKeuxjwdaZZZvjlp2yDbhDQRTwFqvJDUF3-ejbqTJegDPwJCSaNZinwXrswlEnYJy17hbcG7XDN74O6bnSNa5Rkdk3XbNkCxXYJETh4zANGeOz8DPOU715FVxGUfsJ5Kc5=w602-h601-s-no-gm?authuser=0"
-                                alt="お見積りの提案、初期費用のお支払いを現したロゴ">
+                            <img src="https://lh3.googleusercontent.com/pw/AP1GczOqZkOWOkmuh7ecIgg7ZaxKeuxjwdaZZZvjlp2yDbhDQRTwFqvJDUF3-ejbqTJegDPwJCSaNZinwXrswlEnYJy17hbcG7XDN74O6bnSNa5Rkdk3XbNkCxXYJETh4zANGeOz8DPOU715FVxGUfsJ5Kc5=w602-h601-s-no-gm?authuser=0" alt="お見積りの提案、初期費用のお支払いを現したロゴ">
                         </div>
                         <div class="timeline-content">
                             <h3 class="timeline-title">③お見積りの提案・<br class="mobile-break">初期費用のお支払い</h3>
@@ -512,8 +484,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                     </div>
                     <div class="timeline-item">
                         <div class="timeline-icon">
-                            <img src="https://lh3.googleusercontent.com/pw/AP1GczPOr86n9E7_M-OPh0Lbo5D54L3iHRc1vDWiWyPbJHSqwr7A-vaLqTCVUHo4QP90u0VpXLnpoRkPgfY61oiHk9oIFqoXcw5qHRNzoZ3uzgZ0meb0kymjgWIUvQzcyJbdx6MrpDuLHh_jFUpLRrBcV4yx=w612-h600-s-no-gm?authuser=0"
-                                alt="ホームページ制作を現したロゴ">
+                            <img src="https://lh3.googleusercontent.com/pw/AP1GczPOr86n9E7_M-OPh0Lbo5D54L3iHRc1vDWiWyPbJHSqwr7A-vaLqTCVUHo4QP90u0VpXLnpoRkPgfY61oiHk9oIFqoXcw5qHRNzoZ3uzgZ0meb0kymjgWIUvQzcyJbdx6MrpDuLHh_jFUpLRrBcV4yx=w612-h600-s-no-gm?authuser=0" alt="ホームページ制作を現したロゴ">
                         </div>
                         <div class="timeline-content">
                             <h3 class="timeline-title">④ホームページ制作</h3>
@@ -522,8 +493,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                     </div>
                     <div class="timeline-item">
                         <div class="timeline-icon">
-                            <img src="https://lh3.googleusercontent.com/pw/AP1GczM3j1q4eiYcfx8Qdbd6tMtyFSgGHzA9luYo0CD-jdVqzOTv-_kzN09K0rRQL4o1y7zzPtVitNmR55-Xvg34kKzV5efFTNGfY6H2pOKIQdKkdYSJ1oMhdCs89qPZ-LNb8v_1g0MDwPW0U9-c6g33vmqt=w608-h600-s-no-gm?authuser=0"
-                                alt="内容確認を現したロゴ">
+                            <img src="https://lh3.googleusercontent.com/pw/AP1GczM3j1q4eiYcfx8Qdbd6tMtyFSgGHzA9luYo0CD-jdVqzOTv-_kzN09K0rRQL4o1y7zzPtVitNmR55-Xvg34kKzV5efFTNGfY6H2pOKIQdKkdYSJ1oMhdCs89qPZ-LNb8v_1g0MDwPW0U9-c6g33vmqt=w608-h600-s-no-gm?authuser=0" alt="内容確認を現したロゴ">
                         </div>
                         <div class="timeline-content">
                             <h3 class="timeline-title">⑤内容確認</h3>
@@ -532,8 +502,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                     </div>
                     <div class="timeline-item">
                         <div class="timeline-icon">
-                            <img src="https://lh3.googleusercontent.com/pw/AP1GczMFe4J-6XvQ3aiq97vRxd_1gE1HrEJmpJiBetRruu6IoxpHjx8VNOKyZR2x3mBap87-4Duo3u0dSTTttzpqw5mZ27EUd1923_7oumU3OCrO4E3RM6Zlg4aodO0v_Qo15m9vWrOqZCKJsOtX8Bm9kNCr=w608-h600-s-no-gm?authuser=0"
-                                alt="納品、残金の支払いを現したロゴ">
+                            <img src="https://lh3.googleusercontent.com/pw/AP1GczMFe4J-6XvQ3aiq97vRxd_1gE1HrEJmpJiBetRruu6IoxpHjx8VNOKyZR2x3mBap87-4Duo3u0dSTTttzpqw5mZ27EUd1923_7oumU3OCrO4E3RM6Zlg4aodO0v_Qo15m9vWrOqZCKJsOtX8Bm9kNCr=w608-h600-s-no-gm?authuser=0" alt="納品、残金の支払いを現したロゴ">
                         </div>
                         <div class="timeline-content">
                             <h3 class="timeline-title">⑥納品・残金のお支払い</h3>
@@ -543,8 +512,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                     </div>
                     <div class="timeline-item">
                         <div class="timeline-icon">
-                            <img src="https://lh3.googleusercontent.com/pw/AP1GczNRsbOFmx-rWf-3EGpRayqIDn7Gz1N01lucIvYOha0KKPvYPMjQqBk6wItwV0zeMg0GpOAGvWsPazLlCQti5ycIKJ5vpKspINmA3ev0sSA2iZYXSLqLNqtNkmiBp1wshrc1f-wykqw-2csx3B-NB1qY=w609-h597-s-no-gm?authuser=0"
-                                alt="アフターサポートを現したロゴ">
+                            <img src="https://lh3.googleusercontent.com/pw/AP1GczNRsbOFmx-rWf-3EGpRayqIDn7Gz1N01lucIvYOha0KKPvYPMjQqBk6wItwV0zeMg0GpOAGvWsPazLlCQti5ycIKJ5vpKspINmA3ev0sSA2iZYXSLqLNqtNkmiBp1wshrc1f-wykqw-2csx3B-NB1qY=w609-h597-s-no-gm?authuser=0" alt="アフターサポートを現したロゴ">
                         </div>
                         <div class="timeline-content">
                             <h3 class="timeline-title">⑦アフターサポート</h3>
@@ -572,8 +540,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                         <div class="answer-text">
                             ホームページ制作にかかる費用はお客様の目的やご要望に応じて様々です。<br>
                             ホムクリでは、スターターからビジネスプランまで、幅広いプランを用意しており、70,000円からお選びいただけます。<br>
-                            各プランに含まれるサービスの詳細や、お客様の理想を実現するための追加オプションについては、<a
-                                href="pricing.html#plan">料金詳細はこちら</a>をご覧ください。
+                            各プランに含まれるサービスの詳細や、お客様の理想を実現するための追加オプションについては、<a href="pricing.html#plan">料金詳細はこちら</a>をご覧ください。
                         </div>
                     </div>
                     <div class="question-list">
@@ -595,8 +562,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                         <div class="answer-text">
                             はい、ホムクリで制作されるすべてのホームページは、スマートフォンを含むあらゆるデバイスに完全対応しています。<br>
                             レスポンシブデザインを標準で採用しており、どのデバイスからアクセスしても最適な表示でご覧いただけます。<br>
-                            各プランにおける詳細な対応内容や、さらにカスタマイズしたい場合のオプションについては、<a
-                                href="pricing.html#plan">プラン詳細はこちら</a>をご確認ください。
+                            各プランにおける詳細な対応内容や、さらにカスタマイズしたい場合のオプションについては、<a href="pricing.html#plan">プラン詳細はこちら</a>をご確認ください。
                         </div>
                     </div>
 
@@ -608,12 +574,9 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                             <a href="FAQ.html" class="circle_btn05-txt">その他質問はこちら</a>
                             <div class="circle_btn05-icon">
                                 <div class="circle_btn05-circle">
-                                    <svg width="48" height="48" viewBox="0 0 48 48" fill="none"
-                                        xmlns="http://www.w3.org/2000/svg">
+                                    <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
                                         <mask id="644189">
-                                            <path
-                                                d="M43.7571 14.445C54.0966 36.6284 26.334 56.7459 8.47304 39.5132C-8.25498 22.2711 10.2249 -5.00596 32.2464 3.65796"
-                                                stroke="#ffffff" stroke-width="2" stroke-linecap="round"></path>
+                                            <path d="M43.7571 14.445C54.0966 36.6284 26.334 56.7459 8.47304 39.5132C-8.25498 22.2711 10.2249 -5.00596 32.2464 3.65796" stroke="#ffffff" stroke-width="2" stroke-linecap="round"></path>
                                         </mask>
                                         <foreignObject x="0" y="0" width="48" height="48" mask="url(#644189)">
                                             <div class="circle_btn05-circle-itm"></div><!-- 丸の色 -->
@@ -621,16 +584,12 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                                     </svg>
                                 </div>
                                 <div class="circle_btn05-arrow">
-                                    <svg width="16" height="13" viewBox="0 0 16 13" fill="none"
-                                        xmlns="http://www.w3.org/2000/svg">
+                                    <svg width="16" height="13" viewBox="0 0 16 13" fill="none" xmlns="http://www.w3.org/2000/svg">
                                         <g>
-                                            <path d="M0 6.5H14.6036" stroke="black" stroke-width="2"
-                                                stroke-miterlimit="10">
+                                            <path d="M0 6.5H14.6036" stroke="black" stroke-width="2" stroke-miterlimit="10">
                                             </path>
-                                            <path d="M9.72588 11.5533L14.6036 6.5" stroke="black" stroke-width="2"
-                                                stroke-miterlimit="10" stroke-linecap="square"></path>
-                                            <path d="M9.72588 1.43652L14.6036 6.5" stroke="black" stroke-width="2"
-                                                stroke-miterlimit="10" stroke-linecap="square"></path>
+                                            <path d="M9.72588 11.5533L14.6036 6.5" stroke="black" stroke-width="2" stroke-miterlimit="10" stroke-linecap="square"></path>
+                                            <path d="M9.72588 1.43652L14.6036 6.5" stroke="black" stroke-width="2" stroke-miterlimit="10" stroke-linecap="square"></path>
                                         </g>
                                     </svg>
                                 </div>
@@ -644,3 +603,6 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
     </main>
 
+    <?php
+    get_footer(); // フッターの読み込み
+    ?>

@@ -1,7 +1,7 @@
 <?php
 
 /*
-Template Name: Pricing
+Template Name: pricing
 */
 get_header(); // ヘッダーの読み込み
 

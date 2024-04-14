@@ -75,7 +75,7 @@ get_header(); // ヘッダーの読み込み
                 <ul>
                     <li><a href="index.html">TOP </a></li>
                     <li><a href="#flow">依頼の流れ </a></li>
-                    <li><a href="<?php echo get_template_directory_uri(); ?>/pricing.php">料金表</a></li>
+                    <li><a href="<?php echo home_url(); ?>/pricing">料金表</a></li>
                     <li><a href="sample.html">サンプル一覧 </a></li>
                     <li><a href="FAQ.html">よくある質問 </a></li>
                 </ul>

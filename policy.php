@@ -1,18 +1,8 @@
 <?php
 
-/**
- * メインのテンプレートファイル
- *
- * これは WordPress テーマで最も一般的なテンプレートファイルであり、
- * テーマに必要なファイルの2つのうちの1つです（もう1つは style.css です）。
- * クエリによってより特定のファイルが一致しない場合に、ページを表示するために使用されます。
- * たとえば、home.php ファイルが存在しない場合にホームページをまとめます。
- *
- * @link https://developer.wordpress.org/themes/basics/template-hierarchy/
- *
- * @package Your_Theme_Name
- */
-
+/*
+Template Name: policy
+*/
 get_header(); // ヘッダーの読み込み
 
 ?>

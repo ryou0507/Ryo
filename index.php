@@ -40,10 +40,10 @@ get_header(); // ヘッダーの読み込み
                     <nav class="menu">
                         <ul>
                             <li class="menu-option-top"><a></a></li>
-                            <li class="menu-option"><a href="info.html">運営者概要</a></li>
+                            <li class="menu-option"><a href="<?php echo home_url(); ?>/info">運営者概要</a></li>
                             <li class="menu-option"><a href="#お知らせ">お知らせ</a></li>
                             <li class="menu-option"><a href="#お役立ち情報">お役立ち情報</a></li>
-                            <li class="menu-option"><a href="inquiry.html">お問い合わせ</a></li>
+                            <li class="menu-option"><a href="<?php echo home_url(); ?>/inquiry">お問い合わせ</a></li>
                         </ul>
                     </nav>
                 </div>
@@ -62,7 +62,7 @@ get_header(); // ヘッダーの読み込み
                         <i class="fas fa-phone"></i>
                     </a>
                     <!-- メールアイコン -->
-                    <a href="inquiry.html" class="icon-link email-icon">
+                    <a href="<?php echo home_url(); ?>/inquiry" class="icon-link email-icon">
                         <i class="fas fa-envelope"></i>
                     </a>
                 </div>
@@ -76,8 +76,8 @@ get_header(); // ヘッダーの読み込み
                     <li><a href="index.html">TOP </a></li>
                     <li><a href="#flow">依頼の流れ </a></li>
                     <li><a href="<?php echo home_url(); ?>/pricing">料金表</a></li>
-                    <li><a href="sample.html">サンプル一覧 </a></li>
-                    <li><a href="FAQ.html">よくある質問 </a></li>
+                    <li><a href="<?php echo home_url(); ?>/sample">サンプル一覧 </a></li>
+                    <li><a href="<?php echo home_url(); ?>/FAQ">よくある質問 </a></li>
                 </ul>
             </nav>
         </header>
@@ -110,7 +110,7 @@ get_header(); // ヘッダーの読み込み
 
 
             <div class="container4">
-                <a href="inquiry.html" class="btn_25"><span>無料相談はこちら</span></a>
+                <a href="<?php echo home_url(); ?>/inquiry" class="btn_25"><span>無料相談はこちら</span></a>
             </div>
 
 
@@ -182,7 +182,7 @@ get_header(); // ヘッダーの読み込み
             </div>
 
             <div class="container5">
-                <a href="inquiry.html" class="btn_25"><span>無料相談はこちら</span></a>
+                <a href="<?php echo home_url(); ?>/inquiry" class="btn_25"><span>無料相談はこちら</span></a>
             </div>
 
             <p class="text-sd">HomePage Sample</p>
@@ -211,7 +211,7 @@ get_header(); // ヘッダーの読み込み
 
             <div class="container7"><!-- サンプル一覧はこちら -->
                 <div class="circle_btn05">
-                    <a href="sample.html" class="circle_btn05-txt">サンプル一覧はこちら</a>
+                    <a href="<?php echo home_url(); ?>/sample" class="circle_btn05-txt">サンプル一覧はこちら</a>
                     <div class="circle_btn05-icon">
                         <div class="circle_btn05-circle">
                             <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -270,7 +270,7 @@ get_header(); // ヘッダーの読み込み
                                 </ul>
                             </div>
                             <div class="container6-1">
-                                <a href="inquiry.html" class="btn_25"><span>無料相談はこちら</span></a>
+                                <a href="<?php echo home_url(); ?>/inquiry" class="btn_25"><span>無料相談はこちら</span></a>
                             </div>
                         </div>
                     </div>
@@ -298,7 +298,7 @@ get_header(); // ヘッダーの読み込み
                                 </ul>
                             </div>
                             <div class="container6-2">
-                                <a href="inquiry.html" class="btn_25"><span>無料相談はこちら</span></a>
+                                <a href="<?php echo home_url(); ?>/inquiry" class="btn_25"><span>無料相談はこちら</span></a>
                             </div>
                         </div>
                     </div>
@@ -326,7 +326,7 @@ get_header(); // ヘッダーの読み込み
                                 </ul>
                             </div>
                             <div class="container6-3">
-                                <a href="inquiry.html" class="btn_25"><span>無料相談はこちら</span></a>
+                                <a href="<?php echo home_url(); ?>/inquiry" class="btn_25"><span>無料相談はこちら</span></a>
                             </div>
                         </div>
                     </div>
@@ -344,7 +344,7 @@ get_header(); // ヘッダーの読み込み
                 </div>
                 <div class="container7"><!-- 料金詳細はこちら -->
                     <div class="circle_btn05">
-                        <a href="pricing.html" class="circle_btn05-txt">料金詳細はこちら</a>
+                        <a href="<?php echo home_url(); ?>/pricing" class="circle_btn05-txt">料金詳細はこちら</a>
                         <div class="circle_btn05-icon">
                             <div class="circle_btn05-circle">
                                 <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -442,7 +442,7 @@ get_header(); // ヘッダーの読み込み
                 </div>
                 <section id="flow"></section>
                 <div class="container5">
-                    <a href="inquiry.html" class="btn_25"><span>無料相談はこちら</span></a>
+                    <a href="<?php echo home_url(); ?>/inquiry" class="btn_25"><span>無料相談はこちら</span></a>
                 </div>
 
 
@@ -523,7 +523,7 @@ get_header(); // ヘッダーの読み込み
 
                 </div>
                 <div class="container4">
-                    <a href="inquiry.html" class="btn_25"><span>無料相談はこちら</span></a>
+                    <a href="<?php echo home_url(); ?>/inquiry" class="btn_25"><span>無料相談はこちら</span></a>
                 </div>
             </div>
 
@@ -571,7 +571,7 @@ get_header(); // ヘッダーの読み込み
                     <!-- その他質問はこちらボタン -->
                     <div class="container7">
                         <div class="circle_btn05">
-                            <a href="FAQ.html" class="circle_btn05-txt">その他質問はこちら</a>
+                            <a href="<?php echo home_url(); ?>/FAQ" class="circle_btn05-txt">その他質問はこちら</a>
                             <div class="circle_btn05-icon">
                                 <div class="circle_btn05-circle">
                                     <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">

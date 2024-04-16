@@ -1,18 +1,8 @@
 <?php
 
-/**
- * メインのテンプレートファイル
- *
- * これは WordPress テーマで最も一般的なテンプレートファイルであり、
- * テーマに必要なファイルの2つのうちの1つです（もう1つは style.css です）。
- * クエリによってより特定のファイルが一致しない場合に、ページを表示するために使用されます。
- * たとえば、home.php ファイルが存在しない場合にホームページをまとめます。
- *
- * @link https://developer.wordpress.org/themes/basics/template-hierarchy/
- *
- * @package Your_Theme_Name
- */
-
+/*
+Template Name: confirmation
+*/
 get_header(); // ヘッダーの読み込み
 
 ?>
@@ -20,10 +10,9 @@ get_header(); // ヘッダーの読み込み
 <body>
 
     <!-- Google Tag Manager (noscript) -->
-<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NLHZNZDS"
-    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NLHZNZDS" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <!-- End Google Tag Manager (noscript) -->
-    
+
     <!-- ページの最上部にアンカーを設置 -->
     <a id="top"></a>
     <!-- コンテンツなど -->
@@ -42,18 +31,17 @@ get_header(); // ヘッダーの読み込み
                     <nav class="menu">
                         <ul>
                             <li class="menu-option-top"><a></a></li>
-                            <li class="menu-option"><a href="info.html">運営者概要</a></li>
+                            <li class="menu-option"><a href="<?php echo home_url(); ?>/info">運営者概要</a></li>
                             <li class="menu-option"><a href="#お知らせ">お知らせ</a></li>
                             <li class="menu-option"><a href="#お役立ち情報">お役立ち情報</a></li>
-                            <li class="menu-option"><a href="inquiry.html">お問い合わせ</a></li>
+                            <li class="menu-option"><a href="<?php echo home_url(); ?>/inquiry">お問い合わせ</a></li>
                         </ul>
                     </nav>
                 </div>
             </div>
             <div class="center">
                 <a href="index.html">
-                    <img src="https://lh3.googleusercontent.com/pw/AP1GczPpPBJdDHhE-08tnyv3KNgp6l_E1TuspfIxyhw3zIMNSIiZvRMawqtJyS6D2RkzLq7_dXx8UvivUm7ZHS0lFFeWxPb9eSTCenIEZACeMowrstsnqjEI2xaqp3KN62tRy9ZvmrYqMXo5o4KT0Knu87PC=w500-h500-s-no-gm?authuser=0"
-                        alt="ホームページ制作ならホムクリのロゴ">
+                    <img src="https://lh3.googleusercontent.com/pw/AP1GczPpPBJdDHhE-08tnyv3KNgp6l_E1TuspfIxyhw3zIMNSIiZvRMawqtJyS6D2RkzLq7_dXx8UvivUm7ZHS0lFFeWxPb9eSTCenIEZACeMowrstsnqjEI2xaqp3KN62tRy9ZvmrYqMXo5o4KT0Knu87PC=w500-h500-s-no-gm?authuser=0" alt="ホームページ制作ならホムクリのロゴ">
                 </a>
             </div>
             <div class="right">
@@ -65,7 +53,7 @@ get_header(); // ヘッダーの読み込み
                         <i class="fas fa-phone"></i>
                     </a>
                     <!-- メールアイコン -->
-                    <a href="inquiry.html" class="icon-link email-icon">
+                    <a href="<?php echo home_url(); ?>/inquiry" class="icon-link email-icon">
                         <i class="fas fa-envelope"></i>
                     </a>
                 </div>
@@ -77,10 +65,10 @@ get_header(); // ヘッダーの読み込み
             <nav class="header-bottom">
                 <ul>
                     <li><a href="index.html">TOP </a></li>
-                    <li><a href="index.html#flow">依頼の流れ </a></li>
-                    <li><a href="pricing.html">料金表 </a></li>
-                    <li><a href="sample.html">サンプル一覧 </a></li>
-                    <li><a href="FAQ.html">よくある質問 </a></li>
+                    <li><a href="#flow">依頼の流れ </a></li>
+                    <li><a href="<?php echo home_url(); ?>/pricing">料金表</a></li>
+                    <li><a href="<?php echo home_url(); ?>/sample">サンプル一覧 </a></li>
+                    <li><a href="<?php echo home_url(); ?>/FAQ">よくある質問 </a></li>
                 </ul>
             </nav>
         </header>
@@ -129,9 +117,9 @@ get_header(); // ヘッダーの読み込み
     </main>
 
     <script>
-        document.addEventListener('DOMContentLoaded', function () {
+        document.addEventListener('DOMContentLoaded', function() {
             // 送信ボタンのクリックイベントリスナーを追加
-            document.getElementById('confirmSubmit').addEventListener('click', function () {
+            document.getElementById('confirmSubmit').addEventListener('click', function() {
                 // セッションストレージからフォームデータを取得
                 var formData = JSON.parse(sessionStorage.getItem('formData'));
 
@@ -139,12 +127,12 @@ get_header(); // ヘッダーの読み込み
                 function sendFormData(formData) {
                     // フォームデータをサーバーに送信
                     fetch('https://homcri.com/proxy.php', {
-                        method: 'POST', // 送信メソッド
-                        headers: {
-                            'Content-Type': 'application/json' // ヘッダー
-                        },
-                        body: JSON.stringify(formData) // ボディにフォームデータをJSON形式で設定
-                    })
+                            method: 'POST', // 送信メソッド
+                            headers: {
+                                'Content-Type': 'application/json' // ヘッダー
+                            },
+                            body: JSON.stringify(formData) // ボディにフォームデータをJSON形式で設定
+                        })
                         .then(response => {
                             if (response.ok) {
                                 // 送信が成功した場合の処理
@@ -192,6 +180,6 @@ get_header(); // ヘッダーの読み込み
 
 
 
-<?php
+    <?php
     get_footer(); // フッターの読み込み
     ?>

@@ -8,11 +8,10 @@ get_header(); // ヘッダーの読み込み
 ?>
 
 <body>
-    
-<!-- Google Tag Manager (noscript) -->
-<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NLHZNZDS"
-height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-<!-- End Google Tag Manager (noscript) -->
+
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NLHZNZDS" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
 
     <!-- ページの最上部にアンカーを設置 -->
     <a id="top"></a>
@@ -32,18 +31,17 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                     <nav class="menu">
                         <ul>
                             <li class="menu-option-top"><a></a></li>
-                            <li class="menu-option"><a href="info.html">運営者概要</a></li>
+                            <li class="menu-option"><a href="<?php echo home_url(); ?>/info">運営者概要</a></li>
                             <li class="menu-option"><a href="#お知らせ">お知らせ</a></li>
                             <li class="menu-option"><a href="#お役立ち情報">お役立ち情報</a></li>
-                            <li class="menu-option"><a href="inquiry.html">お問い合わせ</a></li>
+                            <li class="menu-option"><a href="<?php echo home_url(); ?>/inquiry">お問い合わせ</a></li>
                         </ul>
                     </nav>
                 </div>
             </div>
             <div class="center">
                 <a href="index.html">
-                    <img src="https://lh3.googleusercontent.com/pw/AP1GczPpPBJdDHhE-08tnyv3KNgp6l_E1TuspfIxyhw3zIMNSIiZvRMawqtJyS6D2RkzLq7_dXx8UvivUm7ZHS0lFFeWxPb9eSTCenIEZACeMowrstsnqjEI2xaqp3KN62tRy9ZvmrYqMXo5o4KT0Knu87PC=w500-h500-s-no-gm?authuser=0"
-                        alt="ホームページ制作ならホムクリのロゴ">
+                    <img src="https://lh3.googleusercontent.com/pw/AP1GczPpPBJdDHhE-08tnyv3KNgp6l_E1TuspfIxyhw3zIMNSIiZvRMawqtJyS6D2RkzLq7_dXx8UvivUm7ZHS0lFFeWxPb9eSTCenIEZACeMowrstsnqjEI2xaqp3KN62tRy9ZvmrYqMXo5o4KT0Knu87PC=w500-h500-s-no-gm?authuser=0" alt="ホームページ制作ならホムクリのロゴ">
                 </a>
             </div>
             <div class="right">
@@ -55,7 +53,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                         <i class="fas fa-phone"></i>
                     </a>
                     <!-- メールアイコン -->
-                    <a href="inquiry.html" class="icon-link email-icon">
+                    <a href="<?php echo home_url(); ?>/inquiry" class="icon-link email-icon">
                         <i class="fas fa-envelope"></i>
                     </a>
                 </div>
@@ -67,10 +65,10 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
             <nav class="header-bottom">
                 <ul>
                     <li><a href="index.html">TOP </a></li>
-                    <li><a href="index.html#flow">依頼の流れ </a></li>
-                    <li><a href="pricing.html">料金表 </a></li>
-                    <li><a href="sample.html">サンプル一覧 </a></li>
-                    <li><a href="FAQ.html">よくある質問 </a></li>
+                    <li><a href="#flow">依頼の流れ </a></li>
+                    <li><a href="<?php echo home_url(); ?>/pricing">料金表</a></li>
+                    <li><a href="<?php echo home_url(); ?>/sample">サンプル一覧 </a></li>
+                    <li><a href="<?php echo home_url(); ?>/FAQ">よくある質問 </a></li>
                 </ul>
             </nav>
         </header>
@@ -79,13 +77,13 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
     <nav aria-label="breadcrumb">
         <ol class="breadcrumb">
-          <li class="breadcrumb-item"><a href="#">ホーム</a></li>
-          <li class="breadcrumb-item"><a href="#">カテゴリー</a></li>
-          <li class="breadcrumb-item active" aria-current="page">現在のページ</li>
+            <li class="breadcrumb-item"><a href="#">ホーム</a></li>
+            <li class="breadcrumb-item"><a href="#">カテゴリー</a></li>
+            <li class="breadcrumb-item active" aria-current="page">現在のページ</li>
         </ol>
-      </nav>
+    </nav>
     <main>
-        <div class="main">     
+        <div class="main">
             <div class="top-container">
                 <h1>料金表</h1>
             </div>
@@ -118,7 +116,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                                 </ul>
                             </div>
                             <div class="container6-1">
-                                <a href="inquiry.html" class="btn_25"><span>無料相談はこちら</span></a>
+                                <a href="<?php echo home_url(); ?>/inquiry" class="btn_25"><span>無料相談はこちら</span></a>
                             </div>
                         </div>
                     </div>
@@ -146,7 +144,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                                 </ul>
                             </div>
                             <div class="container6-2">
-                                <a href="inquiry.html" class="btn_25"><span>無料相談はこちら</span></a>
+                                <a href="<?php echo home_url(); ?>/inquiry" class="btn_25"><span>無料相談はこちら</span></a>
                             </div>
                         </div>
                     </div>
@@ -174,7 +172,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                                 </ul>
                             </div>
                             <div class="container6-3">
-                                <a href="inquiry.html" class="btn_25"><span>無料相談はこちら</span></a>
+                                <a href="<?php echo home_url(); ?>/inquiry" class="btn_25"><span>無料相談はこちら</span></a>
                             </div>
                         </div>
                     </div>
@@ -284,8 +282,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                             <p>50,000円～</p>
                         </div>
                         <div class="image-box-option">
-                            <img src="https://lh3.googleusercontent.com/pw/AP1GczNOpmLNNS7jQKHXgDsIn25Lveo6uXbTmBCnWyPHWdfbvQO7KxLJrKFJhGb3vZgrswh7CCFUTHFh4Ks3MP3pEHbr90hBPt80bP_grmbTOvIASdA8v6pqSCp9atxACkkFZGcIxgm0GUmz7pf-cocmhD9L=w499-h500-s-no-gm?authuser=0"
-                                alt="ホームページのロゴ制作を現したロゴ">
+                            <img src="https://lh3.googleusercontent.com/pw/AP1GczNOpmLNNS7jQKHXgDsIn25Lveo6uXbTmBCnWyPHWdfbvQO7KxLJrKFJhGb3vZgrswh7CCFUTHFh4Ks3MP3pEHbr90hBPt80bP_grmbTOvIASdA8v6pqSCp9atxACkkFZGcIxgm0GUmz7pf-cocmhD9L=w499-h500-s-no-gm?authuser=0" alt="ホームページのロゴ制作を現したロゴ">
                         </div>
                     </div>
                     <div class="content-box-option">
@@ -294,8 +291,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                             <p>40,000円～</p>
                         </div>
                         <div class="image-box-option">
-                            <img src="https://lh3.googleusercontent.com/pw/AP1GczNz_yiwxPT3FXOLonWiPzyJZRN_uQ7cu48FCNGQqflhSPb3QPvVp38Vn5aiXIf8jwXW1aTmJbfV56thwHhZ85kuAtHfuwEuyn2X9wemVCCN_depsNEfpdCYhS7N0Ex3ln1COxYmmAt9cX4oHNe-RtM3=w452-h419-s-no-gm?authuser=0"
-                                alt="LP制作を現したロゴ">
+                            <img src="https://lh3.googleusercontent.com/pw/AP1GczNz_yiwxPT3FXOLonWiPzyJZRN_uQ7cu48FCNGQqflhSPb3QPvVp38Vn5aiXIf8jwXW1aTmJbfV56thwHhZ85kuAtHfuwEuyn2X9wemVCCN_depsNEfpdCYhS7N0Ex3ln1COxYmmAt9cX4oHNe-RtM3=w452-h419-s-no-gm?authuser=0" alt="LP制作を現したロゴ">
                         </div>
                     </div>
                     <div class="content-box-option">
@@ -304,8 +300,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                             <p>10,000円/1記事</p>
                         </div>
                         <div class="image-box-option">
-                            <img src="https://lh3.googleusercontent.com/pw/AP1GczMznMcLvEH6CIbBL2U94D4NbRfRJBYnNf2IRvp-NFboyrbEubbKxTI0JSDzf3Ty5mWEYxgWU0ma3Db4Fh4r_s9BQP5CoLPKOEOj6xVIwobMBwGcQoA6WXxrtP90-1Sx1CmjD5L9d_DqQt5le4BDjwhD=w449-h453-s-no-gm?authuser=0"
-                                alt="SEO記事代行を現したロゴ">
+                            <img src="https://lh3.googleusercontent.com/pw/AP1GczMznMcLvEH6CIbBL2U94D4NbRfRJBYnNf2IRvp-NFboyrbEubbKxTI0JSDzf3Ty5mWEYxgWU0ma3Db4Fh4r_s9BQP5CoLPKOEOj6xVIwobMBwGcQoA6WXxrtP90-1Sx1CmjD5L9d_DqQt5le4BDjwhD=w449-h453-s-no-gm?authuser=0" alt="SEO記事代行を現したロゴ">
                         </div>
                     </div>
                     <div class="content-box-option">
@@ -314,8 +309,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                             <p>月額5,000円</p>
                         </div>
                         <div class="image-box-option">
-                            <img src="https://lh3.googleusercontent.com/pw/AP1GczOZiY2u0yzNw1Bqam31CfOgu66drWoe1pEUhA67djEWj_hqCdMzwO6LNWWf8Gbh2mpAGLjwjZuFupaO-ab7QzwoKQMgxJUuHsCNa2bJpRKK2pdAOyqoM1sfudFDn9Gvof3D6B8BAqgN-NK9ryFjr5t9=w462-h510-s-no-gm?authuser=0"
-                                alt="ホームページの保守管理サービスを現したロゴ">
+                            <img src="https://lh3.googleusercontent.com/pw/AP1GczOZiY2u0yzNw1Bqam31CfOgu66drWoe1pEUhA67djEWj_hqCdMzwO6LNWWf8Gbh2mpAGLjwjZuFupaO-ab7QzwoKQMgxJUuHsCNa2bJpRKK2pdAOyqoM1sfudFDn9Gvof3D6B8BAqgN-NK9ryFjr5t9=w462-h510-s-no-gm?authuser=0" alt="ホームページの保守管理サービスを現したロゴ">
                         </div>
                     </div>
                     <div class="content-box-option">
@@ -324,8 +318,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                             <p>1,000円/1画像</p>
                         </div>
                         <div class="image-box-option">
-                            <img src="https://lh3.googleusercontent.com/pw/AP1GczPkmKH3LOZ4wB7x1tw2iR5hqb-exRJnDwjYDfMI3EX_wddcn3lw1OtEjxvtm5n1ipIBMbbITbdRrTW8Ob8WoKIw2Thsrqn91up6k6TW9z8_qQOlO5RIVheOpRD8BqIbXs3wosfpcIlEuVzd3tTi0fIg=w474-h364-s-no-gm?authuser=0"
-                                alt="ホームページに使う画像の作成を現したロゴ">
+                            <img src="https://lh3.googleusercontent.com/pw/AP1GczPkmKH3LOZ4wB7x1tw2iR5hqb-exRJnDwjYDfMI3EX_wddcn3lw1OtEjxvtm5n1ipIBMbbITbdRrTW8Ob8WoKIw2Thsrqn91up6k6TW9z8_qQOlO5RIVheOpRD8BqIbXs3wosfpcIlEuVzd3tTi0fIg=w474-h364-s-no-gm?authuser=0" alt="ホームページに使う画像の作成を現したロゴ">
                         </div>
                     </div>
                     <div class="content-box-option">
@@ -334,8 +327,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                             <p>4,000円</p>
                         </div>
                         <div class="image-box-option">
-                            <img src="https://lh3.googleusercontent.com/pw/AP1GczPi-vzvQCOsBQKM4n1A3wKNtBA-u0lt_gpYl4ItTJy_CBO9xAFeNFBWBY9TeliPxMzMz461pVt5oc6ryindZ6rw6W0xw47grurYqniySLZcL5O8O0s5F3QH7OzKLxeb_LmSmlGOprsGAC279BGPr1poIQ=w526-h474-s-no-gm?authuser=0"
-                                alt="ホームページのアクセス解析ツール設置を現したロゴ">
+                            <img src="https://lh3.googleusercontent.com/pw/AP1GczPi-vzvQCOsBQKM4n1A3wKNtBA-u0lt_gpYl4ItTJy_CBO9xAFeNFBWBY9TeliPxMzMz461pVt5oc6ryindZ6rw6W0xw47grurYqniySLZcL5O8O0s5F3QH7OzKLxeb_LmSmlGOprsGAC279BGPr1poIQ=w526-h474-s-no-gm?authuser=0" alt="ホームページのアクセス解析ツール設置を現したロゴ">
                         </div>
                     </div>
                     <div class="content-box-option">
@@ -344,8 +336,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                             <p>10,000円/1P</p>
                         </div>
                         <div class="image-box-option">
-                            <img src="https://lh3.googleusercontent.com/pw/AP1GczPIv0795_9BWdaRv06-HdlZv-E5c7L0V7ShRGmZ56GM6CkpfgDjQYic8smoJ5iOJ9N14ySJ4c4_ZVl7gZ889UJJCPb91LPBP7nJxvmwcfORSNlbWQ1QsdN7XfakanWX0ZB0rUYtRAUdC6zLUmZV_ZLV=w490-h484-s-no-gm?authuser=0"
-                                alt="ホームページを英語切り替えを現したロゴ">
+                            <img src="https://lh3.googleusercontent.com/pw/AP1GczPIv0795_9BWdaRv06-HdlZv-E5c7L0V7ShRGmZ56GM6CkpfgDjQYic8smoJ5iOJ9N14ySJ4c4_ZVl7gZ889UJJCPb91LPBP7nJxvmwcfORSNlbWQ1QsdN7XfakanWX0ZB0rUYtRAUdC6zLUmZV_ZLV=w490-h484-s-no-gm?authuser=0" alt="ホームページを英語切り替えを現したロゴ">
                         </div>
                     </div>
 

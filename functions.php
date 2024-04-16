@@ -3,7 +3,7 @@ function load_custom_styles_and_scripts() {
     // CSSファイルの読み込み
     wp_enqueue_style('button-style', get_template_directory_uri() . '/css/button.css');
     wp_enqueue_style('deco-style', get_template_directory_uri() . '/css/deco.css');
-    wp_enqueue_style('layout-style', get_template_directory_uri() . '/css/layuot.css'); // ファイル名の綴りを確認してください
+    wp_enqueue_style('layout-style', get_template_directory_uri() . '/css/layout.css'); // ファイル名の綴りを確認してください
     wp_enqueue_style('responsive-style', get_template_directory_uri() . '/css/responsive.css');
 
     // JavaScriptファイルの読み込み

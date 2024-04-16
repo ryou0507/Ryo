@@ -22,49 +22,45 @@ add_action('wp_enqueue_scripts', 'load_custom_styles_and_scripts');
 ?>
 
 <?php 
-function create_post_type_news(){
-    register_post_type( 
-     'news',
-     array(
-      'labels' => array(
-       'name' => 'お知らせ'
-      ),
-      'public' => true,
-      'has_archive' => true,
-      'supports' => array('title','editor','thumbnail','author'),
-      'show_in_rest' => true,
-     )
+function create_post_type_news() {
+    register_post_type('news',
+        array(
+            'labels' => array(
+                'name' => __('お知らせ'),
+                'singular_name' => __('お知らせ')
+            ),
+            'public' => true,
+            'has_archive' => true,
+            'supports' => array('title', 'editor', 'thumbnail'),
+            'show_in_rest' => true, // Gutenbergエディタを使う場合は、 true にします。
+        )
     );
-   }
-   add_action( 'init', 'create_post_type_news' );
+}
+add_action('init', 'create_post_type_news');
 ?>
 
 <?php 
-function shortcode_news_list() {
-    global $post;
-    $args = array(
-     'posts_per_page' => 3,  // 一覧に表示させる件数
-     'post_type' => 'news',  // お知らせのスラッグ
-     'post_status' => 'publish'
+function custom_news_list_shortcode() {
+    ob_start();
+    $query_args = array(
+        'post_type'      => 'news', // ここにカスタム投稿タイプのスラッグを入れます。
+        'posts_per_page' => 10,     // 表示したい投稿数
+        'order'          => 'DESC', // 降順
+        'orderby'        => 'date'  // 日付で並び替え
     );
-    $the_query = new WP_Query( $args );
-    // お知らせ一覧用HTMLコード作成
-    if ( $the_query->have_posts() ) {
-     $html .= '<ul>';
-     while ( $the_query->have_posts() ) :
-     $the_query->the_post();
-     $url = get_permalink();
-     $title = get_the_title();
-     $date = get_the_date('Y/m/d');
-     $html .= '<li>';
-     $html .= '<a href="'.$url.'">';
-     $html .= '<p class="news_date">'.$date.'</p>';
-     $html .= '<h3 class="news_title">'.$title.'</h3>';
-     $html .= '</a></li>';
-     endwhile;
-     $html .= '</ul>';
+    $the_query = new WP_Query($query_args);
+    if ($the_query->have_posts()) {
+        echo '<ul class="custom-news-list">';
+        while ($the_query->have_posts()) {
+            $the_query->the_post();
+            echo '<li><a href="' . get_permalink() . '">' . get_the_title() . '</a></li>';
+        }
+        echo '</ul>';
+    } else {
+        echo '<p>お知らせはまだありません。</p>';
     }
-    return $html;
-   }
-   add_shortcode("news_list", "shortcode_news_list");
+    wp_reset_postdata();
+    return ob_get_clean();
+}
+add_shortcode('news_list', 'custom_news_list_shortcode');
 ?>

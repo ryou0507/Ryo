@@ -1227,6 +1227,27 @@ header nav {
     margin-top: 3%;
 }
 
+/********** お知らせ一覧ページ　レイアウト *********/
+.content-area {
+    margin-top: 324px;
+    margin-bottom: 78px;
+    text-align: center;
+    font-size: 33px;
+}
+
+main#main-content {
+    margin-top: 238px;
+    text-align: center;
+    margin-bottom: 78px;
+}
+
+main#main-content h1 {
+    font-size: 47px;
+}
+
+.post-content {
+    font-size: 31px;
+}
 
 /**********　フッター　レイアウト　**********/
 footer {

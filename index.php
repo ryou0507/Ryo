@@ -41,7 +41,7 @@ get_header(); // ヘッダーの読み込み
                         <ul>
                             <li class="menu-option-top"><a></a></li>
                             <li class="menu-option"><a href="<?php echo home_url(); ?>/info">運営者概要</a></li>
-                            <li class="menu-option"><a href="#お知らせ">お知らせ</a></li>
+                            <li class="menu-option"><a href="<?php echo home_url(); ?>/news-list">お知らせ</a></li>
                             <li class="menu-option"><a href="#お役立ち情報">お役立ち情報</a></li>
                             <li class="menu-option"><a href="<?php echo home_url(); ?>/inquiry">お問い合わせ</a></li>
                         </ul>
@@ -604,5 +604,5 @@ get_header(); // ヘッダーの読み込み
     </main>
 
     <?php
-    get_footer(); // フッターの読み込み
+    get_footer(); 
     ?>

@@ -1,6 +1,6 @@
 <?php get_header(); ?>
 
-<div id="primary" class="content-area">
+<div id="primary" class="blog-content">
     <main id="main" class="site-main">
 
     <?php
@@ -8,7 +8,7 @@
 
         <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
             <header class="entry-header">
-                <h1 class="entry-title"><?php the_title(); ?></h1>
+                <h1 class="blog-tatile"><?php the_title(); ?></h1>
             </header><!-- .entry-header -->
 
             <div class="entry-content">

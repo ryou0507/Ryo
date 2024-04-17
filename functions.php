@@ -5,6 +5,7 @@ function load_custom_styles_and_scripts() {
     wp_enqueue_style('deco-style', get_template_directory_uri() . '/css/deco.css');
     wp_enqueue_style('layout-style', get_template_directory_uri() . '/css/layout.css'); // ファイル名の綴りを確認してください
     wp_enqueue_style('responsive-style', get_template_directory_uri() . '/css/responsive.css');
+    wp_enqueue_style('blog-style', get_template_directory_uri() . '/css/blog.css');
 
     // JavaScriptファイルの読み込み
     wp_enqueue_script('anime-js', get_template_directory_uri() . '/js/anime.js', array(), null, true); // trueを指定すると</body>の前にスクリプトを出力します

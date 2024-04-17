@@ -60,7 +60,7 @@
             </div>
             <div class="center">
                 <a href="index.html">
-                    <img src="https://lh3.googleusercontent.com/pw/AP1GczPpPBJdDHhE-08tnyv3KNgp6l_E1TuspfIxyhw3zIMNSIiZvRMawqtJyS6D2RkzLq7_dXx8UvivUm7ZHS0lFFeWxPb9eSTCenIEZACeMowrstsnqjEI2xaqp3KN62tRy9ZvmrYqMXo5o4KT0Knu87PC=w500-h500-s-no-gm?authuser=0" alt="ホームページ制作ならホムクリのロゴ">
+                    <img src="http://localhost/wordpress/wp-content/uploads/2024/04/homcri-logo.jpg" alt="ホームページ制作ならホムクリのロゴ">
                 </a>
             </div>
             <div class="right">

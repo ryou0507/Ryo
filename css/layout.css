@@ -87,7 +87,7 @@ html {
 }
 
 /********** ヘッダーナビゲーション レイアウト **********/
-header {
+.site-header {
     position: fixed; /* 固定位置 */
     top: 150px; /* .headerの高さと同じ値に設定 */
     left: 0; /* 左端から0の位置に */
@@ -1274,6 +1274,23 @@ ul.news-list {
 
 .news-list li {
     padding: 12px 0;
+  }
+/********** お役立ち情報　レイアウト *********/
+.page-title{
+    margin-top: 208px;
+    text-align: center;
+}
+
+.entry-title{
+    padding-left: 20%;
+}
+
+.entry-container {
+    background-color: #e7e2e2dc;
+    margin: 0 3% 50px 3%;
+    border-radius: 30px;
+    padding: 2% 0;
+
 }
 /**********　フッター　レイアウト　**********/
 footer {

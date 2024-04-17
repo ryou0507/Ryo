@@ -16,7 +16,7 @@ img {
 }
 
 
-h2 {
+.h2title {
     color: #333;
     text-shadow: 0 0 2px white;
     font-size: 40px;
@@ -35,7 +35,7 @@ h2 {
     color: black;
 }
 /**********　ヘッダーナヴィゲーション　デコ　**********/
-header {
+.site-header {
     background-color: white;
     /* 背景色を指定 */
     color: black;

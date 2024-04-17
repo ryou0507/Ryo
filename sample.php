@@ -19,7 +19,7 @@ get_header(); // ヘッダーの読み込み
       <div class="sample-box">
         <div class="sample1">
           <p class="text-sd">Our homepage</p>
-          <h2>当ホームページ</h2>
+          <h2 class ="h2title">当ホームページ</h2>
           <img src="http://localhost/wordpress/wp-content/uploads/2024/04/homcri-PC.png" alt="ホームページ制作ならホムクリのパソコンでのサンプル" class="PC-img">
           <div class="sample-container">
             <div class="text-section">
@@ -33,7 +33,7 @@ get_header(); // ヘッダーの読み込み
         </div>
         <div class="sample1">
           <p class="text-sd">Izakaya homepage</p>
-          <h2>居酒屋ホームページ</h2>
+          <h2 class ="h2title">居酒屋ホームページ</h2>
           <img src="http://localhost/wordpress/wp-content/uploads/2024/04/izakaya-PC.png" alt="居酒屋ホームページのパソコンでのサンプル" class="PC-img">
           <div class="sample-container">
             <div class="text-section">
@@ -47,7 +47,7 @@ get_header(); // ヘッダーの読み込み
         </div>
         <div class="sample1">
           <p class="text-sd">Kimono rental homepage</p>
-          <h2>着物レンタルホームページ</h2>
+          <h2 class ="h2title">着物レンタルホームページ</h2>
           <img src="http://localhost/wordpress/wp-content/uploads/2024/04/kimono-PC.png" alt="着物レンタルホームページのパソコンでのサンプル" class="PC-img">
           <div class="sample-container">
             <div class="text-section">
@@ -61,7 +61,7 @@ get_header(); // ヘッダーの読み込み
         </div>
         <div class="sample1">
           <p class="text-sd">Bar homepage</p>
-          <h2>BARホームページ</h2>
+          <h2 class ="h2title">BARホームページ</h2>
           <img src="http://localhost/wordpress/wp-content/uploads/2024/04/imagesbar-PC.png" alt="BARホームページのパソコンでのサンプル" class="PC-img">
           <div class="sample-container">
             <div class="text-section">
@@ -75,7 +75,7 @@ get_header(); // ヘッダーの読み込み
         </div>
         <div class="sample1">
           <p class="text-sd">Cafe homepage</p>
-          <h2>カフェホームページ</h2>
+          <h2 class ="h2title">カフェホームページ</h2>
           <img src="http://localhost/wordpress/wp-content/uploads/2024/04/cafe-PC.png" alt="カフェのホームページのパソコンでのサンプル" class="PC-img">
           <div class="sample-container">
             <div class="text-section">
@@ -89,7 +89,7 @@ get_header(); // ヘッダーの読み込み
         </div>
         <div class="sample1">
           <p class="text-sd">Dog salon&hotel homepage</p>
-          <h2>ドッグSalon&Hotelホームページ</h2>
+          <h2 class ="h2title">ドッグSalon&Hotelホームページ</h2>
           <img src="http://localhost/wordpress/wp-content/uploads/2024/04/dog-PC.png" alt="ドッグSalon&Hotelホームページのパソコンでのサンプル" class="PC-img">
           <div class="sample-container">
             <div class="text-section">

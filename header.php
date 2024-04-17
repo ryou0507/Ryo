@@ -52,7 +52,7 @@
                             <li class="menu-option-top"><a></a></li>
                             <li class="menu-option"><a href="<?php echo home_url(); ?>/info">運営者概要</a></li>
                             <li class="menu-option"><a href="<?php echo home_url(); ?>/news-list">お知らせ</a></li>
-                            <li class="menu-option"><a href="#お役立ち情報">お役立ち情報</a></li>
+                            <li class="menu-option"><a href="<?php echo home_url(); ?>/blog">お役立ち情報</a></li>
                             <li class="menu-option"><a href="<?php echo home_url(); ?>/inquiry">お問い合わせ</a></li>
                         </ul>
                     </nav>

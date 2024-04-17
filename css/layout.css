@@ -16,13 +16,13 @@ html {
     /* 横方向のスクロールを隠す */
 }
 
-h2 {
+.h2title  {
     z-index: 0;
     position: relative;
     letter-spacing: 0;
 }
 
-h2:after {
+.h2title:after {
     content: '';
     /* 必須: 疑似要素の内容 */
     position: absolute;
@@ -1172,7 +1172,7 @@ header nav {
 .sample1{
     background-color: F8F8F8;
     border-radius: 15px;
-    padding: 0 40px 50px 40px;
+    padding: 0 0 50px 0;
     margin-top: 70px;
 }
 
@@ -1249,6 +1249,10 @@ main#main-content h1 {
     font-size: 31px;
 }
 
+
+/********** お役立ち情報　レイアウト *********/
+
+
 /**********　フッター　レイアウト　**********/
 footer {
     color: white;
@@ -1287,3 +1291,5 @@ transition: 0.5s;
 .container3 {
     padding-left: 110px;
 }
+
+

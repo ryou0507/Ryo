@@ -24,7 +24,7 @@ get_header(); // ヘッダーの読み込み
     <main>
         <div class="top-wrapper">
             <div class="centered-image1">
-                <img src="http://localhost/wordpress/wp-content/uploads/2024/04/firstview.jpg">
+            <img src="<?php echo esc_url( get_template_directory_uri() ); ?>/images/firstview.jpg" alt="画像の説明">
                 <h1>ホームページ制作なら<br><span>ホムクリ</span></h1>
                 <p>お客様のご要望に合わせて<br>完全オリジナルデザインで制作。<br>結果につながるハイクオリティなホームページを<br>ホムクリのモットーである最速最短でご提供いたします。</p>
             </div>
@@ -40,7 +40,7 @@ get_header(); // ヘッダーの読み込み
                     <div class="text-part"><span class="large-letter">手</span>間はかけたくないけどなるべくコストを抑えたい。</div>
                 </div>
                 <div class="centered-image">
-                    <img src="http://localhost/wordpress/wp-content/uploads/2024/04/main-logo1-background.png" alt="">
+                <img src="<?php echo esc_url( get_template_directory_uri() ); ?>/images/main-logo1-background.jpg" alt="画像の説明">
                 </div>
             </div>
 
@@ -52,7 +52,7 @@ get_header(); // ヘッダーの読み込み
 
             <div class="main-logo2">
                 <p class="text-sd">That's Different</p>
-                <h2 class ="h2title">他とここが違う！</h2>
+                 <h2 class ="h2title">他とここが違う！</h2>
                 <div class="content-box">
                     <div class="text-box1">
                         <h3>01/最低価格<span class="font_red">7万円</span>でサイトを作れる</h3>
@@ -62,10 +62,10 @@ get_header(); // ヘッダーの読み込み
                             専門的な知識がない方でも、ご安心ください。
                             ホムクリはお客様の事業の個性を引き立て、ビジネスの成功を加速させる魅力的なホームページをお届けします。</p>
                     </div>
-                    <div class="image-box1"><img src="http://localhost/wordpress/wp-content/uploads/2024/04/main-logo2-1.png" alt=""></div>
+                    <div class="image-box1"><img src="<?php echo esc_url( get_template_directory_uri() ); ?>/images/main-logo2-1.png" alt=""></div>
                 </div>
                 <div class="content-box">
-                    <div class="image-box2"><img src="http://localhost/wordpress/wp-content/uploads/2024/04/main-logo2-2.png" alt=""></div>
+                    <div class="image-box2"><img src="<?php echo esc_url( get_template_directory_uri() ); ?>/images/main-logo2-2.png" alt=""></div>
                     <div class="text-box2">
                         <h3>02/<span class="font_red">最短7日</span>で納品が可能</h3>
                         <p>速さも、ホムクリの自慢です。<br><br>
@@ -82,10 +82,10 @@ get_header(); // ヘッダーの読み込み
                             訪問者が忘れられない魅力的なサイトで、お客様のビジネスを際立たせることに注力し、お客様の想いと市場の最新動向を組み合わせ、他とは違うホームページを通じてビジネスの可能性を最大限に引き出します。
                         </p>
                     </div>
-                    <div class="image-box1"><img src="http://localhost/wordpress/wp-content/uploads/2024/04/main-logo2-3.png" alt=""></div>
+                    <div class="image-box1"><img src="<?php echo esc_url( get_template_directory_uri() ); ?>/images/main-logo2-3.png" alt=""></div>
                 </div>
                 <div class="content-box">
-                    <div class="image-box2"><img src="http://localhost/wordpress/wp-content/uploads/2024/04/main-logo2-4.png" alt=""></div>
+                    <div class="image-box2"><img src="<?php echo esc_url( get_template_directory_uri() ); ?>/images/main-logo2-4.png" alt=""></div>
                     <div class="text-box2">
                         <h3>04/SEOライティングで<span class="font_red">集客効果UP</span></h3>
                         <p>ホムクリのSEO対策サービスで、お客様のホームページの集客力を大幅に向上させましょう。<br><br>
@@ -103,10 +103,10 @@ get_header(); // ヘッダーの読み込み
                             お客様一人ひとりの需要に合わせたきめ細やかなアドバイスで、ホームページの運営をよりスムーズにし、さらなる成長を促します。
                             ホームページを作った後も、心置きなく事業に専念できるよう全面的にバックアップします。</p>
                     </div>
-                    <div class="image-box1"><img src="http://localhost/wordpress/wp-content/uploads/2024/04/main-logo2-5.png" alt=""></div>
+                    <div class="image-box1"><img src="<?php echo esc_url( get_template_directory_uri() ); ?>/images/main-logo2-5.png" alt=""></div>
                 </div>
                 <div class="content-box">
-                    <div class="image-box2"><img src="http://localhost/wordpress/wp-content/uploads/2024/04/main-logo2-6.png" alt=""></div>
+                    <div class="image-box2"><img src="<?php echo esc_url( get_template_directory_uri() ); ?>/images/main-logo2-6.png" alt=""></div>
                     <div class="text-box2">
                         <h3>06/ホームページ公開後も<span class="font_red">安心のアフターサポート</span></h3>
                         <p>ホームページの公開後も、ホムクリはお客様をしっかりサポートします。<br><br>
@@ -130,12 +130,12 @@ get_header(); // ヘッダーの読み込み
                     他のホームページデザインにも興味がある方は、ぜひサンプル一覧をご覧ください。</p>
                 <div class="sample-images">
                     <div class="image-group">
-                        <img class="image-PC fadeInOnScroll" src="http://localhost/wordpress/wp-content/uploads/2024/04/kimono-PC.png" alt="着物レンタルホームページのパソコンでのサンプル">
-                        <img class="image-phone fadeInOnScroll" src="http://localhost/wordpress/wp-content/uploads/2024/04/kimono-phone.png" alt="着物レンタルホームページのスマホでのサンプル">
+                        <img class="image-PC fadeInOnScroll" src="<?php echo esc_url( get_template_directory_uri() ); ?>/images/kimono-PC.jpg" alt="着物レンタルホームページのパソコンでのサンプル">
+                        <img class="image-phone fadeInOnScroll" src="<?php echo esc_url( get_template_directory_uri() ); ?>/images/kimono-phone.jpg" alt="着物レンタルホームページのスマホでのサンプル">
                     </div>
                     <div class="image-group">
-                        <img class="image-PC fadeInOnScroll" src="http://localhost/wordpress/wp-content/uploads/2024/04/cafe-PC.png" alt="カフェのホームページのパソコンでのサンプル">
-                        <img class="image-phone fadeInOnScroll" src="http://localhost/wordpress/wp-content/uploads/2024/04/cafe-phone.png" alt="カフェのホームページのスマホでのサンプル">
+                        <img class="image-PC fadeInOnScroll" src="<?php echo esc_url( get_template_directory_uri() ); ?>/images/cafe-PC.jpg" alt="カフェのホームページのパソコンでのサンプル">
+                        <img class="image-phone fadeInOnScroll" src="<?php echo esc_url( get_template_directory_uri() ); ?>/images/cafe-phone.jpg" alt="カフェのホームページのスマホでのサンプル">
                     </div>
                 </div>
             </div>
@@ -317,7 +317,7 @@ get_header(); // ヘッダーの読み込み
                             <p>50,000円～</p>
                         </div>
                         <div class="image-box-option">
-                            <img src="http://localhost/wordpress/wp-content/uploads/2024/04/option-1.png" alt="ホームページのロゴ制作を現したロゴ">
+                            <img src="<?php echo esc_url( get_template_directory_uri() ); ?>/images/option-1.jpg" alt="ホームページのロゴ制作を現したロゴ">
                         </div>
                     </div>
                     <div class="content-box-option">
@@ -326,7 +326,7 @@ get_header(); // ヘッダーの読み込み
                             <p>40,000円～</p>
                         </div>
                         <div class="image-box-option">
-                            <img src="http://localhost/wordpress/wp-content/uploads/2024/04/option-2.png" alt="LP制作を現したロゴ">
+                            <img src="<?php echo esc_url( get_template_directory_uri() ); ?>/images/option-2.jpg" alt="LP制作を現したロゴ">
                         </div>
                     </div>
                     <div class="content-box-option">
@@ -335,7 +335,7 @@ get_header(); // ヘッダーの読み込み
                             <p>10,000円/1記事</p>
                         </div>
                         <div class="image-box-option">
-                            <img src="http://localhost/wordpress/wp-content/uploads/2024/04/option-3.png" alt="SEO記事代行を現したロゴ">
+                            <img src="<?php echo esc_url( get_template_directory_uri() ); ?>/images/option-3.jpg" alt="SEO記事代行を現したロゴ">
                         </div>
                     </div>
                     <div class="content-box-option">
@@ -344,7 +344,7 @@ get_header(); // ヘッダーの読み込み
                             <p>月額5,000円</p>
                         </div>
                         <div class="image-box-option">
-                            <img src="http://localhost/wordpress/wp-content/uploads/2024/04/option-4.jpg" alt="ホームページの保守管理サービスを現したロゴ">
+                            <img src="<?php echo esc_url( get_template_directory_uri() ); ?>/images/option-4.jpg" alt="ホームページの保守管理サービスを現したロゴ">
                         </div>
                     </div>
                     <div class="content-box-option">
@@ -353,7 +353,7 @@ get_header(); // ヘッダーの読み込み
                             <p>1,000円/1画像</p>
                         </div>
                         <div class="image-box-option">
-                            <img src="http://localhost/wordpress/wp-content/uploads/2024/04/option-5.png" alt="ホームページに使う画像の作成を現したロゴ">
+                            <img src="<?php echo esc_url( get_template_directory_uri() ); ?>/images/option-5.jpg" alt="ホームページに使う画像の作成を現したロゴ">
                         </div>
                     </div>
                     <div class="content-box-option">
@@ -362,7 +362,7 @@ get_header(); // ヘッダーの読み込み
                             <p>4,000円</p>
                         </div>
                         <div class="image-box-option">
-                            <img src="http://localhost/wordpress/wp-content/uploads/2024/04/option-6.png" alt="ホームページのアクセス解析ツール設置を現したロゴ">
+                            <img src="<?php echo esc_url( get_template_directory_uri() ); ?>/images/option-6.jpg" alt="ホームページのアクセス解析ツール設置を現したロゴ">
                         </div>
                     </div>
                     <div class="content-box-option">
@@ -371,7 +371,7 @@ get_header(); // ヘッダーの読み込み
                             <p>10,000円/1P</p>
                         </div>
                         <div class="image-box-option">
-                            <img src="http://localhost/wordpress/wp-content/uploads/2024/04/option-7.png" alt="ホームページを英語切り替えを現したロゴ">
+                            <img src="<?php echo esc_url( get_template_directory_uri() ); ?>/images/option-7.jpg" alt="ホームページを英語切り替えを現したロゴ">
                         </div>
                     </div>
 
@@ -392,7 +392,7 @@ get_header(); // ヘッダーの読み込み
                     <div class="timeline-item">
                         <div class="timeline-icon">
                             <!-- 最初の画像 -->
-                            <img src="http://localhost/wordpress/wp-content/uploads/2024/04/flow-1.png" alt="お申込みを現したロゴ">
+                            <img src="<?php echo esc_url( get_template_directory_uri() ); ?>/images/flow-1.jpg" alt="お申込みを現したロゴ">
                         </div>
                         <div class="timeline-content">
                             <h3 class="timeline-title">①お申込み受付</h3>
@@ -401,7 +401,7 @@ get_header(); // ヘッダーの読み込み
                     </div>
                     <div class="timeline-item">
                         <div class="timeline-icon">
-                            <img src="http://localhost/wordpress/wp-content/uploads/2024/04/flow-2.png" alt="ミーティング、ヒアリングを現したロゴ">
+                            <img src="<?php echo esc_url( get_template_directory_uri() ); ?>/images/flow-2.jpg" alt="ミーティング、ヒアリングを現したロゴ">
                         </div>
                         <div class="timeline-content">
                             <h3 class="timeline-title">②初回ミーティング・<br class="mobile-break">ヒアリング</h3>
@@ -410,7 +410,7 @@ get_header(); // ヘッダーの読み込み
                     </div>
                     <div class="timeline-item">
                         <div class="timeline-icon">
-                            <img src="http://localhost/wordpress/wp-content/uploads/2024/04/flow-3.png" alt="お見積りの提案、初期費用のお支払いを現したロゴ">
+                            <img src="<?php echo esc_url( get_template_directory_uri() ); ?>/images/flow-3.jpg" alt="お見積りの提案、初期費用のお支払いを現したロゴ">
                         </div>
                         <div class="timeline-content">
                             <h3 class="timeline-title">③お見積りの提案・<br class="mobile-break">初期費用のお支払い</h3>
@@ -420,7 +420,7 @@ get_header(); // ヘッダーの読み込み
                     </div>
                     <div class="timeline-item">
                         <div class="timeline-icon">
-                            <img src="http://localhost/wordpress/wp-content/uploads/2024/04/flow-4.png" alt="ホームページ制作を現したロゴ">
+                            <img src="<?php echo esc_url( get_template_directory_uri() ); ?>/images/flow-4.jpg" alt="ホームページ制作を現したロゴ">
                         </div>
                         <div class="timeline-content">
                             <h3 class="timeline-title">④ホームページ制作</h3>
@@ -429,7 +429,7 @@ get_header(); // ヘッダーの読み込み
                     </div>
                     <div class="timeline-item">
                         <div class="timeline-icon">
-                            <img src="http://localhost/wordpress/wp-content/uploads/2024/04/flow-5.png" alt="内容確認を現したロゴ">
+                            <img src="<?php echo esc_url( get_template_directory_uri() ); ?>/images/flow-5.jpg" alt="内容確認を現したロゴ">
                         </div>
                         <div class="timeline-content">
                             <h3 class="timeline-title">⑤内容確認</h3>
@@ -438,7 +438,7 @@ get_header(); // ヘッダーの読み込み
                     </div>
                     <div class="timeline-item">
                         <div class="timeline-icon">
-                            <img src="http://localhost/wordpress/wp-content/uploads/2024/04/flow-6.png" alt="納品、残金の支払いを現したロゴ">
+                            <img src="<?php echo esc_url( get_template_directory_uri() ); ?>/images/flow-6.jpg" alt="納品、残金の支払いを現したロゴ">
                         </div>
                         <div class="timeline-content">
                             <h3 class="timeline-title">⑥納品・残金のお支払い</h3>
@@ -448,7 +448,7 @@ get_header(); // ヘッダーの読み込み
                     </div>
                     <div class="timeline-item">
                         <div class="timeline-icon">
-                            <img src="http://localhost/wordpress/wp-content/uploads/2024/04/flow-7.png" alt="アフターサポートを現したロゴ">
+                            <img src="<?php echo esc_url( get_template_directory_uri() ); ?>/images/flow-7.jpg" alt="アフターサポートを現したロゴ">
                         </div>
                         <div class="timeline-content">
                             <h3 class="timeline-title">⑦アフターサポート</h3>

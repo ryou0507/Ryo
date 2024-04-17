@@ -22,7 +22,7 @@ html {
     letter-spacing: 0;
 }
 
-.h2title:after {
+.h2title :after {
     content: '';
     /* 必須: 疑似要素の内容 */
     position: absolute;
@@ -1172,7 +1172,7 @@ header nav {
 .sample1{
     background-color: F8F8F8;
     border-radius: 15px;
-    padding: 0 0 50px 0;
+     padding: 0 0 50px 0;
     margin-top: 70px;
 }
 
@@ -1229,10 +1229,15 @@ header nav {
 
 /********** お知らせ一覧ページ　レイアウト *********/
 .content-area {
-    margin-top: 324px;
+    margin-top: 105px;
     margin-bottom: 78px;
     text-align: center;
     font-size: 33px;
+}
+
+
+.content-area a {
+    font-size: 30px;
 }
 
 main#main-content {
@@ -1242,14 +1247,34 @@ main#main-content {
 }
 
 main#main-content h1 {
-    font-size: 47px;
+    font-size: 30px;
 }
+
+/********** お役立ち情報　レイアウト *********/
 
 .post-content {
-    font-size: 31px;
+    font-size: 20px;
 }
 
+.post-modified-info {
+    font-size: 18px;
+    position: fixed;
+    right: 30px;
+}
 
+ul.news-list {
+    background-color: #DDDDDD;
+    height: auto;
+    margin-left: 70px;
+    margin-right: 70px;
+    border-radius: 20px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.news-list li {
+    padding: 12px 0;
+  }
 /********** お役立ち情報　レイアウト *********/
 .page-title{
     margin-top: 208px;
@@ -1265,6 +1290,7 @@ main#main-content h1 {
     margin: 0 3% 50px 3%;
     border-radius: 30px;
     padding: 2% 0;
+
 }
 /**********　フッター　レイアウト　**********/
 footer {
@@ -1304,5 +1330,3 @@ transition: 0.5s;
 .container3 {
     padding-left: 110px;
 }
-
-

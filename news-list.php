@@ -1,4 +1,4 @@
-<?php 
+<?php
 
 /*
 Template Name: news-list
@@ -7,8 +7,12 @@ get_header(); // ヘッダーの読み込み
 
 ?>
 
+<div class="top-container">
+    <h1>お知らせ一覧</h1>
+</div>
 
-    <div id="primary" class="content-area">
+
+<div id="primary" class="content-area">
     <main id="main" class="site-main" role="main">
 
         <?php
@@ -21,7 +25,7 @@ get_header(); // ヘッダーの読み込み
         );
         $news_query = new WP_Query($args);
 
-        if ($news_query->have_posts()) : 
+        if ($news_query->have_posts()) :
             echo '<ul class="news-list">';
             while ($news_query->have_posts()) : $news_query->the_post();
                 // 各投稿の表示内容
@@ -30,10 +34,10 @@ get_header(); // ヘッダーの読み込み
             echo '</ul>';
             // ページネーション
             echo paginate_links(array('total' => $news_query->max_num_pages));
-        else : 
+        else :
             // 投稿が存在しない場合
             echo '<p>No news posts found.</p>';
-        endif; 
+        endif;
 
         // メインループをリセット
         wp_reset_postdata();
@@ -47,7 +51,7 @@ get_header(); // ヘッダーの読み込み
 $news_query = new WP_Query(array('post_type' => 'news'));
 if ($news_query->have_posts()) :
     while ($news_query->have_posts()) : $news_query->the_post();
-        // ここに各お知らせの表示内容を記述
+    // ここに各お知らせの表示内容を記述
     endwhile;
 endif;
 ?>
@@ -55,5 +59,5 @@ endif;
 </body>
 
 <?php
-  get_footer(); 
-  ?>
+get_footer();
+?>

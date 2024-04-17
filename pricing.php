@@ -15,7 +15,7 @@ get_header(); // ヘッダーの読み込み
             <section id="plan"></section>
             <div class="main-logo4">
                 <p class="text-sd">Pricing</p>
-                <h2 class ="h2title">料金プラン</h2>
+                 <h2 class ="h2title">料金プラン</h2>
                 <p>お客様のご要望に合わせて、最適なプランをご提案します。<br>
                     表示価格はすべて税込となっておりますので安心してお選びください。</p>
                 <div class="shapes-set">
@@ -117,7 +117,7 @@ get_header(); // ヘッダーの読み込み
                 </div>
 
                 <p class="text-sd">Price menu details</p>
-                <h2 class ="h2title">料金詳細</h2>
+                 <h2 class ="h2title">料金詳細</h2>
 
                 <div class="base-price">
                     <h3>Web制作</h3>
@@ -197,7 +197,7 @@ get_header(); // ヘッダーの読み込み
                 </div>
 
                 <p class="text-sd">Option</p>
-                <h2 class ="h2title">対応可能なオプション</h2>
+                 <h2 class ="h2title">対応可能なオプション</h2>
                 <p>お客様のご要望に対応出来るように、様々なオプションをご用意しております。<br>
                     表示価格はすべて税込となっておりますので安心してお選びください。</p>
                 <div class="container">

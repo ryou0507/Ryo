@@ -60,7 +60,7 @@
             </div>
             <div class="center">
                 <a href="index.html">
-                    <img src="http://localhost/wordpress/wp-content/uploads/2024/04/homcri-logo.jpg" alt="ホームページ制作ならホムクリのロゴ">
+                    <img src="<?php echo esc_url( get_template_directory_uri() ); ?>/images/homcri-logo.jpg" alt="ホームページ制作ならホムクリのロゴ">
                 </a>
             </div>
             <div class="right">

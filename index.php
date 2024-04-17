@@ -24,7 +24,7 @@ get_header(); // ヘッダーの読み込み
     <main>
         <div class="top-wrapper">
             <div class="centered-image1">
-                <img src="https://lh3.googleusercontent.com/pw/AP1GczO_mFHjFI0juXiR2EsC4LoMvJjBzEdDA5ztpqEc9DTgBD6CdMh4Pwzv78tsGoZrGe_VCqXbQ6AKedZHnjaw3H_Kew48aUgt_7juHZ85HxuZ5Nb-J0RXk8-hp_tby0ejqjgT-Crlw93Au3dI2n45sbj5=w1638-h1502-s-no-gm?authuser=0">
+                <img src="http://localhost/wordpress/wp-content/uploads/2024/04/firstview.jpg">
                 <h1>ホームページ制作なら<br><span>ホムクリ</span></h1>
                 <p>お客様のご要望に合わせて<br>完全オリジナルデザインで制作。<br>結果につながるハイクオリティなホームページを<br>ホムクリのモットーである最速最短でご提供いたします。</p>
             </div>
@@ -40,7 +40,7 @@ get_header(); // ヘッダーの読み込み
                     <div class="text-part"><span class="large-letter">手</span>間はかけたくないけどなるべくコストを抑えたい。</div>
                 </div>
                 <div class="centered-image">
-                    <img src="https://lh3.googleusercontent.com/pw/AP1GczMV8DlhVe2rwZQPC1M6djYUNDTt5YblE5BaqLdvYa5b7Ng1ztsVbjpawyiqXrqOCzpYrXpQnKHNR2qeiC-JLAGStINkcFIAvaeoqVAYtvAWQc3U6hs1b3YHfciTDJgcAR4NlnPa7QYTCrks8Wys6y0V=w500-h420-s-no-gm?authuser=0">
+                    <img src="http://localhost/wordpress/wp-content/uploads/2024/04/main-logo1-background.png" alt="">
                 </div>
             </div>
 
@@ -62,10 +62,10 @@ get_header(); // ヘッダーの読み込み
                             専門的な知識がない方でも、ご安心ください。
                             ホムクリはお客様の事業の個性を引き立て、ビジネスの成功を加速させる魅力的なホームページをお届けします。</p>
                     </div>
-                    <div class="image-box1"><img src="https://lh3.googleusercontent.com/pw/AP1GczNyB7yXZRlHazTMFsETBFGZu7Yiud2DSwzSahT6C06q5PwU_kkveZ6IyZJTY-iXSHizgyFVwMX_z76YQG8DEqKOxd6pKUx4-sGZaMN1rDegNEHYcEq78RruvOI3ScIiVupLIX4dV8RSmKyOHndwgIM2=w500-h500-s-no-gm?authuser=0" alt=""></div>
+                    <div class="image-box1"><img src="http://localhost/wordpress/wp-content/uploads/2024/04/main-logo2-1.png" alt=""></div>
                 </div>
                 <div class="content-box">
-                    <div class="image-box2"><img src="https://lh3.googleusercontent.com/pw/AP1GczMbZFrvdolh8I8S_HmgNHvErEvHG9sTP1IrmJu8qKQL_gdoG7LwBQEqTQZX3j-gTHFFihGx3zO77x1quXuTCVyp4gfW1_KttuY8-exqRroSPlWcxnnF1gBkR_TqburEa_DRi9M3BttHIu5UWv1OFgyj=w500-h500-s-no-gm?authuser=0" alt=""></div>
+                    <div class="image-box2"><img src="http://localhost/wordpress/wp-content/uploads/2024/04/main-logo2-2.png" alt=""></div>
                     <div class="text-box2">
                         <h3>02/<span class="font_red">最短7日</span>で納品が可能</h3>
                         <p>速さも、ホムクリの自慢です。<br><br>
@@ -82,10 +82,10 @@ get_header(); // ヘッダーの読み込み
                             訪問者が忘れられない魅力的なサイトで、お客様のビジネスを際立たせることに注力し、お客様の想いと市場の最新動向を組み合わせ、他とは違うホームページを通じてビジネスの可能性を最大限に引き出します。
                         </p>
                     </div>
-                    <div class="image-box1"><img src="https://lh3.googleusercontent.com/pw/AP1GczN4YdVb3BlUoVQIkN-7IoQdjDtoV8Gs-YKzHjJIITzwfPOBpunvWKJUuAbCTFfl0o_-NeaJ5_fcTR5zOR1zVZwDaZnOI0xCt53hgKL9Pvq3cE9cEYOON96xax5bYmO7dFigFQJdu5r80I-OdtQAqQZx=w500-h500-s-no-gm?authuser=0" alt=""></div>
+                    <div class="image-box1"><img src="http://localhost/wordpress/wp-content/uploads/2024/04/main-logo2-3.png" alt=""></div>
                 </div>
                 <div class="content-box">
-                    <div class="image-box2"><img src="https://lh3.googleusercontent.com/pw/AP1GczMrk0JyvXuhUqEPNau_El8byDgPHaQD2mUqWN8rpZWYA2J0De7yarpN6s8CZSin_kq-mt2TxHAwTHvUTegspaT_spG_g08b7a6hLW8QGkXPxt_vMa7Nqs4-MknROoTvijBtH_9HwJCBlQwZIICaGdAG=w500-h500-s-no-gm?authuser=0" alt=""></div>
+                    <div class="image-box2"><img src="http://localhost/wordpress/wp-content/uploads/2024/04/main-logo2-4.png" alt=""></div>
                     <div class="text-box2">
                         <h3>04/SEOライティングで<span class="font_red">集客効果UP</span></h3>
                         <p>ホムクリのSEO対策サービスで、お客様のホームページの集客力を大幅に向上させましょう。<br><br>
@@ -103,10 +103,10 @@ get_header(); // ヘッダーの読み込み
                             お客様一人ひとりの需要に合わせたきめ細やかなアドバイスで、ホームページの運営をよりスムーズにし、さらなる成長を促します。
                             ホームページを作った後も、心置きなく事業に専念できるよう全面的にバックアップします。</p>
                     </div>
-                    <div class="image-box1"><img src="https://lh3.googleusercontent.com/pw/AP1GczNGAymtmFyGp6jMb3TRnt65Oerj-696Dpi9Qk7_uIk8lFifSOksMaUgWg8V-Fd6Y04BCle2nwiO-ViYwwJxdv8zNANdM2exjqh8mrQHvEEz02pY5_ZzdKRpLe0vammhfXImPtifnf_brwfaAQSNVHFG=w500-h500-s-no-gm?authuser=0" alt=""></div>
+                    <div class="image-box1"><img src="http://localhost/wordpress/wp-content/uploads/2024/04/main-logo2-5.png" alt=""></div>
                 </div>
                 <div class="content-box">
-                    <div class="image-box2"><img src="https://lh3.googleusercontent.com/pw/AP1GczMILlx5pc6jRK4sU7pcf4QjOiGyVTtb-9lfRZGXuR_U9miEyK90QHPq5yoN2QytRpsdGeRFGmjfnc1Ce28CQQzGJQOV2hcykOirzeOHk-c2sJJy9HfEqFi4DiCMudUJwuHTQ5ps5RAjzX469oV64f2J=w500-h500-s-no-gm?authuser=0" alt=""></div>
+                    <div class="image-box2"><img src="http://localhost/wordpress/wp-content/uploads/2024/04/main-logo2-6.png" alt=""></div>
                     <div class="text-box2">
                         <h3>06/ホームページ公開後も<span class="font_red">安心のアフターサポート</span></h3>
                         <p>ホームページの公開後も、ホムクリはお客様をしっかりサポートします。<br><br>
@@ -130,12 +130,12 @@ get_header(); // ヘッダーの読み込み
                     他のホームページデザインにも興味がある方は、ぜひサンプル一覧をご覧ください。</p>
                 <div class="sample-images">
                     <div class="image-group">
-                        <img class="image-PC fadeInOnScroll" src="https://lh3.googleusercontent.com/pw/AP1GczNcW2oHVrTrZsdHyowv0K2vlfR177TYU36m4Kp9f-snta8acw_sGlSQRb-p4joUaBejGj_WHxsoeGO5rgFspUEo1wZTIRcl0Er0T5myWVKwvc6E35autAa16eE22ZUlL4BIMCBwG6gB4bT6Q_F2l3rH=w1080-h657-s-no-gm?authuser=0" alt="着物レンタルホームページのパソコンでのサンプル">
-                        <img class="image-phone fadeInOnScroll" src="https://lh3.googleusercontent.com/pw/AP1GczPH_rKUv2oUWko_plZ4swiKawU8nqXvUfHMaksoA6zlMj6HywrfIvfuKTLxZP7GmqYYnMObbGGvO1LleR7TepD_6LTyDCXxhqE-BopuEdbxgbuzZRy2OuoQYRh4JpP_gby6C6jJET7oeQ77KFQuEsXZkw=w365-h684-s-no-gm?authuser=0" alt="着物レンタルホームページのスマホでのサンプル">
+                        <img class="image-PC fadeInOnScroll" src="http://localhost/wordpress/wp-content/uploads/2024/04/kimono-PC.png" alt="着物レンタルホームページのパソコンでのサンプル">
+                        <img class="image-phone fadeInOnScroll" src="http://localhost/wordpress/wp-content/uploads/2024/04/kimono-phone.png" alt="着物レンタルホームページのスマホでのサンプル">
                     </div>
                     <div class="image-group">
-                        <img class="image-PC fadeInOnScroll" src="https://lh3.googleusercontent.com/pw/AP1GczNvDTjve06GIB2JmChpwl7xzueyiKMvrVyMFQuCcgATmp4IEyxVKUUd3wg8m260YTA86JYaPtgn0p_r3lVgVtWBFkwygIXGl1MfNEwmxbgKXmCI69_7VTWkTz70R90WgRgbS91kwD9--YOaUko6OCnp=w1080-h665-s-no-gm?authuser=0" alt="カフェのホームページのパソコンでのサンプル">
-                        <img class="image-phone fadeInOnScroll" src="https://lh3.googleusercontent.com/pw/AP1GczP0cf5pJsf_MYDzmMYd72lShYfNYs7EcybX4iSpGglKSzkmwktRy0_2tWav-EzkobvacULvIi8QaCR7Pq5ZJfh43FoCNI0Pi3nLLO3J24oWe1O-yo8z-BJmHdOmcjuO9q8n03t9gCLFoeaHUhQiqhg24g=w365-h683-s-no-gm?authuser=0" alt="カフェのホームページのスマホでのサンプル">
+                        <img class="image-PC fadeInOnScroll" src="http://localhost/wordpress/wp-content/uploads/2024/04/cafe-PC.png" alt="カフェのホームページのパソコンでのサンプル">
+                        <img class="image-phone fadeInOnScroll" src="http://localhost/wordpress/wp-content/uploads/2024/04/cafe-phone.png" alt="カフェのホームページのスマホでのサンプル">
                     </div>
                 </div>
             </div>
@@ -317,7 +317,7 @@ get_header(); // ヘッダーの読み込み
                             <p>50,000円～</p>
                         </div>
                         <div class="image-box-option">
-                            <img src="https://lh3.googleusercontent.com/pw/AP1GczNOpmLNNS7jQKHXgDsIn25Lveo6uXbTmBCnWyPHWdfbvQO7KxLJrKFJhGb3vZgrswh7CCFUTHFh4Ks3MP3pEHbr90hBPt80bP_grmbTOvIASdA8v6pqSCp9atxACkkFZGcIxgm0GUmz7pf-cocmhD9L=w499-h500-s-no-gm?authuser=0" alt="ホームページのロゴ制作を現したロゴ">
+                            <img src="http://localhost/wordpress/wp-content/uploads/2024/04/option-1.png" alt="ホームページのロゴ制作を現したロゴ">
                         </div>
                     </div>
                     <div class="content-box-option">
@@ -326,7 +326,7 @@ get_header(); // ヘッダーの読み込み
                             <p>40,000円～</p>
                         </div>
                         <div class="image-box-option">
-                            <img src="https://lh3.googleusercontent.com/pw/AP1GczNz_yiwxPT3FXOLonWiPzyJZRN_uQ7cu48FCNGQqflhSPb3QPvVp38Vn5aiXIf8jwXW1aTmJbfV56thwHhZ85kuAtHfuwEuyn2X9wemVCCN_depsNEfpdCYhS7N0Ex3ln1COxYmmAt9cX4oHNe-RtM3=w452-h419-s-no-gm?authuser=0" alt="LP制作を現したロゴ">
+                            <img src="http://localhost/wordpress/wp-content/uploads/2024/04/option-2.png" alt="LP制作を現したロゴ">
                         </div>
                     </div>
                     <div class="content-box-option">
@@ -335,7 +335,7 @@ get_header(); // ヘッダーの読み込み
                             <p>10,000円/1記事</p>
                         </div>
                         <div class="image-box-option">
-                            <img src="https://lh3.googleusercontent.com/pw/AP1GczMznMcLvEH6CIbBL2U94D4NbRfRJBYnNf2IRvp-NFboyrbEubbKxTI0JSDzf3Ty5mWEYxgWU0ma3Db4Fh4r_s9BQP5CoLPKOEOj6xVIwobMBwGcQoA6WXxrtP90-1Sx1CmjD5L9d_DqQt5le4BDjwhD=w449-h453-s-no-gm?authuser=0" alt="SEO記事代行を現したロゴ">
+                            <img src="http://localhost/wordpress/wp-content/uploads/2024/04/option-3.png" alt="SEO記事代行を現したロゴ">
                         </div>
                     </div>
                     <div class="content-box-option">
@@ -344,7 +344,7 @@ get_header(); // ヘッダーの読み込み
                             <p>月額5,000円</p>
                         </div>
                         <div class="image-box-option">
-                            <img src="https://lh3.googleusercontent.com/pw/AP1GczOZiY2u0yzNw1Bqam31CfOgu66drWoe1pEUhA67djEWj_hqCdMzwO6LNWWf8Gbh2mpAGLjwjZuFupaO-ab7QzwoKQMgxJUuHsCNa2bJpRKK2pdAOyqoM1sfudFDn9Gvof3D6B8BAqgN-NK9ryFjr5t9=w462-h510-s-no-gm?authuser=0" alt="ホームページの保守管理サービスを現したロゴ">
+                            <img src="http://localhost/wordpress/wp-content/uploads/2024/04/option-4.jpg" alt="ホームページの保守管理サービスを現したロゴ">
                         </div>
                     </div>
                     <div class="content-box-option">
@@ -353,7 +353,7 @@ get_header(); // ヘッダーの読み込み
                             <p>1,000円/1画像</p>
                         </div>
                         <div class="image-box-option">
-                            <img src="https://lh3.googleusercontent.com/pw/AP1GczPkmKH3LOZ4wB7x1tw2iR5hqb-exRJnDwjYDfMI3EX_wddcn3lw1OtEjxvtm5n1ipIBMbbITbdRrTW8Ob8WoKIw2Thsrqn91up6k6TW9z8_qQOlO5RIVheOpRD8BqIbXs3wosfpcIlEuVzd3tTi0fIg=w474-h364-s-no-gm?authuser=0" alt="ホームページに使う画像の作成を現したロゴ">
+                            <img src="http://localhost/wordpress/wp-content/uploads/2024/04/option-5.png" alt="ホームページに使う画像の作成を現したロゴ">
                         </div>
                     </div>
                     <div class="content-box-option">
@@ -362,7 +362,7 @@ get_header(); // ヘッダーの読み込み
                             <p>4,000円</p>
                         </div>
                         <div class="image-box-option">
-                            <img src="https://lh3.googleusercontent.com/pw/AP1GczPi-vzvQCOsBQKM4n1A3wKNtBA-u0lt_gpYl4ItTJy_CBO9xAFeNFBWBY9TeliPxMzMz461pVt5oc6ryindZ6rw6W0xw47grurYqniySLZcL5O8O0s5F3QH7OzKLxeb_LmSmlGOprsGAC279BGPr1poIQ=w526-h474-s-no-gm?authuser=0" alt="ホームページのアクセス解析ツール設置を現したロゴ">
+                            <img src="http://localhost/wordpress/wp-content/uploads/2024/04/option-6.png" alt="ホームページのアクセス解析ツール設置を現したロゴ">
                         </div>
                     </div>
                     <div class="content-box-option">
@@ -371,7 +371,7 @@ get_header(); // ヘッダーの読み込み
                             <p>10,000円/1P</p>
                         </div>
                         <div class="image-box-option">
-                            <img src="https://lh3.googleusercontent.com/pw/AP1GczPIv0795_9BWdaRv06-HdlZv-E5c7L0V7ShRGmZ56GM6CkpfgDjQYic8smoJ5iOJ9N14ySJ4c4_ZVl7gZ889UJJCPb91LPBP7nJxvmwcfORSNlbWQ1QsdN7XfakanWX0ZB0rUYtRAUdC6zLUmZV_ZLV=w490-h484-s-no-gm?authuser=0" alt="ホームページを英語切り替えを現したロゴ">
+                            <img src="http://localhost/wordpress/wp-content/uploads/2024/04/option-7.png" alt="ホームページを英語切り替えを現したロゴ">
                         </div>
                     </div>
 
@@ -392,7 +392,7 @@ get_header(); // ヘッダーの読み込み
                     <div class="timeline-item">
                         <div class="timeline-icon">
                             <!-- 最初の画像 -->
-                            <img src="https://lh3.googleusercontent.com/pw/AP1GczNKvcv57dBa6l3ZiFnaZyoqFACw-MT3TUrhADQTN0CP3YOx10ID4DFjmuiWdth_TwFq_NN7ahhSrwuUYIVsDFs_4lUPKx3Ylfg-ENdT2ghcnaFWBCKYWbUJqeZ1ED8LunVjkV2GsU1NxeWkWQbJpPGi=w605-h595-s-no-gm?authuser=0" alt="お申込みを現したロゴ">
+                            <img src="http://localhost/wordpress/wp-content/uploads/2024/04/flow-1.png" alt="お申込みを現したロゴ">
                         </div>
                         <div class="timeline-content">
                             <h3 class="timeline-title">①お申込み受付</h3>
@@ -401,7 +401,7 @@ get_header(); // ヘッダーの読み込み
                     </div>
                     <div class="timeline-item">
                         <div class="timeline-icon">
-                            <img src="https://lh3.googleusercontent.com/pw/AP1GczPo0f8ZynTT9RS3VmSn2GOb3EGuWuKGlVaYY3YmGZNPrba5d8j6y-h-5KfWGEhxkYgTNOzM_jzOtYIkEFWqnd1wMQDJzW_I3zzebiKZ11XwS9GpzB5d7dGTcYMM8zEu9RAzPHx8IsXgT87IRhFePrvm=w613-h610-s-no-gm?authuser=0" alt="ミーティング、ヒアリングを現したロゴ">
+                            <img src="http://localhost/wordpress/wp-content/uploads/2024/04/flow-2.png" alt="ミーティング、ヒアリングを現したロゴ">
                         </div>
                         <div class="timeline-content">
                             <h3 class="timeline-title">②初回ミーティング・<br class="mobile-break">ヒアリング</h3>
@@ -410,7 +410,7 @@ get_header(); // ヘッダーの読み込み
                     </div>
                     <div class="timeline-item">
                         <div class="timeline-icon">
-                            <img src="https://lh3.googleusercontent.com/pw/AP1GczOqZkOWOkmuh7ecIgg7ZaxKeuxjwdaZZZvjlp2yDbhDQRTwFqvJDUF3-ejbqTJegDPwJCSaNZinwXrswlEnYJy17hbcG7XDN74O6bnSNa5Rkdk3XbNkCxXYJETh4zANGeOz8DPOU715FVxGUfsJ5Kc5=w602-h601-s-no-gm?authuser=0" alt="お見積りの提案、初期費用のお支払いを現したロゴ">
+                            <img src="http://localhost/wordpress/wp-content/uploads/2024/04/flow-3.png" alt="お見積りの提案、初期費用のお支払いを現したロゴ">
                         </div>
                         <div class="timeline-content">
                             <h3 class="timeline-title">③お見積りの提案・<br class="mobile-break">初期費用のお支払い</h3>
@@ -420,7 +420,7 @@ get_header(); // ヘッダーの読み込み
                     </div>
                     <div class="timeline-item">
                         <div class="timeline-icon">
-                            <img src="https://lh3.googleusercontent.com/pw/AP1GczPOr86n9E7_M-OPh0Lbo5D54L3iHRc1vDWiWyPbJHSqwr7A-vaLqTCVUHo4QP90u0VpXLnpoRkPgfY61oiHk9oIFqoXcw5qHRNzoZ3uzgZ0meb0kymjgWIUvQzcyJbdx6MrpDuLHh_jFUpLRrBcV4yx=w612-h600-s-no-gm?authuser=0" alt="ホームページ制作を現したロゴ">
+                            <img src="http://localhost/wordpress/wp-content/uploads/2024/04/flow-4.png" alt="ホームページ制作を現したロゴ">
                         </div>
                         <div class="timeline-content">
                             <h3 class="timeline-title">④ホームページ制作</h3>
@@ -429,7 +429,7 @@ get_header(); // ヘッダーの読み込み
                     </div>
                     <div class="timeline-item">
                         <div class="timeline-icon">
-                            <img src="https://lh3.googleusercontent.com/pw/AP1GczM3j1q4eiYcfx8Qdbd6tMtyFSgGHzA9luYo0CD-jdVqzOTv-_kzN09K0rRQL4o1y7zzPtVitNmR55-Xvg34kKzV5efFTNGfY6H2pOKIQdKkdYSJ1oMhdCs89qPZ-LNb8v_1g0MDwPW0U9-c6g33vmqt=w608-h600-s-no-gm?authuser=0" alt="内容確認を現したロゴ">
+                            <img src="http://localhost/wordpress/wp-content/uploads/2024/04/flow-5.png" alt="内容確認を現したロゴ">
                         </div>
                         <div class="timeline-content">
                             <h3 class="timeline-title">⑤内容確認</h3>
@@ -438,7 +438,7 @@ get_header(); // ヘッダーの読み込み
                     </div>
                     <div class="timeline-item">
                         <div class="timeline-icon">
-                            <img src="https://lh3.googleusercontent.com/pw/AP1GczMFe4J-6XvQ3aiq97vRxd_1gE1HrEJmpJiBetRruu6IoxpHjx8VNOKyZR2x3mBap87-4Duo3u0dSTTttzpqw5mZ27EUd1923_7oumU3OCrO4E3RM6Zlg4aodO0v_Qo15m9vWrOqZCKJsOtX8Bm9kNCr=w608-h600-s-no-gm?authuser=0" alt="納品、残金の支払いを現したロゴ">
+                            <img src="http://localhost/wordpress/wp-content/uploads/2024/04/flow-6.png" alt="納品、残金の支払いを現したロゴ">
                         </div>
                         <div class="timeline-content">
                             <h3 class="timeline-title">⑥納品・残金のお支払い</h3>
@@ -448,7 +448,7 @@ get_header(); // ヘッダーの読み込み
                     </div>
                     <div class="timeline-item">
                         <div class="timeline-icon">
-                            <img src="https://lh3.googleusercontent.com/pw/AP1GczNRsbOFmx-rWf-3EGpRayqIDn7Gz1N01lucIvYOha0KKPvYPMjQqBk6wItwV0zeMg0GpOAGvWsPazLlCQti5ycIKJ5vpKspINmA3ev0sSA2iZYXSLqLNqtNkmiBp1wshrc1f-wykqw-2csx3B-NB1qY=w609-h597-s-no-gm?authuser=0" alt="アフターサポートを現したロゴ">
+                            <img src="http://localhost/wordpress/wp-content/uploads/2024/04/flow-7.png" alt="アフターサポートを現したロゴ">
                         </div>
                         <div class="timeline-content">
                             <h3 class="timeline-title">⑦アフターサポート</h3>

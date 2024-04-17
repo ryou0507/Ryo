@@ -31,7 +31,7 @@ get_header(); // ヘッダーの読み込み
         </div>
         <div class="main">
             <p class="text-sd">Have you ever thought about this?</p>
-            <h2>こんな事思ったことありませんか？</h2>
+            <h2 class ="h2title">こんな事思ったことありませんか？</h2>
             <div class="main-logo1">
 
                 <div class="text">
@@ -52,7 +52,7 @@ get_header(); // ヘッダーの読み込み
 
             <div class="main-logo2">
                 <p class="text-sd">That's Different</p>
-                <h2>他とここが違う！</h2>
+                 <h2 class ="h2title">他とここが違う！</h2>
                 <div class="content-box">
                     <div class="text-box1">
                         <h3>01/最低価格<span class="font_red">7万円</span>でサイトを作れる</h3>
@@ -122,7 +122,7 @@ get_header(); // ヘッダーの読み込み
             </div>
 
             <p class="text-sd">HomePage Sample</p>
-            <h2>ホームページのサンプル</h2>
+            <h2 class ="h2title">ホームページのサンプル</h2>
             <div class="main-logo3">
                 <p>ホムクリでは様々な業界や目的に合わせたホームページに対応可能です。<br><br>
                     こちらでは、ホムクリのデザインサンプルを一部ご紹介しています。<br>
@@ -180,7 +180,7 @@ get_header(); // ヘッダーの読み込み
 
             <div class="main-logo4">
                 <p class="text-sd">Pricing</p>
-                <h2>料金プラン</h2>
+                <h2 class ="h2title">料金プラン</h2>
                 <p>お客様のご要望に合わせて、最適なプランをご提案します。<br>
                     表示価格はすべて税込となっておりますので安心してお選びください。</p>
                 <div class="shapes-set">
@@ -307,7 +307,7 @@ get_header(); // ヘッダーの読み込み
                 </div>
 
                 <p class="text-sd">Option</p>
-                <h2>対応可能なオプション</h2>
+                <h2 class ="h2title">対応可能なオプション</h2>
                 <p>お客様のご要望に対応出来るように、様々なオプションをご用意しております。<br>
                     表示価格はすべて税込となっておりますので安心してお選びください。</p>
                 <div class="container">
@@ -384,7 +384,7 @@ get_header(); // ヘッダーの読み込み
 
             </div>
             <p class="text-sd">HomePage Complete Flow</p>
-            <h2>お申込みからホームページ完成までの流れ</h2>
+            <h2 class ="h2title">お申込みからホームページ完成までの流れ</h2>
             <div class="main-logo5">
 
                 <div class="timeline-container">
@@ -465,7 +465,7 @@ get_header(); // ヘッダーの読み込み
 
             <div class="main-logo6">
                 <p class="text-sd">Q&A</p>
-                <h2>よくある質問</h2>
+                <h2 class ="h2title">よくある質問</h2>
                 <div class="FAQ-list">
                     <div class="question-list">
                         <div class="question-item">Q</div>

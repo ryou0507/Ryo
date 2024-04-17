@@ -80,7 +80,7 @@
             </div>
         </div>
 
-        <header>
+        <header class="site-header">
             <nav class="header-bottom">
                 <ul>
                     <li><a href="index.html">TOP </a></li>

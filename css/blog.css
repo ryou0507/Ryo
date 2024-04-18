@@ -1,5 +1,227 @@
+.blog-content {
+    margin-top: 180px;
+    padding: 3% 0;
+    letter-spacing: 0.2rem;
+}
 
-    .blog-content {
-        margin-top: 200px;
-        margin-bottom: 100px;
+.blog-container {
+    padding: 10% 5%;
+    background-color: rgba(33, 150, 243, 0.06);
+}
+
+.blog-main {
+    background-color: white;
+    height: auto;
+    padding: 0 5% 1% 5%;
+    border-radius: 30px;
+    box-shadow: 0 -3px 10px rgba(0, 0, 0, 0.15);
+
+}
+
+.blog-title {
+    font-size: 4vw;
+    font-weight: 700;
+    border-bottom: 2px solid rgba(51, 51, 51, 0.6);
+    /* 黒色の2ピクセルの固定下線 */
+    padding-bottom: 2%;
+    /* 下線とテキストの間にスペースを加える */
+}
+
+.entry-content ul>li {
+    list-style-type: disc;
+    margin-left: 1%;
+    padding-bottom: 2%;
+    font-size: 1.4vw;
+}
+
+.entry-content p {
+    margin: 0 0 3rem 0;
+    line-height: 1.6em;
+    font-size: 1.5vw;
+    font-weight: 400;
+    color: #413931;
+}
+
+.entry-content img {
+    margin-bottom: 2.2rem;
+}
+
+/*********** この記事のポイント　ボックスデザイン **********/
+
+.box-article {
+    margin: 7% auto 5% auto;
+    padding: 30px 20px;
+    border: 2px solid #4c9ac0;
+    position: relative;
+    /* 追加: 三角形の位置の基準点にするため */
+}
+
+.box-article-title {
+    background-color: #4c9ac0;
+    color: #fff;
+    border-radius: 20px;
+    /* 修正: 丸みの度合いを調整 */
+    padding: 16px 20px;
+    /* 修正: 左右のパディングを均等に */
+    margin: 0 auto;
+    /* 修正: 自動で中央揃え */
+    transform: translate(-50%, -50%);
+    top: 0;
+    /* 追加: 上端からの位置 */
+    left: 50%;
+    /* 修正: コンテナの中央 */
+    position: absolute;
+    /* 修正: 絶対位置指定 */
+    font-size: 1.7vw;
+    font-weight: bold;
+    text-align: center;
+    display: inline-block;
+    /* 追加: インラインブロック要素にする */
+    width: 60%;
+    /* タイトルの幅を親要素の80%にする */
+    max-width: 80%;
+    /* 最大幅を600pxに設定 */
+    box-sizing: border-box;
+    /* パディングとボーダーを幅に含める */
+}
+
+.box-article-title::after {
+    content: '';
+    position: absolute;
+    top: 98%;
+    /* 上からの位置をタイトルボックスの下に変更 */
+    left: 50%;
+    transform: translateX(-50%);
+    border: 15px solid transparent;
+    border-top-color: #4c9ac0;
+    /* 下向きの三角形の色を設定 */
+}
+
+.box-article ul {
+    padding-top: 3%;
+}
+
+
+/*********** シンプルボックスデザイン **********/
+.box-simple {
+    margin: 0 auto 7% auto;
+    padding: 3% 0 0 3%;
+    border: 2px solid rgba(76, 154, 192, 0.5);
+    position: relative;
+    width: 80%;
+}
+
+.box-simple-title {
+    position: absolute;
+    top: -15px;
+    left: 20px;
+    background-color: #fff;
+    padding: 0 0.5em;
+    margin: 0;
+    font-size: 20px;
+    font-weight: bold;
+    font-size: 1.7vw;
+}
+
+/*********** h2,h3デザイン **********/
+
+.entry-content h2 {
+    padding: 0.5em 1em;
+    background-color: #e1eef5;
+    box-shadow: 5px -5px #4c9ac0;
+    position: relative;
+}
+
+.blog-container h3 {
+    padding: 0.4em 0.5em;
+    /*文字の上下 左右の余白*/
+    color: #494949;
+    /*文字色*/
+    background: #f4f4f4;
+    /*背景色*/
+    border-left: solid 5px #7db4e6;
+    /*左線*/
+    border-bottom: solid 3px #d7d7d7;
+    /*下線*/
+}
+
+/*********** 埋め込みインスタ　中央寄せ **********/
+
+.entry-content .instagram-media,
+.o--widget-area .instagram-media {
+    margin-left: auto !important;
+    margin-right: auto !important;
+    box-sizing: border-box !important;
+}
+
+/*********** テーブル　デザイン **********/
+.entry-content table{
+    border-collapse: collapse;
+    width: 100%;
+    max-width: 700px;
+    margin: 2.4rem auto;
+  }
+  .entry-content th, .entry-content td {
+    border: 2px solid #fff;
+    background-color: #e6f1f6;
+    padding: 1em;
+  }
+  .entry-content th {
+    background-color: #4d9bc1;
+    color: #fff;
+    font-weight: bold;
+    text-align: center;
+    width: 20%;
+    min-width: 4em;
+    white-space: nowrap;
+  }
+
+
+/*********** 関連記事 **********/
+	
+.related-post-wrap {
+  margin: 2em 0;
+}
+ 
+.related-post-wrap h4 {
+  font-size: 1.25em;
+  margin-bottom: 1em;
+}
+ 
+.related-post-wrap ul {
+  display: grid;
+  list-style: none;
+  gap: .875em;
+  grid-template-columns: repeat(4, 1fr);
+}
+ 
+.related-post a {
+  display: block;
+  text-decoration: none;
+  color: #000;
+}
+ 
+.related-post a:hover {
+  opacity: .6;
+}
+ 
+.related-post img {
+    display: block;
+    width: 100%;
+    height: auto; /* 高さをautoに設定すると、画像の比率はそのままに幅に合わせて高さが自動調整されます */
+    aspect-ratio: 3 / 2; /* アスペクト比を3:2に保つ */
+    margin-bottom: .5em;
+    object-fit: cover; /* サイズがコンテナを超えた場合には、はみ出た部分が切り取られる */
+  }
+ 
+.related-post .text-wrap {
+  font-size: .875em;
+  font-weight: bold;
+}
+ 
+/* レスポンシブデザインのためのメディアクエリ */
+@media (max-width: 600px) {
+    .related-post img {
+      aspect-ratio: 2 / 1; /* スマートフォンなどの狭い画面では異なるアスペクト比を設定することもできます */
     }
+  }

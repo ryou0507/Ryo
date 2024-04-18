@@ -7,11 +7,22 @@
     <title>ホームページ制作ならホムクリ</title>
 
     <!-- Google Tag Manager -->
-<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-    })(window,document,'script','dataLayer','GTM-NLHZNZDS');</script>
+    <script>
+        (function(w, d, s, l, i) {
+            w[l] = w[l] || [];
+            w[l].push({
+                'gtm.start': new Date().getTime(),
+                event: 'gtm.js'
+            });
+            var f = d.getElementsByTagName(s)[0],
+                j = d.createElement(s),
+                dl = l != 'dataLayer' ? '&l=' + l : '';
+            j.async = true;
+            j.src =
+                'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
+            f.parentNode.insertBefore(j, f);
+        })(window, document, 'script', 'dataLayer', 'GTM-NLHZNZDS');
+    </script>
     <!-- End Google Tag Manager -->
 
     <meta name="description" content="事業を始めたばかりでホームページがない、またはリニューアルを考えている企業へ。おしゃれで機能的で安価なホームページ制作で、お客様のビジネスをより魅力的なものに！">
@@ -24,6 +35,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Arbutus+Slab&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <?php wp_head(); ?>
 </head>
 
@@ -60,13 +72,18 @@
             </div>
             <div class="center">
                 <a href="index.html">
-                    <img src="<?php echo esc_url( get_template_directory_uri() ); ?>/images/homcri-logo.jpg" alt="ホームページ制作ならホムクリのロゴ">
+                    <img src="<?php echo esc_url(get_template_directory_uri()); ?>/images/homcri-logo.jpg" alt="ホームページ制作ならホムクリのロゴ">
                 </a>
             </div>
             <div class="right">
                 <!-- 電話アイコンとメールアイコンを含むコンテナ -->
                 <!-- アイコンを横並びにするためのコンテナ -->
                 <div class="icon-container">
+                    <a href="https://twitter.com/homcri_web" class="icon-link x-icon">
+                        <i class="fa-brands fa-x-twitter"></i>
+                    </a>
+                    <img src="<?php echo esc_url( get_template_directory_uri() ); ?>/images/instagram-icon.svg" alt="画像の説明">
+                    </a>
                     <!-- 電話アイコン -->
                     <a href="tel:08083874545" class="icon-link phone-icon">
                         <i class="fas fa-phone"></i>

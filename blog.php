@@ -29,6 +29,11 @@ Template Name: blog
                             <!-- タイトルをリンクとして表示 -->
                             <h2 class="entry-title"><a href="<?php the_permalink(); ?>" rel="bookmark"><?php the_title(); ?></a></h2>
                         </header><!-- .entry-header -->
+                        <?php
+                        if (function_exists('get_the_last_modified_info')) {
+                            echo '<div class="post-date-last">最終更新日: ' . get_post_modified_time('Y年n月j日') . '</div>';
+                        }
+                        ?>
                     </article><!-- #post-<?php the_ID(); ?> -->
 
             <?php

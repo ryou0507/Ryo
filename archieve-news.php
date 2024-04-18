@@ -22,16 +22,22 @@ get_header(); // ヘッダーの読み込み
             <?php the_excerpt(); ?>
           </div>
         </article>
+        <?php
+        if (function_exists('get_the_last_modified_info')) {
+          echo '<div class="post-date-last">最終更新日: ' . get_post_modified_time('Y年n月j日') . '</div>';
+      }
+        ?>
       <?php endwhile; ?>
     </div>
     <?php the_posts_navigation(); ?>
   <?php else : ?>
     <p><?php _e('お知らせはまだありません。', 'textdomain'); ?></p>
   <?php endif; ?>
+
 </main>
 
-  </body>
+</body>
 
 <?php
-  get_footer(); 
-  ?>
+get_footer();
+?>

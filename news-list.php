@@ -30,6 +30,9 @@ get_header(); // ヘッダーの読み込み
             while ($news_query->have_posts()) : $news_query->the_post();
                 // 各投稿の表示内容
                 echo '<li><a href="' . get_permalink() . '">' . get_the_title() . '</a></li>';
+                if (function_exists('get_the_last_modified_info')) {
+                    echo '<div class="post-date-last">最終更新日: ' . get_post_modified_time('Y年n月j日') . '</div>';
+                }
             endwhile;
             echo '</ul>';
             // ページネーション
@@ -42,7 +45,7 @@ get_header(); // ヘッダーの読み込み
         // メインループをリセット
         wp_reset_postdata();
         ?>
-
+        
     </main><!-- #main -->
 </div><!-- #primary -->
 

@@ -22,7 +22,7 @@ html {
     letter-spacing: 0;
 }
 
-.h2title :after {
+.h2title:after {
     content: '';
     /* 必須: 疑似要素の内容 */
     position: absolute;
@@ -1231,7 +1231,7 @@ header nav {
 .content-area {
     margin-top: 105px;
     margin-bottom: 78px;
-    text-align: center;
+    
     font-size: 33px;
 }
 
@@ -1242,8 +1242,8 @@ header nav {
 
 main#main-content {
     margin-top: 238px;
-    text-align: center;
     margin-bottom: 78px;
+    text-align: center;
 }
 
 main#main-content h1 {
@@ -1258,23 +1258,31 @@ main#main-content h1 {
 
 .post-modified-info {
     font-size: 18px;
-    position: fixed;
-    right: 30px;
+    position: absolute;
+    top: 190px;
 }
 
 ul.news-list {
-    background-color: #DDDDDD;
+    background-color: #e7e2e2dc;
     height: auto;
     margin-left: 70px;
     margin-right: 70px;
-    border-radius: 20px;
+    border-radius: 30px;
     padding-top: 50px;
     padding-bottom: 50px;
+    padding-left: 30%;
 }
 
 .news-list li {
     padding: 12px 0;
   }
+
+  .post-date-last {
+    position: absolute;
+    left: 80px;
+    font-size: 15px;
+    margin-top: -45px;
+}
 /********** お役立ち情報　レイアウト *********/
 .page-title{
     margin-top: 208px;
@@ -1282,7 +1290,7 @@ ul.news-list {
 }
 
 .entry-title{
-    padding-left: 20%;
+    padding-left: 30%;
 }
 
 .entry-container {

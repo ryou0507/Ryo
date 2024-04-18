@@ -148,6 +148,8 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 });
 
+
+
 /**********　対応可能なオプション　アニメーション　**********/
 document.addEventListener("DOMContentLoaded", () => {
   const options = document.querySelectorAll('.content-box-option');

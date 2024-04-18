@@ -22,7 +22,7 @@ html {
     letter-spacing: 0;
 }
 
-.h2title :after {
+.h2title:after {
     content: '';
     /* 必須: 疑似要素の内容 */
     position: absolute;

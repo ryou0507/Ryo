@@ -1,5 +1,6 @@
 <?php
-function load_custom_styles_and_scripts() {
+function load_custom_styles_and_scripts()
+{
     // CSSファイルの読み込み
     wp_enqueue_style('button-style', get_template_directory_uri() . '/css/button.css');
     wp_enqueue_style('deco-style', get_template_directory_uri() . '/css/deco.css');
@@ -20,11 +21,11 @@ function load_custom_styles_and_scripts() {
 
 add_action('wp_enqueue_scripts', 'load_custom_styles_and_scripts');
 
-?>
 
-<?php 
-function create_post_type_news() {
-    register_post_type('news',
+function create_post_type_news()
+{
+    register_post_type(
+        'news',
         array(
             'labels' => array(
                 'name' => __('お知らせ'),
@@ -38,10 +39,10 @@ function create_post_type_news() {
     );
 }
 add_action('init', 'create_post_type_news');
-?>
 
-<?php 
-function custom_news_list_shortcode() {
+
+function custom_news_list_shortcode()
+{
     ob_start();
     $query_args = array(
         'post_type'      => 'news', // ここにカスタム投稿タイプのスラッグを入れます。
@@ -64,4 +65,7 @@ function custom_news_list_shortcode() {
     return ob_get_clean();
 }
 add_shortcode('news_list', 'custom_news_list_shortcode');
-?>
+
+if ( function_exists( 'add_theme_support' ) ) {
+    add_theme_support( 'post-thumbnails' );
+}

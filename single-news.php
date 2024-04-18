@@ -17,6 +17,7 @@ get_header(); // ヘッダーの読み込み
       </div>
     </article>
   <?php endwhile; endif; ?>
+  
 </main>  
 
 </body>

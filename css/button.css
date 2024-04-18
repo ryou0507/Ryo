@@ -25,6 +25,7 @@
   align-items: center; /* 中央揃えにする */
 }
 
+
 /* アイコンリンクのスタイル */
 .icon-link {
   display: inline-block;
@@ -36,6 +37,7 @@
   text-decoration: none; /* 下線を消す */
   transition: border-color 0.3s; /* 色変更のアニメーションを追加 */
 }
+
 
 /* 電話アイコンのスタイル */
 .phone-icon {
@@ -56,7 +58,14 @@
   font-size: 180%; /* アイコンのサイズ */
 }
 
+.icon-container img {
+  width: 22%;
+  height: 62%;
+}
 
+i.fa-brands.fa-x-twitter {
+  font-size: 35px;
+}
 
 /**********　ハンバーガーボタン　**********/
 .hamburger-menu-container {

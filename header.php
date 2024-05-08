@@ -67,6 +67,10 @@
                             <li class="menu-option"><a href="<?php echo home_url(); ?>/blog">お役立ち情報</a></li>
                             <li class="menu-option"><a href="<?php echo home_url(); ?>/inquiry">お問い合わせ</a></li>
                         </ul>
+                        <div class="sns-icon1">
+                            <img class="X-logo" src="<?php echo esc_url(get_template_directory_uri()); ?>/images/X-icon.png" alt="Xのアイコン">
+                            <img class="insta-logo" src="<?php echo esc_url(get_template_directory_uri()); ?>/images/instagram-icon.svg" alt="インスタグラムのアイコン">
+                        </div>
                     </nav>
                 </div>
             </div>
@@ -79,11 +83,6 @@
                 <!-- 電話アイコンとメールアイコンを含むコンテナ -->
                 <!-- アイコンを横並びにするためのコンテナ -->
                 <div class="icon-container">
-                    <a href="https://twitter.com/homcri_web" class="icon-link x-icon">
-                        <i class="fa-brands fa-x-twitter"></i>
-                    </a>
-                    <img src="<?php echo esc_url( get_template_directory_uri() ); ?>/images/instagram-icon.svg" alt="画像の説明">
-                    </a>
                     <!-- 電話アイコン -->
                     <a href="tel:08083874545" class="icon-link phone-icon">
                         <i class="fas fa-phone"></i>

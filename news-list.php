@@ -20,8 +20,8 @@ get_header(); // ヘッダーの読み込み
         $args = array(
             'post_type'      => 'news',  // 投稿タイプ
             'posts_per_page' => 10,      // 1ページに表示する投稿数
-            'order'          => 'DESC',  // 降順で表示
-            'orderby'        => 'date'   // 日付で並び替え
+            'order'          => 'DSC',  // 降順で表示
+            'orderby'        => 'modified'   // 日付で並び替え
         );
         $news_query = new WP_Query($args);
 
@@ -31,7 +31,7 @@ get_header(); // ヘッダーの読み込み
                 // 各投稿の表示内容
                 echo '<li><a href="' . get_permalink() . '">' . get_the_title() . '</a></li>';
                 if (function_exists('get_the_last_modified_info')) {
-                    echo '<div class="post-date-last">最終更新日: ' . get_post_modified_time('Y年n月j日') . '</div>';
+                    echo '<div class="post-date-last">' . get_post_modified_time('Y.n.j') . '</div>';
                 }
             endwhile;
             echo '</ul>';

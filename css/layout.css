@@ -16,7 +16,7 @@ html {
     /* 横方向のスクロールを隠す */
 }
 
-.h2title  {
+.h2title {
     z-index: 0;
     position: relative;
     letter-spacing: 0;
@@ -42,26 +42,38 @@ html {
 
 /*********** ヘッダーレイアウト **********/
 .header {
-    height: 150px; /* 高さ */
-    position: fixed; /* 固定位置 */
-    top: 0; /* 上端から0の位置に */
-    left: 0; /* 左端から0の位置に */
-    width: 100%; /* 幅を100%に設定 */
-    z-index: 1000; /* 他の要素よりも前面に表示 */
+    height: 150px;
+    /* 高さ */
+    position: fixed;
+    /* 固定位置 */
+    top: 0;
+    /* 上端から0の位置に */
+    left: 0;
+    /* 左端から0の位置に */
+    width: 100%;
+    /* 幅を100%に設定 */
+    z-index: 1000;
+    /* 他の要素よりも前面に表示 */
 }
 
 .head-wrapper {
     display: flex;
-    justify-content: space-between; /* アイテムを左右に均等に配置 */
-    align-items: center; /* アイテムを縦方向の中央に配置 */
-    padding: 10px; /* パディング */
+    justify-content: space-between;
+    /* アイテムを左右に均等に配置 */
+    align-items: center;
+    /* アイテムを縦方向の中央に配置 */
+    padding: 10px;
+    /* パディング */
 }
 
 .center {
     display: flex;
-    justify-content: center; /* 水平方向の中央寄せ */
-    align-items: center; /* 垂直方向の中央寄せ */
-    flex: 1; /* フレックスアイテムとしての拡張比率を指定 */
+    justify-content: center;
+    /* 水平方向の中央寄せ */
+    align-items: center;
+    /* 垂直方向の中央寄せ */
+    flex: 1;
+    /* フレックスアイテムとしての拡張比率を指定 */
 }
 
 .left,
@@ -72,53 +84,74 @@ html {
 
 .center img {
     height: auto;
-    max-height: 155px; /* ロゴの最大高さ */
-    width: auto; /* 幅は自動調整 */
+    max-height: 155px;
+    /* ロゴの最大高さ */
+    width: auto;
+    /* 幅は自動調整 */
 }
 
 .left {
     display: flex;
-    justify-content: flex-start; /* 左寄せ */
+    justify-content: flex-start;
+    /* 左寄せ */
 }
 
 .right {
     display: flex;
-    justify-content: flex-end; /* 右寄せ */
+    justify-content: flex-end;
+    /* 右寄せ */
 }
 
 /********** ヘッダーナビゲーション レイアウト **********/
 .site-header {
-    position: fixed; /* 固定位置 */
-    top: 150px; /* .headerの高さと同じ値に設定 */
-    left: 0; /* 左端から0の位置に */
-    width: 100%; /* 幅を100%に設定 */
-    z-index: 1000; /* .headerと同じz-index値に設定 */
+    position: fixed;
+    /* 固定位置 */
+    top: 150px;
+    /* .headerの高さと同じ値に設定 */
+    left: 0;
+    /* 左端から0の位置に */
+    width: 100%;
+    /* 幅を100%に設定 */
+    z-index: 1000;
+    /* .headerと同じz-index値に設定 */
 }
 
 header nav {
     display: flex;
-    justify-content: center; /* アイテムを水平方向の中央に配置 */
-    align-items: center; /* アイテムを垂直方向の中央に配置 */
+    justify-content: center;
+    /* アイテムを水平方向の中央に配置 */
+    align-items: center;
+    /* アイテムを垂直方向の中央に配置 */
 }
 
 .header-bottom ul {
     display: flex;
-    justify-content: space-around; /* アイテムを左右に均等に配置 */
-    align-items: center; /* アイテムを縦方向の中央に配置 */
-    height: 50px; /* 高さ */
-    list-style: none; /* リストマーカーを非表示 */
-    padding: 0; /* パディングを0に設定 */
-    margin: 0; /* マージンを0に設定 */
+    justify-content: space-around;
+    /* アイテムを左右に均等に配置 */
+    align-items: center;
+    /* アイテムを縦方向の中央に配置 */
+    height: 50px;
+    /* 高さ */
+    list-style: none;
+    /* リストマーカーを非表示 */
+    padding: 0;
+    /* パディングを0に設定 */
+    margin: 0;
+    /* マージンを0に設定 */
 }
 
 .header-bottom li {
-    position: relative; /* ナビゲーションリンクの下線を追加するため */
+    position: relative;
+    /* ナビゲーションリンクの下線を追加するため */
 }
 
 .header-bottom a {
-    text-decoration: none; /* アンダーラインを非表示 */
-    padding: 0 35px; /* 左右のパディング */
-    border-bottom: 2px solid white; /* 下線を白色に */
+    text-decoration: none;
+    /* アンダーラインを非表示 */
+    padding: 0 35px;
+    /* 左右のパディング */
+    border-bottom: 2px solid white;
+    /* 下線を白色に */
 }
 
 
@@ -360,11 +393,11 @@ header nav {
     font-size: 14px;
 }
 
-.main-logo3 .sample-images{
+.main-logo3 .sample-images {
     text-align: center;
 }
 
-.sample-images{
+.sample-images {
     margin-top: 45px;
 }
 
@@ -378,7 +411,8 @@ header nav {
     position: relative;
 }
 
-.image-PC, .image-phone {
+.image-PC,
+.image-phone {
     width: auto;
     max-width: 100%;
     height: auto;
@@ -394,7 +428,8 @@ header nav {
 
 .image-PC {
     z-index: 1;
-    width: 95%; /* 画像1と3のサイズ */
+    width: 95%;
+    /* 画像1と3のサイズ */
 }
 
 
@@ -783,8 +818,8 @@ header nav {
 
 .main-logo6 .FAQ-list {
     margin: 0;
-  }
-  
+}
+
 
 /********** お問い合わせフォームページ **********/
 /********** お問い合わせフォーム　レイアウト **********/
@@ -792,52 +827,57 @@ header nav {
     text-align: center;
     height: auto;
     margin-top: 150px;
-  }
-  
-  .top-container h1 {
+}
+
+.top-container h1 {
     display: inline-block;
     border-bottom: solid 4px black;
     padding-top: 50px;
     padding-bottom: 10px;
     width: 356px;
     font-size: 24px;
-  }
-  
-  .top-container p {
+}
+
+.top-container p {
     font-size: 15px;
-  }
-  
-  .rectangle-container {
+}
+
+.rectangle-container {
     height: auto;
     display: flex;
     justify-content: space-between;
-  }
+}
 
-  .step {
+.step {
     display: flex;
     flex-direction: column;
     align-items: center;
-    flex: 1 ;
+    flex: 1;
     margin: 0 0;
     position: relative;
-  }
+}
 
-  .step::after {
-    content: ""; /* 擬似要素にはこれが必要 */
+.step::after {
+    content: "";
+    /* 擬似要素にはこれが必要 */
     position: absolute;
     top: 71%;
-     /* 円の右側中央から始める */
-    width: 880px; /* 必要に応じて調整 */
-    border-top: 10px solid #87CEFA; /* 線の色と太さ */
-    z-index: -1; /* 円の下に線を表示 */
-  }
-  
-  .step:first-child::after,
-  .step:last-child::after {
-    content: none; /* 最初と最後の円では線を非表示にする */
-  }
-  
-  .step-rectangle {
+    /* 円の右側中央から始める */
+    width: 880px;
+    /* 必要に応じて調整 */
+    border-top: 10px solid #87CEFA;
+    /* 線の色と太さ */
+    z-index: -1;
+    /* 円の下に線を表示 */
+}
+
+.step:first-child::after,
+.step:last-child::after {
+    content: none;
+    /* 最初と最後の円では線を非表示にする */
+}
+
+.step-rectangle {
     position: relative;
     display: inline-block;
     margin: 1.5em 0;
@@ -846,9 +886,9 @@ header nav {
     background-color: #1E90FF;
     text-align: center;
     font-weight: bold;
-  }
-  
-  .step-rectangle:before {
+}
+
+.step-rectangle:before {
     content: "";
     position: absolute;
     top: 100%;
@@ -856,9 +896,9 @@ header nav {
     margin-left: -15px;
     border: 15px solid transparent;
     border-top: 15px solid #1E90FF;
-  }
-  
-  .step-rectangle1 {
+}
+
+.step-rectangle1 {
     position: relative;
     display: inline-block;
     margin: 1.5em 0;
@@ -867,9 +907,9 @@ header nav {
     background-color: #87CEFA;
     text-align: center;
     font-weight: bold;
-  }
-  
-  .step-rectangle1:before {
+}
+
+.step-rectangle1:before {
     content: "";
     position: absolute;
     top: 100%;
@@ -877,14 +917,14 @@ header nav {
     margin-left: -15px;
     border: 15px solid transparent;
     border-top: 15px solid #87CEFA;
-  }
-  
-  .step-rectangle p,
-  .step-rectangle1 p {
+}
+
+.step-rectangle p,
+.step-rectangle1 p {
     font-size: 25px;
-  }
-  
-  .step-circle {
+}
+
+.step-circle {
     width: 80px;
     height: 80px;
     border-radius: 50%;
@@ -899,9 +939,9 @@ header nav {
     z-index: 1;
     /* 円を線の前面に表示 */
     margin-bottom: 50px;
-  }
-  
-  .step-circle1 {
+}
+
+.step-circle1 {
     width: 80px;
     height: 80px;
     border-radius: 50%;
@@ -916,16 +956,16 @@ header nav {
     z-index: 1;
     /* 円を線の前面に表示 */
     margin-bottom: 50px;
-  }
+}
 
 
-  /********** 入力フォーム　レイアウト **********/
-  .input-container span {
+/********** 入力フォーム　レイアウト **********/
+.input-container span {
     color: red;
     font-size: 12px;
-  }
-  
-  .text-area {
+}
+
+.text-area {
     display: inline-block;
     font-size: 15px;
     border-bottom: solid 1px black;
@@ -935,57 +975,67 @@ header nav {
     padding-top: 5px;
     padding-bottom: 5px;
     padding-left: 15px;
-  }
-  
-  
-  .input-container {
-    margin-top: 10px ;
+}
+
+
+.input-container {
+    margin-top: 10px;
     height: auto;
     padding: 0 150px;
     position: relative;
-  }
+}
 
-  /* 枠線を追加するための擬似要素のスタイル */
-  .input-container::before {
-    content: ''; /* 擬似要素にはcontentが必須 */
-    position: absolute; /* 親要素(.form-container)に対して絶対位置指定 */
-    top: -1px; /* 枠線をフォームの上端に合わせる */
-    right: 149px; /* 枠線をフォームの右端に合わせる */
-    bottom: -1px; /* 枠線をフォームの下端に合わせる */
-    left: 149px; /* 枠線をフォームの左端に合わせる */
-    border: 2px solid #000; /* 黒色の枠線 */
-    pointer-events: none; /* 枠線がクリックイベントを奪わないようにする */
-    z-index: 10; /* 枠線をフォームの上に表示 */
-  }
-  
-  
-  .input-area {
+/* 枠線を追加するための擬似要素のスタイル */
+.input-container::before {
+    content: '';
+    /* 擬似要素にはcontentが必須 */
+    position: absolute;
+    /* 親要素(.form-container)に対して絶対位置指定 */
+    top: -1px;
+    /* 枠線をフォームの上端に合わせる */
+    right: 149px;
+    /* 枠線をフォームの右端に合わせる */
+    bottom: -1px;
+    /* 枠線をフォームの下端に合わせる */
+    left: 149px;
+    /* 枠線をフォームの左端に合わせる */
+    border: 2px solid #000;
+    /* 黒色の枠線 */
+    pointer-events: none;
+    /* 枠線がクリックイベントを奪わないようにする */
+    z-index: 10;
+    /* 枠線をフォームの上に表示 */
+}
+
+
+.input-area {
     width: 100%;
     height: 40px;
     padding-left: 15px;
-  }
-  
-  select {
+}
+
+select {
     width: 100%;
     height: 40px;
     padding-left: 15px;
-  }
-  
-  textarea {
+}
+
+textarea {
     width: 100%;
     height: 80px;
     padding-left: 15px;
-  }
-  
-  
-  
-  .bottom-container {
-    text-align: center;
-  }
+}
 
-  .bottom-container p{
+
+
+.bottom-container {
+    text-align: center;
+}
+
+.bottom-container p {
     margin-top: 50px;
-  }
+}
+
 /********** 同意チェックボックス **********/
 .agreement {
     display: flex;
@@ -995,16 +1045,16 @@ header nav {
     /* 垂直方向の中央に配置 */
     flex-direction: row;
     /* 横並びに配置 */
-  }
-  
-  .agreement input[type="checkbox"] {
+}
+
+.agreement input[type="checkbox"] {
     width: 40px;
     /* チェックボックスの幅を自動にしてデフォルトサイズを使用 */
     height: 40px;
     /* チェックボックスの高さを自動にしてデフォルトサイズを使用 */
 }
-  
-  .agreement label {
+
+.agreement label {
     cursor: pointer;
     /* カーソルをポインターに変更する */
     /* 不要なスタイルをリセット */
@@ -1013,7 +1063,7 @@ header nav {
     width: auto;
     /* コンテンツの幅に合わせる */
     margin: 0;
-  }
+}
 
 
 /********** 確認画面　レイアウト **********/
@@ -1024,38 +1074,38 @@ header nav {
     /* 水平方向の中央に配置 */
     align-items: center;
     /* 垂直方向の中央に配置 */
-  }
-  
-  #confirmationDetails {
+}
+
+#confirmationDetails {
     word-wrap: break-word;
     /* テキストを折り返す */
     max-width: 60%;
     /* 必要に応じてテキストの最大幅を設定 */
-  }
-  
+}
 
 
-  /********** 入力完了ページ　レイアウト **********/
+
+/********** 入力完了ページ　レイアウト **********/
 .input-complete {
     text-align: center;
     margin-bottom: 50px;
     font-weight: bold;
     font-size: 25px;
     letter-spacing: 1.5;
-  }
-  
-  .complete-text {
+}
+
+.complete-text {
     text-align: center;
     letter-spacing: 0.5;
-  }
-  
-  .container6 {
+}
+
+.container6 {
     display: flex;
     justify-content: center;
     align-items: center;
     margin-bottom: 50px;
     margin-top: 50px;
-  }
+}
 
 /**********　よくある質問ページ　レイアウト　**********/
 .last-text {
@@ -1109,7 +1159,7 @@ header nav {
 .base-price h3 {
     margin-top: 5%;
 }
- 
+
 .price-table {
     border: solid 2px black;
     border-collapse: collapse;
@@ -1120,10 +1170,11 @@ header nav {
 }
 
 /* 共通の行のスタイル */
-.price-row th, 
+.price-row th,
 .price-row td {
-  height: 70px; /* 高さを50pxに設定 */
-  border: solid 2px black;
+    height: 70px;
+    /* 高さを50pxに設定 */
+    border: solid 2px black;
 }
 
 .table-top {
@@ -1147,7 +1198,8 @@ header nav {
     justify-content: space-between;
 }
 
-.text-section, .img-section {
+.text-section,
+.img-section {
     flex: 1;
 }
 
@@ -1159,20 +1211,20 @@ header nav {
     white-space: nowrap;
 }
 
-.img-section img  {
+.img-section img {
     width: 100%;
     height: 500px;
     object-fit: contain;
 }
 
-.sample-box{
-    margin-bottom:4%;
+.sample-box {
+    margin-bottom: 4%;
 }
 
-.sample1{
+.sample1 {
     background-color: F8F8F8;
     border-radius: 15px;
-     padding: 0 0 50px 0;
+    padding: 0 0 50px 0;
     margin-top: 70px;
 }
 
@@ -1180,7 +1232,8 @@ header nav {
 /* テーブルコンテナ */
 .table-container {
     width: 100%;
-    max-width: 80%; /* 表の最大幅を変更 */
+    max-width: 80%;
+    /* 表の最大幅を変更 */
     margin: 0 auto;
     text-align: center;
     margin-top: 5%;
@@ -1191,17 +1244,21 @@ header nav {
 .info-table {
     width: 100%;
     height: 540px;
-    border-collapse: collapse; /* セルの境界線を1本に */
-    table-layout: fixed; /* 列幅を均等にする */
+    border-collapse: collapse;
+    /* セルの境界線を1本に */
+    table-layout: fixed;
+    /* 列幅を均等にする */
     /* テーブルの全体のボーダーを定義しない */
 }
 
 /* テーブルのヘッダーセル */
 .info-table th,
 .info-table td {
-    border: 2px solid #000; /* 全てのセルにボーダーを適用 */
+    border: 2px solid #000;
+    /* 全てのセルにボーダーを適用 */
     padding: 8px;
-    text-align: center; /* 中央寄せに */
+    text-align: center;
+    /* 中央寄せに */
 }
 
 /* 最初の列のセルの左側のボーダーを削除 */
@@ -1218,8 +1275,10 @@ header nav {
 
 /* テーブルのヘッダーセル */
 .info-table th {
-    background-color: #f5f5f5; /* 見出しの背景色を明るい灰色に */
-    font-weight: bold; /* 見出しを太字に */
+    background-color: #f5f5f5;
+    /* 見出しの背景色を明るい灰色に */
+    font-weight: bold;
+    /* 見出しを太字に */
 }
 
 .contact-spacing {
@@ -1231,110 +1290,259 @@ header nav {
 .content-area {
     margin-top: 105px;
     margin-bottom: 78px;
-    
     font-size: 33px;
 }
 
 
 .content-area a {
     font-size: 30px;
+    color: black;
+    text-decoration: auto;
+}
+
+.content-area a:hover {
+    opacity: 0.7;
+    transition: 0.5s;
+    color: #474747;
+}
+
+
+ul.news-list {
+    padding: 0.5em 9.5em;
+    margin: 2em 2em;
+    color: #474747;
+    background: whitesmoke;
+    /*背景色*/
+    border-left: double 7px #0bdd;
+    /*左線*/
+    border-right: double 7px #0bdd;
+    /*右線*/
+    ;
+}
+
+.news-list li {
+    padding: 12px 0;
+}
+
+.post-date-last {
+    position: absolute;
+    left: 176px;
+    font-size: 18px;
+    margin-top: -41px;
+}
+
+/********** お知らせ　レイアウト *********/
+
+.post-content {
+    font-size: 20px;
+    margin-top: -163px;
 }
 
 main#main-content {
     margin-top: 238px;
     margin-bottom: 78px;
-    text-align: center;
 }
 
 main#main-content h1 {
-    font-size: 30px;
+    font-size: 2em;
+    padding: 13px 42px;
+    position: relative;
+    top: -172px;
+    left: -5%;
 }
 
-/********** お役立ち情報　レイアウト *********/
-
-.post-content {
-    font-size: 20px;
+main#main-content h1:after {
+    content: '';
+    /* 必須: 疑似要素の内容 */
+    position: absolute;
+    /* 絶対位置指定: h1要素に対する相対位置 */
+    left: 37px;
+    /* h1要素の左端からの位置 */
+    bottom: 6px;
+    /* 下線の位置を調整 */
+    height: 2px;
+    /* 下線の厚み */
+    width: 80%;
+    /* ここで下線の長さを固定 */
+    background-color: #000;
+    /* 下線の色 */
 }
 
-.post-modified-info {
+.date-last-news {
+    position: absolute;
     font-size: 18px;
-    position: absolute;
-    top: 190px;
+    top: 200px;
+    left: 117px;
+    color: #0bdd;
+    font-weight: bold;
 }
 
-ul.news-list {
-    background-color: #e7e2e2dc;
-    height: auto;
-    margin-left: 70px;
-    margin-right: 70px;
-    border-radius: 30px;
-    padding-top: 50px;
-    padding-bottom: 50px;
-    padding-left: 30%;
+.news-box {
+    margin: 0 5em;
+    /* ボックスの余白 */
+    padding: 8em 2em 2em;
+    /* ボックス内側余白 */
+    position: relative;
+    /* 配置(ここを基準に)*/
 }
 
-.news-list li {
-    padding: 12px 0;
-  }
-
-  .post-date-last {
-    position: absolute;
-    left: 80px;
-    font-size: 15px;
-    margin-top: -45px;
-}
 /********** お役立ち情報　レイアウト *********/
-.page-title{
+.page-title {
     margin-top: 208px;
     text-align: center;
 }
 
-.entry-title{
+.entry-title {
     padding-left: 30%;
 }
 
+.entry-title a {
+    font-size: 30px;
+    color: black;
+    text-decoration: auto;
+}
+
+
 .entry-container {
-    background-color: #e7e2e2dc;
-    margin: 0 3% 50px 3%;
-    border-radius: 30px;
-    padding: 2% 0;
+    padding: 0.5em 9.5em;
+    margin: 2em 6em;
+    color: #474747;
+    background: whitesmoke;
+    border-left: double 7px #0bdd;
+    border-right: double 7px #0bdd;
 
 }
+
 /**********　フッター　レイアウト　**********/
 footer {
-    color: white;
-    background-color: gray;
+    background-color: #bdbdbd;
     height: auto;
+    padding: 5px 20px 40px 20px;
+    /* 必要に応じて余白を追加 */
+}
+
+.footer-container {
     display: flex;
+    width: 100%;
+    height: auto;
 }
 
-footer ul{
-    padding-inline-start: 17px;
-}
-
-footer p {
-    font-size: 18px;
-}
-
-footer li {
-    font-size: 14px;
-    padding-bottom: 15px;
-}
-
-footer li:hover {
-opacity: 0.7;
-transition: 0.5s;
-}
-
-
-.container1 {
+.footer-right {
+    flex: auto;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
     padding-left: 50px;
+    padding-top: 8%;
+}
+
+.container1,
+.container2,
+.container3 {
+    display: flex;
+    /* コンテナ内の要素を横並びにする */
+    flex-direction: column;
+    width: 210px;
+    align-self: flex-start;
+    /* 各要素を上揃えにする */
+}
+
+/* .container1 {
+    background-color: red;
 }
 
 .container2 {
-    padding-left: 140px;
+    background-color: blue;
 }
 
 .container3 {
-    padding-left: 110px;
+    background-color: green;
+} */
+
+/* .container1 ul {
+    padding-left: 60px;
+}
+
+.container2 ul {
+    padding-left: 76px;
+}
+
+.container3 ul {
+    padding-left: 13px;
+} */
+
+.footer-right ul {
+    list-style: none;
+    /* 箇条書きのマーカーを非表示にする */
+    display: flex;
+    /* コンテナ内の要素を横並びにする */
+    flex-direction: column;
+}
+
+.container-title {
+    font-size: 20px;
+    padding-bottom: 10px;
+    position: relative;
+}
+
+.container-title:after {
+    content: '';
+    /* 必須: 疑似要素の内容 */
+    position: absolute;
+    /* 絶対位置指定: h1要素に対する相対位置 */
+    left: -5px;
+    /* h1要素の左端からの位置 */
+    bottom: 6px;
+    /* 下線の位置を調整 */
+    height: 2px;
+    /* 下線の厚み */
+    width: 80%;
+    /* ここで下線の長さを固定 */
+    background-color: #000;
+    /* 下線の色 */
+}
+
+.container-list {
+    font-size: 14px;
+    padding-top: 5px;
+}
+
+.container-list:hover {
+    opacity: 0.7;
+    transition: 0.5s;
+}
+
+.footer-left {
+    flex: 0 0 200px;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    margin-left: 5%;
+}
+
+.footer-logo {
+    width: 100%;
+}
+
+.info-container {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 13px;
+    margin-left: 35%;
+}
+
+.sns-icon {
+    display: flex;
+    position: relative;
+    left: -14%;
+}
+
+.sns-icon img {
+    width: 30px;
+    /* 写真のように固定値で指定 */
+    height: auto;
+}
+
+.insta-logo {
+    padding-left: 25px;
 }

@@ -397,6 +397,6 @@ h2.policy:after {
 
 /**********　フッター　デコ　**********/
 footer a {
-    color: white; /* リンクの色を黒（または好みの色）に設定 */
+    color: black;
     text-decoration: none; /* 下線を消す */
 }

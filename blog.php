@@ -31,7 +31,7 @@ Template Name: blog
                         </header><!-- .entry-header -->
                         <?php
                         if (function_exists('get_the_last_modified_info')) {
-                            echo '<div class="post-date-last">最終更新日: ' . get_post_modified_time('Y年n月j日') . '</div>';
+                            echo '<div class="post-date-last">' . get_post_modified_time('Y.n.j') . '</div>';
                         }
                         ?>
                     </article><!-- #post-<?php the_ID(); ?> -->

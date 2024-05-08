@@ -58,15 +58,6 @@
   font-size: 180%; /* アイコンのサイズ */
 }
 
-.icon-container img {
-  width: 22%;
-  height: 62%;
-}
-
-i.fa-brands.fa-x-twitter {
-  font-size: 35px;
-}
-
 /**********　ハンバーガーボタン　**********/
 .hamburger-menu-container {
   height: auto;
@@ -182,6 +173,19 @@ i.fa-brands.fa-x-twitter {
 /* メニューの表示/非表示 */
 .menu-toggle:checked ~ .menu {
   transform: scaleY(1);
+}
+
+.sns-icon1 {
+  display: flex;
+  justify-content: center;
+  padding-top: 14%;
+  padding-left: 52%;
+}
+
+.sns-icon1 img {
+  width: 30px;
+  /* 写真のように固定値で指定 */
+  height: auto;
 }
 
 /**********　無料相談はこちら　ボタン　**********/
@@ -418,3 +422,15 @@ button {
   background: #fff; /* 背景色 */
   color: #4D9BC1; /* 文字色 */
 }
+
+/********** お知らせ一覧に戻る　ボタン **********/
+
+.news-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: auto;
+  margin-bottom: 30px;
+}
+
+/* これ以降はサンプル一覧へボタン、その他質問ボタンと一緒 */

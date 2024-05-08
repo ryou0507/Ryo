@@ -10,7 +10,7 @@ Template Name: blog
     <main id="main" class="site-main">
 
         <header class="page-header">
-            <h1 class="page-title">お役立ち情報</h1>
+            <h1 class="page-title">コラム</h1>
         </header><!-- .page-header -->
 
         <div class="entry-container"> <!-- コンテナをループの外に移動 -->

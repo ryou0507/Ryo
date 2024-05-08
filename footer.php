@@ -21,7 +21,7 @@
         <div class="container3">
             <p>〇お客様ページ</p>
             <ul>
-                <li><a href="<?php echo home_url(); ?>/blog">お役立ち情報</a></li>
+                <li><a href="<?php echo home_url(); ?>/blog">コラム</a></li>
                 <li><a href="<?php echo home_url(); ?>/inquiry">お問い合わせ</a></li>
             </ul>
         </div>

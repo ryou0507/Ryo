@@ -64,7 +64,7 @@
                             <li class="menu-option-top"><a></a></li>
                             <li class="menu-option"><a href="<?php echo home_url(); ?>/info">運営者概要</a></li>
                             <li class="menu-option"><a href="<?php echo home_url(); ?>/news-list">お知らせ</a></li>
-                            <li class="menu-option"><a href="<?php echo home_url(); ?>/blog">お役立ち情報</a></li>
+                            <li class="menu-option"><a href="<?php echo home_url(); ?>/blog">コラム</a></li>
                             <li class="menu-option"><a href="<?php echo home_url(); ?>/inquiry">お問い合わせ</a></li>
                         </ul>
                     </nav>
@@ -83,7 +83,7 @@
                         <i class="fa-brands fa-x-twitter"></i>
                     </a>
                     <img src="<?php echo esc_url( get_template_directory_uri() ); ?>/images/instagram-icon.svg" alt="画像の説明">
-                    </a>
+                
                     <!-- 電話アイコン -->
                     <a href="tel:08083874545" class="icon-link phone-icon">
                         <i class="fas fa-phone"></i>

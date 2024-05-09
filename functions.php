@@ -69,3 +69,4 @@ add_shortcode('news_list', 'custom_news_list_shortcode');
 if ( function_exists( 'add_theme_support' ) ) {
     add_theme_support( 'post-thumbnails' );
 }
+

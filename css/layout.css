@@ -16,12 +16,6 @@ html {
     /* 横方向のスクロールを隠す */
 }
 
-h3{
-    font-size: calc(2 * var(--font-size));
-}
-
-
-
 
 /*********** ヘッダーレイアウト **********/
 .header {
@@ -140,11 +134,10 @@ header nav {
 
 
 /* トップページ 共通*/
-.h2title {
+.h2title  {
     z-index: 0;
     position: relative;
     letter-spacing: 0;
-    font-size: calc(2.055 * var(--font-size));
 }
 
 .h2title:after {
@@ -1285,47 +1278,35 @@ textarea {
 .content-area {
     margin-top: 105px;
     margin-bottom: 78px;
-
+    
     font-size: 33px;
 }
 
 
 .content-area a {
     font-size: 30px;
+    color: black;
+    text-decoration: auto;
 }
 
-main#main-content {
-    margin-top: 238px;
-    margin-bottom: 78px;
-    text-align: center;
+.content-area a:hover {
+    opacity: 0.7;
+    transition: 0.5s;
+    color: #474747;
 }
 
-main#main-content h1 {
-    font-size: 30px;
-}
-
-/********** お役立ち情報　レイアウト *********/
-
-.post-content {
-    font-size: 20px;
-}
-
-p.post-modified-info {
-    font-size: 18px;
-    position: absolute;
-    top: 190px;
-    font-weight: 700;
-}
 
 ul.news-list {
-    background-color: #e7e2e2dc;
-    height: auto;
-    margin-left: 70px;
-    margin-right: 70px;
-    border-radius: 30px;
-    padding-top: 50px;
-    padding-bottom: 50px;
-    padding-left: 30%;
+    padding: 0.5em 9.5em;
+    margin: 2em 2em;
+    color: #474747;
+    background: whitesmoke;
+    /*背景色*/
+    border-left: double 7px #0bdd;
+    /*左線*/
+    border-right: double 7px #0bdd;
+    /*右線*/
+    ;
 }
 
 .news-list li {
@@ -1334,10 +1315,45 @@ ul.news-list {
 
 .post-date-last {
     position: absolute;
-    left: 80px;
-    font-size: 15px;
-    margin-top: -45px;
+    left: 176px;
+    font-size: 18px;
+    margin-top: -41px;
 }
+
+/********** お知らせ　レイアウト *********/
+
+.post-content {
+    font-size: 20px;
+    margin-top: -163px;
+}
+
+.post-modified-info {
+    font-size: 18px;
+    position: absolute;
+    top: 190px;
+}
+
+main#main-content h1 {
+    font-size: 2em;
+    padding: 13px 42px;
+    position: relative;
+    top: -172px;
+    left: -5%;
+}
+
+.news-list li {
+    padding: 12px 0;
+  }
+
+  .post-date-last {
+    position: absolute;
+    font-size: 18px;
+    top: 200px;
+    left: 117px;
+    color: #0bdd;
+    font-weight: bold;
+}
+
 
 /********** お役立ち情報　レイアウト *********/
 .page-title {
@@ -1349,49 +1365,153 @@ ul.news-list {
     padding-left: 30%;
 }
 
+.entry-title a {
+    font-size: 30px;
+    color: black;
+    text-decoration: auto;
+}
+
+
 .entry-container {
-    background-color: #e7e2e2dc;
-    margin: 0 3% 50px 3%;
-    border-radius: 30px;
-    padding: 2% 0;
+    padding: 0.5em 9.5em;
+    margin: 2em 6em;
+    color: #474747;
+    background: whitesmoke;
+    border-left: double 7px #0bdd;
+    border-right: double 7px #0bdd;
 
 }
 
 /**********　フッター　レイアウト　**********/
 footer {
-    color: white;
-    background-color: gray;
+    background-color: #bdbdbd;
     height: auto;
+    padding: 5px 20px 40px 20px;
+    /* 必要に応じて余白を追加 */
+}
+
+.footer-container {
     display: flex;
+    width: 100%;
+    height: auto;
 }
 
-footer ul {
-    padding-inline-start: 17px;
+.footer-right {
+    flex: auto;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding-left: 50px;
+    padding-top: 8%;
 }
 
-footer p {
-    font-size: 18px;
+.container1,
+.container2,
+.container3 {
+    display: flex;
+    /* コンテナ内の要素を横並びにする */
+    flex-direction: column;
+    width: 210px;
+    align-self: flex-start;
+    /* 各要素を上揃えにする */
 }
 
-footer li {
+/* .container1 {
+    background-color: red;
+}
+
+.container2 {
+    background-color: blue;
+}
+
+.container3 {
+    background-color: green;
+} */
+
+/* .container1 ul {
+    padding-left: 60px;
+}
+
+.container2 ul {
+    padding-left: 76px;
+}
+
+.container3 ul {
+    padding-left: 13px;
+} */
+
+.footer-right ul {
+    list-style: none;
+    /* 箇条書きのマーカーを非表示にする */
+    display: flex;
+    /* コンテナ内の要素を横並びにする */
+    flex-direction: column;
+}
+
+.container-title {
+    font-size: 20px;
+    padding-bottom: 10px;
+    position: relative;
+}
+
+.container-title:after {
+    content: '';
+    /* 必須: 疑似要素の内容 */
+    position: absolute;
+    /* 絶対位置指定: h1要素に対する相対位置 */
+    left: -5px;
+    /* h1要素の左端からの位置 */
+    bottom: 6px;
+    /* 下線の位置を調整 */
+    height: 2px;
+    /* 下線の厚み */
+    width: 80%;
+    /* ここで下線の長さを固定 */
+    background-color: #000;
+    /* 下線の色 */
+}
+
+.container-list {
     font-size: 14px;
-    padding-bottom: 15px;
+    padding-top: 5px;
 }
 
-footer li:hover {
+.container-list:hover {
     opacity: 0.7;
     transition: 0.5s;
 }
 
-
-.container1 {
-    padding-left: 50px;
+.footer-left {
+    flex: 0 0 200px;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    margin-left: 5%;
 }
 
-.container2 {
-    padding-left: 140px;
+.footer-logo {
+    width: 100%;
 }
 
-.container3 {
-    padding-left: 110px;
+.info-container {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 13px;
+    margin-left: 35%;
+}
+
+.sns-icon {
+    display: flex;
+    position: relative;
+    left: -14%;
+}
+
+.sns-icon img {
+    width: 30px;
+    /* 写真のように固定値で指定 */
+    height: auto;
+}
+
+.insta-logo {
+    padding-left: 25px;
 }

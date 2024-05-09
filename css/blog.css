@@ -1,3 +1,10 @@
+.post-modified-info {
+  font-size: 18px;
+  position: absolute;
+  top: 46%;
+}
+
+/**********  **********/
 .blog-content {
     margin-top: 180px;
     padding: 3% 0;

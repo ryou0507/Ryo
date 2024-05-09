@@ -146,11 +146,11 @@
     /*********** h2と下線 **********/
 
 
-    h2 {
+    .h2title {
         font-size: 4.9vw;
     }
 
-    h2:after {
+    .h2title:after {
         width: 99%;
         /* ここで下線の長さを固定 */
     }

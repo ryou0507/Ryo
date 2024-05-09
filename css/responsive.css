@@ -146,11 +146,10 @@
     /*********** h2と下線 **********/
 
 
-    h2 {
-        font-size: 4.9vw;
+    .h2title {
     }
 
-    h2:after {
+    .h2title:after {
         width: 99%;
         /* ここで下線の長さを固定 */
     }
@@ -243,7 +242,6 @@
         /* モバイルでの位置を調整 */
         transform: translateX(-50%);
         /* 位置補正 */
-        font-size: 7vw;
         /* フォントサイズを調整 */
     }
 
@@ -254,7 +252,6 @@
         /* 位置補正 */
         width: 80%;
         /* テキストブロックの幅を調整 */
-        font-size: 3vw;
         /* フォントサイズを調整 */
         white-space: nowrap;
     }
@@ -269,7 +266,6 @@
     .text {
         white-space: normal;
         /* テキストを折り返し表示 */
-        font-size: 1.8em;
         /* フォントサイズを大きく */
     }
 
@@ -284,7 +280,6 @@
         /* 文字を上に少し移動させる */
         display: inline-block;
         margin-right: 0.5em;
-        font-size: 2.4em;
     }
 }
 
@@ -339,12 +334,10 @@
     }
 
     .content-box h3 {
-        font-size: 4.9vw;
         /* h3タグのフォントサイズを大きく */
     }
 
     .content-box p {
-        font-size: 1.5em;
         /* pタグのフォントサイズを大きく */
     }
 
@@ -362,7 +355,6 @@
 /*********** サンプル レスポンシブ　縦向きかつ1000px以下に適用 **********/
 @media (max-width: 1000px) and (orientation: portrait) {
     .main-logo3 p {
-        font-size: 1.5em;
         /* pタグのフォントサイズを大きく */
     }
 
@@ -394,24 +386,20 @@
 /*********** 料金プラン レスポンシブ　縦向きかつ1000px以下に適用 **********/
 @media (max-width: 1000px) and (orientation: portrait) {
     .main-logo4 p {
-        font-size: 2.4vw;
     }
 
 
     .shapes-set p {
-        font-size: 5vw;
     }
 
     .container8 p,
     .container9 p,
     .container8 span,
     .container9 span {
-        font-size: 3vw;
     }
 
     .container8 ul,
     .container9 ul {
-        font-size: 2vw;
 
     }
 
@@ -439,7 +427,6 @@
         /* 幅を内容に応じて自動調整 */
         padding: 0 15%;
         /* ボタン内のパディングを増やし、テキストに余裕を持たせる */
-        font-size: 1.5vw;
         /* フォントサイズを大きく */
         margin-top: 30px;
         white-space: nowrap;
@@ -448,7 +435,6 @@
     .container6-1 span,
     .container6-2 span,
     .container6-3 span {
-        font-size: 100%;
         /* span内のテキストのフォントサイズを大きく */
     }
 
@@ -492,11 +478,9 @@
     }
 
     .text-box-option h3 {
-        font-size: 2.4em;
     }
 
     .text-box-option p {
-        font-size: 2.5em;
         margin-top: 0;
     }
 }
@@ -506,7 +490,6 @@
 /*********** 完成までの流れ レスポンシブ　縦向きかつ1000px以下に適用　**********/
 @media (max-width: 1000px) and (orientation: portrait) {
     h3.timeline-title {
-        font-size: 2.8em;
     }
 
     .mobile-break {
@@ -532,7 +515,6 @@
     }
 
     .timeline-content p {
-        font-size: 2em;
     }
 
 }
@@ -541,19 +523,15 @@
 /*********** よくある質問　レスポンシブ　縦向きかつ1000px以下に適用　**********/
 @media (max-width: 1000px) and (orientation: portrait) {
     .question-list {
-        font-size: 2em;
     }
 
     .question-item {
-        font-size: 1.5em;
     }
 
     .answer-item {
-        font-size: 2em;
     }
 
     .answer-list {
-        font-size: 1.5em;
     }
 
 }
@@ -605,7 +583,6 @@
     .plan-container1 h3,
     .plan-container2 h3,
     .plan-container3 h3 {
-        font-size: 1.7em;
     }
 
 }
@@ -613,16 +590,13 @@
 /*********** よくある質問ページ　レスポンシブ　縦向きかつ1000px以下に適用　**********/
 @media (max-width: 1000px) and (orientation: portrait) {
     .last-text {
-        font-size: 2.3em;
     }
 
     .answer-text {
-        font-size: 1.3em;
         padding-bottom: 40px;
     }
 
     .question-list {
-        font-size: 2.5em;
         padding-top: 40px;
     }
 

@@ -50,7 +50,7 @@ get_header(); // ヘッダーの読み込み
       <div class="input-container">
         <form id="contactForm">
           <div>
-            <label for="category" class="text-area">〇カテゴリー <span>必須</span></label><br>
+            <label for="category" class="text-area">〇カテゴリー <span>必須</span></label>
             <select name="category" id="category" required>
               <option value="">選択してください</option>
               <option value="inquiry">お問い合わせ</option>
@@ -59,36 +59,36 @@ get_header(); // ヘッダーの読み込み
             </select>
           </div>
           <div>
-            <label for="companyName" class="text-area">〇貴社名</label><br>
+            <label for="companyName" class="text-area">〇貴社名</label>
             <input class="input-area" type="text" id="companyName" name="companyName" placeholder="貴社のお名前を入力してください。">
           </div>
 
           <div>
-            <label for="companyNameKana" class="text-area">〇貴社名（フリガナ）</label><br>
+            <label for="companyNameKana" class="text-area">〇貴社名（フリガナ）</label>
             <input class="input-area" type="text" id="companyNameKana" name="companyNameKana" placeholder="貴社のお名前（フリガナ）を入力してください。">
           </div>
           <div>
-            <label for="contactName" class="text-area">〇担当者名 <span>必須</span></label><br>
+            <label for="contactName" class="text-area">〇担当者名 <span>必須</span></label>
             <input class="input-area" type="text" id="contactName" name="contactName" placeholder="担当者様のお名前を入力してください。" required>
           </div>
 
           <div>
-            <label for="contactNameKana" class="text-area">〇担当者名（フリガナ） <span>必須</span></label><br>
+            <label for="contactNameKana" class="text-area">〇担当者名（フリガナ） <span>必須</span></label>
             <input class="input-area" type="text" id="contactNameKana" name="contactNameKana" placeholder="担当者様のお名前（フリガナ）を入力してください。" 　required>
           </div>
 
           <div>
-            <label for="phone" class="text-area">〇電話番号 <span>必須</span></label><br>
+            <label for="phone" class="text-area">〇電話番号 <span>必須</span></label>
             <input class="input-area" type="tel" id="phone" name="phone" placeholder="ご連絡可能な電話番号を入力してください。" required>
           </div>
 
           <div>
-            <label for="email" class="text-area">〇メールアドレス <span>必須</span></label><br>
+            <label for="email" class="text-area">〇メールアドレス <span>必須</span></label>
             <input class="input-area" type="email" id="email" name="email" placeholder="ご連絡可能なメールアドレスを入力してください。" required>
           </div>
 
           <div>
-            <label for="inquiryDetails" class="text-area">〇お問い合わせ内容の詳細 <span>必須</span></label><br>
+            <label for="inquiryDetails" class="text-area">〇お問い合わせ内容の詳細 <span>必須</span></label>
             <textarea id="inquiryDetails" name="inquiryDetails" placeholder="例：ホームページが欲しいので無料相談したい。" required></textarea>
           </div>
         </form>

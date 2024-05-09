@@ -204,6 +204,7 @@ a.btn_25 {
 	background: black;
 	background-size: 400%;
 	color: #fff;
+
 }
 a.btn_25:hover::before {
   transform: scaleX(1);
@@ -211,10 +212,12 @@ a.btn_25:hover::before {
 a.btn_25:hover {
 	color: #fff;
 }
+
 a.btn_25 span {
   position: relative;
   z-index: 1;
   white-space: nowrap;
+
 }
 a.btn_25::before {
   content: '';

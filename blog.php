@@ -9,9 +9,9 @@ Template Name: blog
 <div id="primary" class="content-area-blog">
     <main id="main" class="site-main">
 
-        <header class="page-header">
-            <h1 class="page-title">コラム</h1>
-        </header><!-- .page-header -->
+    <div class="top-container">
+    <h1>コラム一覧</h1>
+</div>
 
         <div class="entry-container"> <!-- コンテナをループの外に移動 -->
             <?php
@@ -21,36 +21,51 @@ Template Name: blog
                 'posts_per_page' => 10 // 1ページに表示する投稿数
             ));
             if ($custom_query->have_posts()) :
+                $post_count = 0; // 追加したカウンター
                 while ($custom_query->have_posts()) : $custom_query->the_post();
-            ?>
+                    if ($post_count % 2 == 0) : ?>
+                        <div class="row"> <!-- 新しい行の開始 -->
+                        <?php endif; ?>
 
-                    <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-                        <header class="entry-header">
-                            <!-- タイトルをリンクとして表示 -->
-                            <h2 class="entry-title"><a href="<?php the_permalink(); ?>" rel="bookmark"><?php the_title(); ?></a></h2>
-                        </header><!-- .entry-header -->
-                        <?php
-                        if (function_exists('get_the_last_modified_info')) {
-                            echo '<div class="post-date-last">' . get_post_modified_time('Y.n.j') . '</div>';
-                        }
-                        ?>
-                    </article><!-- #post-<?php the_ID(); ?> -->
+                        <div class="column">
+                            <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
+                                <?php if (has_post_thumbnail()) : ?>
+                                    <div class="post-thumbnail">
+                                        <a href="<?php the_permalink(); ?>">
+                                            <?php the_post_thumbnail('custom-size'); ?>
+                                        </a>
+                                    </div>
+                                <?php endif; ?>
+                                <header class="entry-header">
+                                <?php
+                                if (function_exists('get_the_last_modified_info')) {
+                                    echo '<div class="column-date-last">' . get_post_modified_time('Y.n.j') . '</div>';
+                                }
+                                ?>
+                                    <h2 class="entry-title"><a href="<?php the_permalink(); ?>" rel="bookmark"><?php the_title(); ?></a></h2>
+                                </header><!-- .entry-header -->
+                                <div class="entry-content">
+                                    <?php echo wp_trim_words(get_the_content(), 40, '...'); ?>
+                                </div>
+                            </article><!-- #post-<?php the_ID(); ?> -->
+                        </div><!-- .column -->
 
-            <?php
-                endwhile; // End of the loop.
-                the_posts_navigation(); // 投稿のページネーション
-            else :
-                get_template_part('template-parts/content', 'none');
-            endif;
+                        <?php if ($post_count % 2 == 1 || $custom_query->current_post + 1 == $custom_query->post_count) : ?>
+                        </div> <!-- 行の終了 -->
+            <?php endif;
+                        $post_count++;
+                    endwhile;
+                    the_posts_navigation(); // 投稿のページネーション
+                else :
+                    get_template_part('template-parts/content', 'none');
+                endif;
 
-            // メインクエリのリセット
-            wp_reset_postdata();
+                // メインクエリのリセット
+                wp_reset_postdata();
             ?>
         </div> <!-- コンテナの終了 -->
 
     </main><!-- #main -->
 </div><!-- #primary -->
 
-<?php
-get_footer();
-?>
+<?php get_footer(); ?>

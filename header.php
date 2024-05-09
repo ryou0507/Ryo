@@ -64,16 +64,12 @@
                             <li class="menu-option-top"><a></a></li>
                             <li class="menu-option"><a href="<?php echo home_url(); ?>/info">運営者概要</a></li>
                             <li class="menu-option"><a href="<?php echo home_url(); ?>/news-list">お知らせ</a></li>
-                            <li class="menu-option"><a href="<?php echo home_url(); ?>/blog">コラム</a></li>
+                            <li class="menu-option"><a href="<?php echo home_url(); ?>/blog">お役立ち情報</a></li>
                             <li class="menu-option"><a href="<?php echo home_url(); ?>/inquiry">お問い合わせ</a></li>
                         </ul>
                         <div class="sns-icon1">
-                        <a href="https://twitter.com/homcri_web" target="_blank" rel="noopener noreferrer">    
                             <img class="X-logo" src="<?php echo esc_url(get_template_directory_uri()); ?>/images/X-icon.png" alt="Xのアイコン">
-                        </a>
-                        <a href="https://www.instagram.com/homcri_web/" target="_blank" rel="noopener noreferrer">
                             <img class="insta-logo" src="<?php echo esc_url(get_template_directory_uri()); ?>/images/instagram-icon.svg" alt="インスタグラムのアイコン">
-                        </a>
                         </div>
                     </nav>
                 </div>

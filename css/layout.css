@@ -173,7 +173,7 @@ header nav {
     white-space: nowrap;
     /* テキストを改行せずに一行で表示 */
     /* タイトルは基本の2倍 */
-    font-size: calc(3 * var(--font-size));
+    font-size:5vw;
 }
 
 .top-wrapper span {
@@ -949,73 +949,71 @@ header nav {
 
 
 /********** 入力フォーム　レイアウト **********/
+.input-container {
+    margin-top: 10px;
+    height: auto;
+    padding: 0px; /* 左右に30pxずつ余白を追加 */
+    max-width: 600px; /* フォーム全体の幅を固定、必要に応じて調整 */
+    margin-left: auto; /* 中央寄せ */
+    margin-right: auto; /* 中央寄せ */
+    position: relative;
+}
+
+.input-container::before {
+    content: '';
+    position: absolute;
+    top: -1px;
+    right: -1px;
+    bottom: -1px;
+    left: -1px;
+    border: 2px solid #000;
+    pointer-events: none;
+    z-index: 10;
+}
+
+.input-area, select, textarea {
+    border: 2px solid #d7d9da; /* 新しい枠線の色を指定 */
+    border-radius: 4px; /* 角を少し丸くする（任意） */
+    padding: 8px 10px; /* 内側のパディングを調整 */
+    margin-top: 5px;
+    width: 100%;
+}
+
+
+.text-area {
+    display: block; /* ラベルをブロック要素に */
+    font-size: 15px;
+    width: 97%;
+    background-color: #D3D3D3;
+    padding: 15px 10px; /* パディングの調整 */
+}
+
+.input-area {
+    width: 85%;
+    height: 40px;
+    padding: 5px 10px; /* パディングを調整 */
+    margin: 3% 5%;
+}
+
+select {
+    width: 30%;
+    height: 40px;
+    padding: 5px 10px; /* パディングを調整 */
+    margin: 3% 5%;
+}
+
+textarea {
+    width: 85%;
+    height: 120px;
+    padding: 5px 10px; /* パディングを調整 */
+    margin: 3% 5%;
+    resize: none;
+}
+
 .input-container span {
     color: red;
     font-size: 12px;
 }
-
-.text-area {
-    display: inline-block;
-    font-size: 15px;
-    border-bottom: solid 1px black;
-    border-top: solid 1px black;
-    width: 98.3%;
-    background-color: #D3D3D3;
-    padding-top: 5px;
-    padding-bottom: 5px;
-    padding-left: 15px;
-}
-
-
-.input-container {
-    margin-top: 10px;
-    height: auto;
-    padding: 0 150px;
-    position: relative;
-}
-
-/* 枠線を追加するための擬似要素のスタイル */
-.input-container::before {
-    content: '';
-    /* 擬似要素にはcontentが必須 */
-    position: absolute;
-    /* 親要素(.form-container)に対して絶対位置指定 */
-    top: -1px;
-    /* 枠線をフォームの上端に合わせる */
-    right: 149px;
-    /* 枠線をフォームの右端に合わせる */
-    bottom: -1px;
-    /* 枠線をフォームの下端に合わせる */
-    left: 149px;
-    /* 枠線をフォームの左端に合わせる */
-    border: 2px solid #000;
-    /* 黒色の枠線 */
-    pointer-events: none;
-    /* 枠線がクリックイベントを奪わないようにする */
-    z-index: 10;
-    /* 枠線をフォームの上に表示 */
-}
-
-
-.input-area {
-    width: 100%;
-    height: 40px;
-    padding-left: 15px;
-}
-
-select {
-    width: 100%;
-    height: 40px;
-    padding-left: 15px;
-}
-
-textarea {
-    width: 100%;
-    height: 80px;
-    padding-left: 15px;
-}
-
-
 
 .bottom-container {
     text-align: center;
@@ -1024,6 +1022,7 @@ textarea {
 .bottom-container p {
     margin-top: 50px;
 }
+
 
 /********** 同意チェックボックス **********/
 .agreement {
@@ -1474,10 +1473,12 @@ footer {
 .container-list {
     font-size: 14px;
     padding-top: 5px;
+    padding-bottom: 10px;
+    font-weight: 400;
 }
 
 .container-list:hover {
-    opacity: 0.7;
+    opacity: 0.6;
     transition: 0.5s;
 }
 

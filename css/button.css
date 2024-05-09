@@ -204,7 +204,6 @@ a.btn_25 {
 	background: black;
 	background-size: 400%;
 	color: #fff;
-
 }
 a.btn_25:hover::before {
   transform: scaleX(1);
@@ -212,12 +211,10 @@ a.btn_25:hover::before {
 a.btn_25:hover {
 	color: #fff;
 }
-
 a.btn_25 span {
   position: relative;
   z-index: 1;
   white-space: nowrap;
-
 }
 a.btn_25::before {
   content: '';
@@ -434,6 +431,16 @@ button {
   align-items: center;
   height: auto;
   margin-bottom: 30px;
+}
+
+/********** コラム一覧に戻るボタン **********/
+
+.column-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: auto;
+  margin-top: 70px;
 }
 
 /* これ以降はサンプル一覧へボタン、その他質問ボタンと一緒 */

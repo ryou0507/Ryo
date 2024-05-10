@@ -79,7 +79,7 @@
                 </div>
             </div>
             <div class="center">
-                <a href="index.html">
+                <a href="<?php echo home_url('/'); ?>">
                     <img src="<?php echo esc_url(get_template_directory_uri()); ?>/images/homcri-logo.jpg" alt="ホームページ制作ならホムクリのロゴ">
                 </a>
             </div>
@@ -103,7 +103,7 @@
         <header class="site-header">
             <nav class="header-bottom">
                 <ul>
-                    <li><a href="index.html">TOP </a></li>
+                    <li><a href="<?php echo home_url('/'); ?>">トップページ</a></li>
                     <li><a href="#flow">依頼の流れ </a></li>
                     <li><a href="<?php echo home_url(); ?>/pricing">料金表</a></li>
                     <li><a href="<?php echo home_url(); ?>/sample">サンプル一覧 </a></li>

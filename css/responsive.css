@@ -778,6 +778,22 @@
     .row {
         flex-direction: column;
     }
+
+    .column {
+        margin: 3% 2.5%;
+    }
+
+    .entry-title a {
+        font-size: 50px;
+    }
+
+    .entry-content {
+        font-size: 22px;
+    }
+
+    .column-date-last {
+        font-size: 30px;
+    }
 }
 
 @media (max-width: 600px) {
@@ -785,6 +801,54 @@
       aspect-ratio: 2 / 1; /* スマートフォンなどの狭い画面では異なるアスペクト比を設定することもできます */
     }
   }
+
+/********** お知らせ一覧ページ　レスポンシブ　縦向きかつ1000px以下に適用 **********/
+@media (max-width: 1000px) and (orientation: portrait) {
+    ul.news-list {
+        padding: 0.5em 0;
+        margin: 2em 0.8em;
+    }
+
+    .column_btn {
+        right: 60px;
+    }
+
+    .post-date-last {
+        left: 47px;
+        font-size: 25px;
+        margin-top: -155px;
+    }
+
+    .content-area p {
+        font-size: 20px;
+    }
+
+    .content-area a {
+        font-size: 40px;
+    }
+}
+
+/********** お知らせページ　レスポンシブ　縦向きかつ1000px以下に適用 **********/
+@media (max-width: 1000px) and (orientation: portrait) {
+    .date-last-news {
+        top: 280px;
+        font-size: 25px;
+    }
+
+    .post-content {
+        margin-top: -95px;
+        font-size: 30px;
+    }
+
+    main#main-content h1 {
+        top: -85px;
+        font-size: 50px;
+    }
+
+    main#main-content h1:after {
+        width: 100%;
+    }
+}
 
 /*********** フッター　レスポンシブ　縦向きかつ1000px以下に適用　**********/
 /* @media (max-width: 1000px) and (orientation: portrait) { */

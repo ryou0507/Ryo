@@ -436,4 +436,14 @@ button {
   margin-bottom: 30px;
 }
 
+/********** コラム一覧に戻る　ボタン **********/
+.column-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: auto;
+  margin-bottom: 30px;
+  margin-top: 30px;
+}
+
 /* これ以降はサンプル一覧へボタン、その他質問ボタンと一緒 */

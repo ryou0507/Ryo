@@ -11,7 +11,7 @@
                 <img class="X-logo" src="<?php echo esc_url(get_template_directory_uri()); ?>/images/X-icon.png" alt="Xのアイコン" >
             </a>
             <a href="https://www.instagram.com/homcri_web/" target="_blank" rel="noopener noreferrer">
-                <img class="insta-logo" src="<?php echo esc_url(get_template_directory_uri()); ?>/images/instagram-icon.svg" alt="インスタグラムのアイコン">
+                <img class="insta-logo" src="<?php echo esc_url(get_template_directory_uri()); ?>/images/insta.png" alt="インスタグラムのアイコン">
             </a>
             </div>
         </div>

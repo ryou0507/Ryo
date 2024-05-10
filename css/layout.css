@@ -127,7 +127,7 @@ header nav {
     /* アンダーラインを非表示 */
     padding: 0 35px;
     /* 左右のパディング */
-    border-bottom: 2px solid white;
+    border-bottom: 2px solid transparent;
     /* 下線を白色に */
 }
 
@@ -1582,11 +1582,16 @@ footer {
 }
 
 .sns-icon img {
-    width: 30px;
-    /* 写真のように固定値で指定 */
     height: auto;
 }
 
 .insta-logo {
     padding-left: 25px;
+    width: 47px;
+    flex: 1;
+}
+
+.X-logo {
+    width: 30px;
+    flex: 1;
 }

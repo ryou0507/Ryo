@@ -955,7 +955,14 @@
 
     .sns-icon img {
         margin: 0 10px; /* SNSアイコン同士の余白 */
+    }
+
+    .X-logo {
         width: 56px;
+    }
+
+    .insta-logo {
+        width: 86px;
     }
 
 .container-title{

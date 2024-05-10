@@ -867,7 +867,7 @@ header nav {
     position: absolute;
     top: 71%;
     /* 円の右側中央から始める */
-    width: 880px;
+    width: 190%;
     /* 必要に応じて調整 */
     border-top: 10px solid #87CEFA;
     /* 線の色と太さ */
@@ -968,7 +968,7 @@ header nav {
     margin-top: 10px;
     height: auto;
     padding: 0px; /* 左右に30pxずつ余白を追加 */
-    max-width: 600px; /* フォーム全体の幅を固定、必要に応じて調整 */
+    max-width: 770px; /* フォーム全体の幅を固定、必要に応じて調整 */
     margin-left: auto; /* 中央寄せ */
     margin-right: auto; /* 中央寄せ */
     position: relative;
@@ -998,7 +998,7 @@ header nav {
 .text-area {
     display: block; /* ラベルをブロック要素に */
     font-size: 15px;
-    width: 97%;
+    width: 751px;
     background-color: #D3D3D3;
     padding: 15px 10px; /* パディングの調整 */
 }
@@ -1011,7 +1011,7 @@ header nav {
 }
 
 select {
-    width: 30%;
+    width: 40%;
     height: 40px;
     padding: 5px 10px; /* パディングを調整 */
     margin: 3% 5%;

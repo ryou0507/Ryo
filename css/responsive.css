@@ -665,6 +665,12 @@
     .input-container {
         padding: 0 20px;
         /* モバイル表示の時のサイドパディングを調整 */
+        margin: 10px auto 0 auto;
+        max-width: 882px; /* フォーム全体の幅を固定、必要に応じて調整 */
+    }
+
+    .text-area {
+        width: 861px;
     }
 
     input,

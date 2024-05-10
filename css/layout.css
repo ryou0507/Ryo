@@ -1291,16 +1291,17 @@ textarea {
 /********** お知らせ一覧ページ　レイアウト *********/
 .content-area {
     margin-top: 105px;
-    margin-bottom: 78px;
+    margin-bottom: 105px;
     
     font-size: 33px;
 }
 
 
 .content-area a {
-    font-size: 30px;
+    font-size: 18px;
     color: black;
     text-decoration: auto;
+    font-weight: 700;
 }
 
 .content-area a:hover {
@@ -1309,29 +1310,39 @@ textarea {
     color: #474747;
 }
 
+.content-area p {
+    font-size: 18px;
+}
+
 
 ul.news-list {
-    padding: 0.5em 9.5em;
+    padding: 0.5em 3.5em;
     margin: 2em 2em;
     color: #474747;
-    background: whitesmoke;
-    /*背景色*/
-    border-left: double 7px #0bdd;
-    /*左線*/
-    border-right: double 7px #0bdd;
-    /*右線*/
-    ;
 }
 
 .news-list li {
-    padding: 12px 0;
+    padding: 12px 46px;
+    text-align: center;
+    background: whitesmoke;
+    border: 1px solid #EEEEEE;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+.column_btn {
+    position: absolute;
+    margin-top: -100px;
+    right: 200px;
 }
 
 .post-date-last {
     position: absolute;
-    left: 176px;
-    font-size: 18px;
-    margin-top: -48px;
+    left: 220px;
+    font-size: 15px;
+    margin-top: -90px;
+    color: #0bdd;
+    font-weight: 700;
 }
 
 /********** お知らせ　レイアウト *********/
@@ -1389,7 +1400,7 @@ main#main-content h1:after {
     /* 配置(ここを基準に)*/
 }
 
-/********** お役立ち情報　レイアウト *********/
+/********** お役立ち情報一覧　レイアウト *********/
 
 .entry-title {
     margin-top: 70px;
@@ -1398,7 +1409,7 @@ main#main-content h1:after {
 .entry-title a {
     font-size: 25px;
     color: black;
-    text-decoration: auto;
+    text-decoration: none;
 }
 
 
@@ -1425,7 +1436,13 @@ main#main-content h1:after {
 .column {
     flex: 0 0 45%; /* 各カラムを画面の約半分の幅で表示 */
     margin: 0 2.5%; /* 左右にマージンを追加 */
-    background: whitesmoke;
+}
+
+.entry-box {
+    border: 1px solid #EEEEEE;
+    border-top: none; /* 上辺のボーダーを削除 */
+    border-radius: 0 0 10px 10px;
+    padding: 0 10px 20px 10px;
 }
 
 .post-thumbnail img {

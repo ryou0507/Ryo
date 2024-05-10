@@ -36,6 +36,7 @@ Template Name: blog
                                         </a>
                                     </div>
                                 <?php endif; ?>
+                                <div class="entry-box">
                                 <header class="entry-header">
                                 <?php
                                 if (function_exists('get_the_last_modified_info')) {
@@ -46,6 +47,7 @@ Template Name: blog
                                 </header><!-- .entry-header -->
                                 <div class="entry-content">
                                     <?php echo wp_trim_words(get_the_content(), 40, '...'); ?>
+                                </div>
                                 </div>
                             </article><!-- #post-<?php the_ID(); ?> -->
                         </div><!-- .column -->

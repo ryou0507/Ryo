@@ -183,9 +183,22 @@
 }
 
 .sns-icon1 img {
-  width: 30px;
-  /* 写真のように固定値で指定 */
   height: auto;
+}
+
+.X-logo-hamburger {
+  position: relative;
+  width: 30px;
+  top: -5px;
+  left: -40px;
+}
+
+
+.insta-logo-hamburger {
+  position: relative;
+    width: 40px;
+    top: -10px;
+    left: -5px;
 }
 
 /**********　無料相談はこちら　ボタン　**********/

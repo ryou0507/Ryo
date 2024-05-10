@@ -5,7 +5,7 @@
     .menu-icon {
         top: 4.5% !important;
         width: 5%;
-        
+
     }
 
     .menu-icon-line {
@@ -31,7 +31,7 @@
         height: 770%;
     }
 
-    .menu-option-top{
+    .menu-option-top {
         height: 5%;
     }
 
@@ -42,7 +42,7 @@
 
 /*********** お問い合わせフォームページ　レスポンシブ　縦向きかつ1080px以下かつ高さが500px以上に適用　**********/
 @media (max-width: 1080px) and (min-height: 500px) {
-    .menu-icon{
+    .menu-icon {
         top: 58px;
     }
 }
@@ -110,9 +110,11 @@
     .header-bottom ul li a {
         font-size: 3.2vw;
         /* ナビゲーションテキストのフォントサイズを大きくする */
-        padding: 10px 15px;
+        padding: 3px 15px;
         /* パディングを調整してタップしやすくする */
     }
+
+    
 
 
     /*********** ヘッダーお問い合わせボタン  **********/
@@ -123,6 +125,23 @@
         /* アイコンのサイズ */
     }
 
+}
+
+/********** ハンバーガー　SNSアイコン　レスポンシブ ***********/
+@media (max-width: 1000px) and (orientation: portrait) {
+    .X-logo-hamburger {
+        position: absolute;
+        top: 359px;
+        left: 129px;
+        width: 70px;
+    }
+
+    .insta-logo-hamburger {
+        position: absolute;
+        top: 353px;
+        left: 250px;
+        width: 80px;
+    }
 }
 
 
@@ -175,8 +194,8 @@
         font-size: 1.5em;
         /* スパン内のテキストサイズを大きく（もし必要なら） */
     }
-    
- 
+
+
 
     /***********サンプル一覧、料金一覧、その他質問はこちらボタン **********/
 
@@ -453,10 +472,10 @@
     }
 
     .rectangle1 ul,
-.rectangle2 ul,
-.rectangle3 ul {
-    padding-inline-start: 40px;
-}
+    .rectangle2 ul,
+    .rectangle3 ul {
+        padding-inline-start: 40px;
+    }
 }
 
 
@@ -666,7 +685,8 @@
         padding: 0 20px;
         /* モバイル表示の時のサイドパディングを調整 */
         margin: 10px auto 0 auto;
-        max-width: 882px; /* フォーム全体の幅を固定、必要に応じて調整 */
+        max-width: 882px;
+        /* フォーム全体の幅を固定、必要に応じて調整 */
     }
 
     .text-area {
@@ -767,7 +787,7 @@
 
 /*********** 運営者概要　レスポンシブ　縦向きかつ1000px以下に適用　**********/
 @media (max-width: 1000px) and (orientation: portrait) {
-    .info-table{
+    .info-table {
         font-size: 3vw;
         height: 900px;
     }
@@ -775,7 +795,8 @@
 
 
     .table-container {
-        max-width: 100%; /* 表の最大幅を変更 */
+        max-width: 100%;
+        /* 表の最大幅を変更 */
     }
 }
 
@@ -804,9 +825,10 @@
 
 @media (max-width: 600px) {
     .post-thumbnail img {
-      aspect-ratio: 2 / 1; /* スマートフォンなどの狭い画面では異なるアスペクト比を設定することもできます */
+        aspect-ratio: 2 / 1;
+        /* スマートフォンなどの狭い画面では異なるアスペクト比を設定することもできます */
     }
-  }
+}
 
 /********** お知らせ一覧ページ　レスポンシブ　縦向きかつ1000px以下に適用 **********/
 @media (max-width: 1000px) and (orientation: portrait) {
@@ -858,41 +880,41 @@
 
 /*********** フッター　レスポンシブ　縦向きかつ1000px以下に適用　**********/
 /* @media (max-width: 1000px) and (orientation: portrait) { */
-    /* footer p {
+/* footer p {
         font-size: 1.7em;
     } */
 
-    /* footer li {
+/* footer li {
         font-size: 1.7em;
         padding-bottom: 20px;
     } */
 
-    /* footer { */
-        /* flex-wrap: wrap; */
-        /* アイテムが折り返し可能になる */
-        /* justify-content: flex-start; */
-        /* アイテムをコンテナの開始端に揃える */
-    /* } */
+/* footer { */
+/* flex-wrap: wrap; */
+/* アイテムが折り返し可能になる */
+/* justify-content: flex-start; */
+/* アイテムをコンテナの開始端に揃える */
+/* } */
 
-    /* footer .container1, */
-    /* footer .container2 { */
-        /* width: 38%; */
-        /* 2つのアイテムが横に収まるように設定 */
-        /* padding-right: 2% */
-        /* 余白を設けるためのパディング */
-    /* } */
+/* footer .container1, */
+/* footer .container2 { */
+/* width: 38%; */
+/* 2つのアイテムが横に収まるように設定 */
+/* padding-right: 2% */
+/* 余白を設けるためのパディング */
+/* } */
 
-    /* footer .container3 { */
-        /* width: 96%; */
-        /* 3つ目のアイテムを2つの合計幅に合わせる */
-        /* padding-top: 20px; */
-        /* 上にスペースを設ける */
-        /* padding-right: 0; */
-        /* パディングリセット */
-        /* box-sizing: border-box; */
-        /* パディングとボーダーを幅に含める */
-        /* padding-left: 50px; */
-    /* } */
+/* footer .container3 { */
+/* width: 96%; */
+/* 3つ目のアイテムを2つの合計幅に合わせる */
+/* padding-top: 20px; */
+/* 上にスペースを設ける */
+/* padding-right: 0; */
+/* パディングリセット */
+/* box-sizing: border-box; */
+/* パディングとボーダーを幅に含める */
+/* padding-left: 50px; */
+/* } */
 
 
 
@@ -901,7 +923,8 @@
 @media screen and (max-width: 1000px) {
     .footer-container {
         display: flex;
-        flex-direction: column; /* それぞれのセクションを縦積みにする */
+        flex-direction: column;
+        /* それぞれのセクションを縦積みにする */
         align-items: center;
         width: 100%;
     }
@@ -909,37 +932,45 @@
     /* 主要セクション（事業概要、運営情報、お客様ページ）を最上部に横並びで配置 */
     .footer-right {
         display: flex;
-        flex-direction: row; /* 横並びにする */
+        flex-direction: row;
+        /* 横並びにする */
         justify-content: space-around;
         width: 100%;
         margin-top: 20px;
         padding-left: 0;
         flex-wrap: wrap;
-        order: 1; /* 最上部に配置 */
+        order: 1;
+        /* 最上部に配置 */
     }
 
-    .footer-right ul{
+    .footer-right ul {
         padding-inline-start: 0;
     }
 
     /* その下に連絡先情報とロゴを横並びで配置 */
     .footer-left {
         display: flex;
-        flex-direction: row; /* 横並びにする */
+        flex-direction: row;
+        /* 横並びにする */
         justify-content: space-between;
         align-items: center;
-        width: 90%; /* 幅を狭めて中央に寄せる */
+        width: 90%;
+        /* 幅を狭めて中央に寄せる */
         margin-top: 20px;
-        margin-bottom: 20px; /* SNSアイコンとの間に余白を設ける */
+        margin-bottom: 20px;
+        /* SNSアイコンとの間に余白を設ける */
         margin-left: 0;
-        order: 2; /* 2番目に配置 */
+        order: 2;
+        /* 2番目に配置 */
     }
 
     .footer-logo {
-        width: 50%; /* 必要に応じてサイズを調整 */
+        width: 50%;
+        /* 必要に応じてサイズを調整 */
         max-width: 260px;
         height: auto;
-        margin-right: 20px; /* 右端にスペースを確保する */
+        margin-right: 20px;
+        /* 右端にスペースを確保する */
     }
 
     .info-container {
@@ -954,52 +985,60 @@
         width: 100%;
         display: flex;
         justify-content: center;
-        margin-top: 15px; /* ロゴと連絡先情報の下に十分な余白を設ける */
+        margin-top: 15px;
+        /* ロゴと連絡先情報の下に十分な余白を設ける */
         left: 3%;
-        order: 3; /* 最下部に配置 */
+        order: 3;
+        /* 最下部に配置 */
     }
 
     .sns-icon img {
-        margin: 0 10px; /* SNSアイコン同士の余白 */
+        margin: 0 10px;
+        /* SNSアイコン同士の余白 */
     }
 
     .X-logo {
-        width: 56px;
+        width: 62px;
+        bottom: -3px;
+        right: 80px;
+        position: absolute;
     }
 
     .insta-logo {
-        width: 86px;
+        width: 73px;
+        bottom: -3px;
+        right: -27px;
     }
 
-.container-title{
-    font-size: 35px;
-    white-space: nowrap;
-}
+    .container-title {
+        font-size: 35px;
+        white-space: nowrap;
+    }
 
-.container-title:after {
-    content: '';
-    /* 必須: 疑似要素の内容 */
-    position: absolute;
-    /* 絶対位置指定: h1要素に対する相対位置 */
-    left: -5px;
-    /* h1要素の左端からの位置 */
-    bottom: 7px;
-    /* 下線の位置を調整 */
-    height: 2px;
-    /* 下線の厚み */
-    width: 106%;
-    /* ここで下線の長さを固定 */
-    background-color: #000;
-    /* 下線の色 */
-}
+    .container-title:after {
+        content: '';
+        /* 必須: 疑似要素の内容 */
+        position: absolute;
+        /* 絶対位置指定: h1要素に対する相対位置 */
+        left: -5px;
+        /* h1要素の左端からの位置 */
+        bottom: 7px;
+        /* 下線の位置を調整 */
+        height: 2px;
+        /* 下線の厚み */
+        width: 106%;
+        /* ここで下線の長さを固定 */
+        background-color: #000;
+        /* 下線の色 */
+    }
 
-.container-list{
-    font-size: 25px;
-    padding-bottom: 20px;
-}
+    .container-list {
+        font-size: 25px;
+        padding-bottom: 20px;
+    }
 
-.info-container{
-    font-size: 25px;
-}
+    .info-container {
+        font-size: 25px;
+    }
 
 }

@@ -103,7 +103,7 @@
         <header class="site-header">
             <nav class="header-bottom">
                 <ul>
-                    <li><a href="<?php echo home_url('/'); ?>">トップページ</a></li>
+                    <li><a href="<?php echo home_url('/'); ?>">TOP</a></li>
                     <li><a href="#flow">依頼の流れ </a></li>
                     <li><a href="<?php echo home_url(); ?>/pricing">料金表</a></li>
                     <li><a href="<?php echo home_url(); ?>/sample">サンプル一覧 </a></li>

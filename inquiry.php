@@ -46,7 +46,7 @@ get_header(); // ヘッダーの読み込み
       </div>
     </div>
 
-    <div class="main">
+
       <div class="input-container">
         <form id="contactForm">
           <div>
@@ -107,7 +107,7 @@ get_header(); // ヘッダーの読み込み
       <div class="button1">
         <button type="button" id="goToConfirmation">入力確認へ</button>
       </div>
-    </div>
+    
 
 
     <script>

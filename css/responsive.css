@@ -827,3 +827,102 @@
 
 
 /* } */
+
+@media screen and (max-width: 1000px) {
+    .footer-container {
+        display: flex;
+        flex-direction: column; /* それぞれのセクションを縦積みにする */
+        align-items: center;
+        width: 100%;
+    }
+
+    /* 主要セクション（事業概要、運営情報、お客様ページ）を最上部に横並びで配置 */
+    .footer-right {
+        display: flex;
+        flex-direction: row; /* 横並びにする */
+        justify-content: space-around;
+        width: 100%;
+        margin-top: 20px;
+        padding-left: 0;
+        flex-wrap: wrap;
+        order: 1; /* 最上部に配置 */
+    }
+
+    .footer-right ul{
+        padding-inline-start: 0;
+    }
+
+    /* その下に連絡先情報とロゴを横並びで配置 */
+    .footer-left {
+        display: flex;
+        flex-direction: row; /* 横並びにする */
+        justify-content: space-between;
+        align-items: center;
+        width: 90%; /* 幅を狭めて中央に寄せる */
+        margin-top: 20px;
+        margin-bottom: 20px; /* SNSアイコンとの間に余白を設ける */
+        margin-left: 0;
+        order: 2; /* 2番目に配置 */
+    }
+
+    .footer-logo {
+        width: 50%; /* 必要に応じてサイズを調整 */
+        max-width: 260px;
+        height: auto;
+        margin-right: 20px; /* 右端にスペースを確保する */
+    }
+
+    .info-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin-left: 28px;
+    }
+
+    /* SNSアイコンを最下部に独立した行で配置 */
+    .sns-icon {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        margin-top: 15px; /* ロゴと連絡先情報の下に十分な余白を設ける */
+        left: 3%;
+        order: 3; /* 最下部に配置 */
+    }
+
+    .sns-icon img {
+        margin: 0 10px; /* SNSアイコン同士の余白 */
+        width: 56px;
+    }
+
+.container-title{
+    font-size: 35px;
+    white-space: nowrap;
+}
+
+.container-title:after {
+    content: '';
+    /* 必須: 疑似要素の内容 */
+    position: absolute;
+    /* 絶対位置指定: h1要素に対する相対位置 */
+    left: -5px;
+    /* h1要素の左端からの位置 */
+    bottom: 7px;
+    /* 下線の位置を調整 */
+    height: 2px;
+    /* 下線の厚み */
+    width: 106%;
+    /* ここで下線の長さを固定 */
+    background-color: #000;
+    /* 下線の色 */
+}
+
+.container-list{
+    font-size: 25px;
+    padding-bottom: 20px;
+}
+
+.info-container{
+    font-size: 25px;
+}
+
+}

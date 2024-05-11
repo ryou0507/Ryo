@@ -131,16 +131,16 @@
 @media (max-width: 1000px) and (orientation: portrait) {
     .X-logo-hamburger {
         position: absolute;
-        top: 359px;
-        left: 129px;
-        width: 70px;
+        top: 362px;
+        left: 159px;
+        width: 48px;
     }
 
     .insta-logo-hamburger {
         position: absolute;
         top: 353px;
         left: 250px;
-        width: 80px;
+        width: 60px;
     }
 }
 

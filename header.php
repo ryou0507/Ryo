@@ -71,10 +71,10 @@
                         </ul>
                         <div class="sns-icon1">
                         <a href="https://twitter.com/homcri_web" target="_blank" rel="noopener noreferrer">    
-                            <img class="X-logo" src="<?php echo esc_url(get_template_directory_uri()); ?>/images/X-icon.png" alt="Xのアイコン">
+                            <img class="X-logo-hamburger" src="<?php echo esc_url(get_template_directory_uri()); ?>/images/X-icon.png" alt="Xのアイコン">
                         </a>
                         <a href="https://www.instagram.com/homcri_web/" target="_blank" rel="noopener noreferrer">
-                            <img class="insta-logo" src="<?php echo esc_url(get_template_directory_uri()); ?>/images/insta.png" alt="インスタグラムのアイコン">
+                            <img class="insta-logo-hamburger" src="<?php echo esc_url(get_template_directory_uri()); ?>/images/insta.png" alt="インスタグラムのアイコン">
                         </a>
                         </div>
                     </nav>
@@ -105,7 +105,10 @@
         <header class="site-header">
             <nav class="header-bottom">
                 <ul>
-                    <li><a href="<?php echo home_url('/'); ?>">TOP </a></li>
+
+                   
+
+                    <li><a href="<?php echo home_url('/'); ?>">TOP</a></li>
                     <li><a href="#flow">依頼の流れ </a></li>
                     <li><a href="<?php echo home_url(); ?>/pricing">料金表</a></li>
                     <li><a href="<?php echo home_url(); ?>/sample">サンプル一覧 </a></li>

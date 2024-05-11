@@ -28,6 +28,8 @@
     <meta name="description" content="事業を始めたばかりでホームページがない、またはリニューアルを考えている企業へ。おしゃれで機能的で安価なホームページ制作で、お客様のビジネスをより魅力的なものに！">
     <meta name="keywords" content="ホームページ">
     <script src="anime.js"></script>
+    <link rel="icon" type="image/png" href="<?php echo esc_url(get_template_directory_uri()); ?>/images/homcri-logo2.png" sizes="32x32">
+    <link rel="apple-touch-icon" sizes="180x180" href="<?php echo esc_url(get_template_directory_uri()); ?>/images/homcri-logo2.png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&display=swap" rel="stylesheet">
@@ -103,6 +105,9 @@
         <header class="site-header">
             <nav class="header-bottom">
                 <ul>
+
+                   
+
                     <li><a href="<?php echo home_url('/'); ?>">TOP</a></li>
                     <li><a href="#flow">依頼の流れ </a></li>
                     <li><a href="<?php echo home_url(); ?>/pricing">料金表</a></li>

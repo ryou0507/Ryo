@@ -95,7 +95,7 @@ get_header(); // ヘッダーの読み込み
       </div>
 
       <div class="bottom-container">
-        <p><a href="policy.html">個人情報に関する同意</a><br><br>
+        <p><a href="policy">個人情報に関する同意</a><br><br>
           上記をご確認の上で、同意頂けるお客様は下記の同意ボタンにチェックをお願い致します。</p>
       </div>
       <div class="agreement">

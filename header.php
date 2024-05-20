@@ -1,6 +1,17 @@
+<?php
+// 現在のURLを取得する関数
+function getCurrentUrl()
+{
+    $protocol = (!empty($_SERVER['HTTPS']) && $_SERVER['HTTPS'] !== 'off' || $_SERVER['SERVER_PORT'] == 443) ? "https://" : "http://";
+    $domainName = $_SERVER['HTTP_HOST'];
+    $requestUri = $_SERVER['REQUEST_URI'];
+    return $protocol . $domainName . $requestUri;
+}
+?>
+
 <!DOCTYPE html>
 
-<html>
+<html lang="ja">
 
 <head>
     <meta charset="utf-8">
@@ -25,7 +36,6 @@
     </script>
     <!-- End Google Tag Manager -->
 
-    <meta name="description" content="事業を始めたばかりでホームページがない、またはリニューアルを考えている企業へ。おしゃれで機能的で安価なホームページ制作で、お客様のビジネスをより魅力的なものに！">
     <meta name="keywords" content="ホームページ">
     <script src="anime.js"></script>
     <link rel="icon" type="image/png" href="<?php echo esc_url(get_template_directory_uri()); ?>/images/homcri-logo2.png" sizes="32x32">
@@ -38,6 +48,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Arbutus+Slab&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="canonical" href="<?php echo getCurrentUrl(); ?>">
     <?php wp_head(); ?>
 </head>
 
@@ -70,12 +81,12 @@
                             <li class="menu-option"><a href="<?php echo home_url(); ?>/inquiry">お問い合わせ</a></li>
                         </ul>
                         <div class="sns-icon1">
-                        <a href="https://twitter.com/homcri_web" target="_blank" rel="noopener noreferrer">    
-                            <img class="X-logo-hamburger" src="<?php echo esc_url(get_template_directory_uri()); ?>/images/X-icon.png" alt="Xのアイコン">
-                        </a>
-                        <a href="https://www.instagram.com/homcri_web/" target="_blank" rel="noopener noreferrer">
-                            <img class="insta-logo-hamburger" src="<?php echo esc_url(get_template_directory_uri()); ?>/images/insta.png" alt="インスタグラムのアイコン">
-                        </a>
+                            <a href="https://twitter.com/homcri_web" target="_blank" rel="noopener noreferrer">
+                                <img class="X-logo-hamburger" src="<?php echo esc_url(get_template_directory_uri()); ?>/images/X-icon.png" alt="Xのアイコン">
+                            </a>
+                            <a href="https://www.instagram.com/homcri_web/" target="_blank" rel="noopener noreferrer">
+                                <img class="insta-logo-hamburger" src="<?php echo esc_url(get_template_directory_uri()); ?>/images/insta.png" alt="インスタグラムのアイコン">
+                            </a>
                         </div>
                     </nav>
                 </div>
@@ -106,7 +117,7 @@
             <nav class="header-bottom">
                 <ul>
 
-                   
+
 
                     <li><a href="<?php echo home_url('/'); ?>">TOP</a></li>
                     <li><a href="#flow">依頼の流れ </a></li>

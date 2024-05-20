@@ -3,16 +3,16 @@
         <div class="footer-left">
             <img class="footer-logo" src="<?php echo esc_url(get_template_directory_uri()); ?>/images/footer-homcri-logo.png" alt="ホームページ制作ならホムクリのロゴ">
             <div class="info-container">
-            <p>ーTELー<br>080-8387-4545</p>
-            <p>ーMailー<br>homcri.hpweb@gmail.com</p>
+                <p>ーTELー<br>080-8387-4545</p>
+                <p>ーMailー<br>homcri.hpweb@gmail.com</p>
             </div>
             <div class="sns-icon">
-            <a href="https://twitter.com/homcri_web" target="_blank" rel="noopener noreferrer">
-                <img class="X-logo" src="<?php echo esc_url(get_template_directory_uri()); ?>/images/X-icon.png" alt="Xのアイコン" >
-            </a>
-            <a href="https://www.instagram.com/homcri_web/" target="_blank" rel="noopener noreferrer">
-                <img class="insta-logo" src="<?php echo esc_url(get_template_directory_uri()); ?>/images/insta.png" alt="インスタグラムのアイコン">
-            </a>
+                <a href="https://twitter.com/homcri_web" target="_blank" rel="noopener noreferrer">
+                    <img class="X-logo" src="<?php echo esc_url(get_template_directory_uri()); ?>/images/X-icon.png" alt="Xのアイコン">
+                </a>
+                <a href="https://www.instagram.com/homcri_web/" target="_blank" rel="noopener noreferrer">
+                    <img class="insta-logo" src="<?php echo esc_url(get_template_directory_uri()); ?>/images/insta.png" alt="インスタグラムのアイコン">
+                </a>
             </div>
         </div>
         <div class="footer-right">

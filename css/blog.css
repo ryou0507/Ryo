@@ -1,7 +1,9 @@
-.post-modified-info {
+.post-date>.post-modified-info {
     font-size: 18px;
     position: absolute;
-    top: 46%;
+    top: 42%;
+    font-weight: 700;
+    color: #4c9ac0;
 }
 
 /**********  **********/
@@ -297,8 +299,8 @@
 }
 
 @media (max-width: 1000px) and (orientation: portrait) {
-    .post-modified-info {
-        top: 360px;
+    .post-date>.post-modified-info {
+        top: 380px;
         font-size: 20px;
     }
 

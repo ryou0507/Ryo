@@ -70,7 +70,7 @@ if ( function_exists( 'add_theme_support' ) ) {
     add_theme_support( 'post-thumbnails' );
 }
 
-function custom_excerpt_length($content, $length = 20) {
+function custom_excerpt_length($content, $length = 40) {
     $content = strip_tags($content); // HTMLタグを削除
     if (mb_strlen($content) > $length) {
         $content = mb_substr($content, 0, $length) . '...'; // 内容を指定の長さで切り取り

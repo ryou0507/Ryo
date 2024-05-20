@@ -1,7 +1,9 @@
-.post-modified-info {
+.post-date>.post-modified-info {
     font-size: 18px;
     position: absolute;
-    top: 46%;
+    top: 42%;
+    font-weight: 700;
+    color: #4c9ac0;
 }
 
 /**********  **********/

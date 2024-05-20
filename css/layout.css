@@ -3,22 +3,21 @@
     background-color: white;
     height: auto;
     padding: 0 3%;
-}
-
-body {
+  }
+  
+  body {
     margin: 0;
     letter-spacing: 0.05em;
-}
-
-body,
-html {
+  }
+  
+  body,
+  html {
     overflow-x: hidden;
     /* 横方向のスクロールを隠す */
-}
-
-
-/*********** ヘッダーレイアウト **********/
-.header {
+  }
+  
+  /*********** ヘッダーレイアウト **********/
+  .header {
     height: 150px;
     /* 高さ */
     position: fixed;
@@ -31,9 +30,9 @@ html {
     /* 幅を100%に設定 */
     z-index: 1000;
     /* 他の要素よりも前面に表示 */
-}
-
-.head-wrapper {
+  }
+  
+  .head-wrapper {
     display: flex;
     justify-content: space-between;
     /* アイテムを左右に均等に配置 */
@@ -41,9 +40,9 @@ html {
     /* アイテムを縦方向の中央に配置 */
     padding: 10px;
     /* パディング */
-}
-
-.center {
+  }
+  
+  .center {
     display: flex;
     justify-content: center;
     /* 水平方向の中央寄せ */
@@ -51,36 +50,36 @@ html {
     /* 垂直方向の中央寄せ */
     flex: 1;
     /* フレックスアイテムとしての拡張比率を指定 */
-}
-
-.left,
-.center,
-.right {
+  }
+  
+  .left,
+  .center,
+  .right {
     flex: 1;
-}
-
-.center img {
+  }
+  
+  .center img {
     height: auto;
     max-height: 155px;
     /* ロゴの最大高さ */
     width: auto;
     /* 幅は自動調整 */
-}
-
-.left {
+  }
+  
+  .left {
     display: flex;
     justify-content: flex-start;
     /* 左寄せ */
-}
-
-.right {
+  }
+  
+  .right {
     display: flex;
     justify-content: flex-end;
     /* 右寄せ */
-}
-
-/********** ヘッダーナビゲーション レイアウト **********/
-.site-header {
+  }
+  
+  /********** ヘッダーナビゲーション レイアウト **********/
+  .site-header {
     position: fixed;
     /* 固定位置 */
     top: 150px;
@@ -91,17 +90,17 @@ html {
     /* 幅を100%に設定 */
     z-index: 1000;
     /* .headerと同じz-index値に設定 */
-}
-
-header nav {
+  }
+  
+  header nav {
     display: flex;
     justify-content: center;
     /* アイテムを水平方向の中央に配置 */
     align-items: center;
     /* アイテムを垂直方向の中央に配置 */
-}
-
-.header-bottom ul {
+  }
+  
+  .header-bottom ul {
     display: flex;
     justify-content: space-around;
     /* アイテムを左右に均等に配置 */
@@ -115,32 +114,30 @@ header nav {
     /* パディングを0に設定 */
     margin: 0;
     /* マージンを0に設定 */
-}
-
-.header-bottom li {
+  }
+  
+  .header-bottom li {
     position: relative;
     /* ナビゲーションリンクの下線を追加するため */
-}
-
-.header-bottom a {
+  }
+  
+  .header-bottom a {
     text-decoration: none;
     /* アンダーラインを非表示 */
     padding: 0 35px;
     /* 左右のパディング */
     border-bottom: 2px solid transparent;
     /* 下線を白色に */
-}
-
-
-
-/* トップページ 共通*/
-.h2title  {
+  }
+  
+  /* トップページ 共通*/
+  .h2title {
     z-index: 0;
     position: relative;
     letter-spacing: 0;
-}
-
-.h2title:after {
+  }
+  
+  .h2title:after {
     content: '';
     /* 必須: 疑似要素の内容 */
     position: absolute;
@@ -155,47 +152,43 @@ header nav {
     /* ここで下線の長さを固定 */
     background-color: #000;
     /* 下線の色 */
-}
-
-
-
-
-/**********　ファーストビュー　レイアウト　**********/
-.top-wrapper {
+  }
+  
+  /**********　ファーストビュー　レイアウト　**********/
+  .top-wrapper {
     background-size: cover;
     width: 100%;
     height: 940px;
     overflow-y: hidden;
-}
-
-.top-wrapper h1 {
+  }
+  
+  .top-wrapper h1 {
     position: absolute;
     top: 20%;
     left: 3%;
     white-space: nowrap;
     /* テキストを改行せずに一行で表示 */
     /* タイトルは基本の2倍 */
-    font-size:5vw;
-}
-
-.top-wrapper span {
+    font-size: 5vw;
+  }
+  
+  .top-wrapper span {
     display: block;
     text-align: center;
-}
-
-.top-wrapper p {
+  }
+  
+  .top-wrapper p {
     position: absolute;
     top: 45%;
     left: 4.5%;
-}
-
-.centered-image1 {
+  }
+  
+  .centered-image1 {
     background-size: cover;
     position: relative;
-}
-
-
-.top-wrapper img {
+  }
+  
+  .top-wrapper img {
     position: relative;
     left: 30%;
     top: -250px;
@@ -205,64 +198,61 @@ header nav {
     padding: 0;
     width: 100%;
     max-width: none;
-}
-
-
-
-/**********　こんな事思ったことありませんか　レイアウト　**********/
-.main-logo1 {
+  }
+  
+  /**********　こんな事思ったことありませんか　レイアウト　**********/
+  .main-logo1 {
     height: auto;
     display: flex;
     /* コンテナをフレックスボックスに設定 */
     align-items: center;
     /* 子要素を垂直方向の中央に配置 */
-}
-
-.text,
-.centered-image {
+  }
+  
+  .text,
+  .centered-image {
     flex: 1;
     /* 子要素にフレックスアイテムとしての振る舞いを指定 */
-}
-
-
-.large-letter {
+  }
+  
+  .large-letter {
     margin-right: 8px;
     /* vertical-alignはflexboxを使用するため不要 */
-}
-
-.text-part {
+  }
+  
+  .text-part {
     display: flex;
     /* フレックスボックスを使用して、テキストを整列させる */
     align-items: baseline;
     /* テキストを基線に沿って揃える */
     margin-bottom: 60px;
     /* 各テキストブロック間のスペース */
-}
-
-.text {
+  }
+  
+  .text {
     line-height: 1.6;
     /* テキストの行間を調整 */
     white-space: nowrap;
     /* テキストを改行せずに一行で表示 */
     margin-top: 50px;
-}
-
-.centered-image {
+  }
+  
+  .centered-image {
     text-align: center;
     /* コンテナのテキスト揃えを中央に */
-}
-
-.container4 {
+  }
+  
+  .container4 {
     margin-top: 67px;
-}
-
-/**********　他とここが違う　レイアウト　**********/
-.main-logo2 {
+  }
+  
+  /**********　他とここが違う　レイアウト　**********/
+  .main-logo2 {
     overflow-x: hidden;
     /* コンテナレベルでも適用 */
-}
-
-.main-logo2 .image-box1 img {
+  }
+  
+  .main-logo2 .image-box1 img {
     border-radius: 60px;
     /* 角の丸みを設定 */
     width: 75%;
@@ -273,9 +263,9 @@ header nav {
     /* ブロック要素として扱い、中央寄せ可能に */
     margin: 0 auto;
     /* 左右マージンを自動で設定し、画像を中央寄せに */
-}
-
-.main-logo2 .image-box2 img {
+  }
+  
+  .main-logo2 .image-box2 img {
     border-radius: 60px;
     /* 角の丸みを設定 */
     width: 75%;
@@ -286,22 +276,22 @@ header nav {
     /* ブロック要素として扱い、中央寄せ可能に */
     margin: 0 auto;
     /* 左右マージンを自動で設定し、画像を中央寄せに */
-}
-
-.text-sd {
+  }
+  
+  .text-sd {
     font-size: 14px;
     color: #bdbdbd;
     position: relative;
     margin-top: 20px;
     top: 30px;
     letter-spacing: 0.05em;
-}
-
-.main-logo2 h3 {
+  }
+  
+  .main-logo2 h3 {
     font-size: 32px;
-}
-
-.content-box {
+  }
+  
+  .content-box {
     display: flex;
     justify-content: space-between;
     /* コンテンツ間のスペースを確保 */
@@ -309,28 +299,28 @@ header nav {
     /* ここで垂直中央寄せを設定 */
     /* heightが設定されている場合は削除または調整する */
     padding: 3% 0 30px 3%;
-}
-
-.content-box p {
+  }
+  
+  .content-box p {
     font-size: 14px;
-}
-
-.text-box1 {
+  }
+  
+  .text-box1 {
     width: 50%;
     float: left;
-}
-
-.text-box2 {
+  }
+  
+  .text-box2 {
     width: 50%;
     float: right;
-}
-
-.image-box1,
-.image-box2 {
+  }
+  
+  .image-box1,
+  .image-box2 {
     width: 50%;
-}
-
-.image-box1 img {
+  }
+  
+  .image-box1 img {
     float: right;
     width: 70% !important;
     /* 画像の幅を半分に */
@@ -338,9 +328,9 @@ header nav {
     /* 高さを自動調整 */
     display: block !important;
     /* ブロック要素として扱う */
-}
-
-.image-box2 img {
+  }
+  
+  .image-box2 img {
     float: left;
     width: 70% !important;
     /* 画像の幅を半分に */
@@ -348,9 +338,9 @@ header nav {
     /* 高さを自動調整 */
     display: block !important;
     /* ブロック要素として扱う */
-}
-
-.text-box {
+  }
+  
+  .text-box {
     width: 50%;
     /* テキストと画像が半分の幅を占めるように設定 */
     /* 他のスタイル */
@@ -364,19 +354,17 @@ header nav {
     /* 水平中央寄せ */
     height: 100%;
     /* 親要素の高さに合わせて伸縮 */
-
-}
-
-.image-box {
+  }
+  
+  .image-box {
     width: 50%;
-}
-
-
-.text-box p {
+  }
+  
+  .text-box p {
     text-align: left;
-}
-
-.image-box img {
+  }
+  
+  .image-box img {
     width: 65% !important;
     /* 画像の幅を半分に */
     height: auto !important;
@@ -385,97 +373,93 @@ header nav {
     /* ブロック要素として扱う */
     margin: 0 auto !important;
     /* 中央寄せ */
-}
-
-
-/**********　ホームページのサンプル　レイアウト　**********/
-.main-logo3 {
+  }
+  
+  /**********　ホームページのサンプル　レイアウト　**********/
+  .main-logo3 {
     background-color: white;
     height: auto;
-}
-
-.main-logo3 p {
+  }
+  
+  .main-logo3 p {
     font-size: 14px;
-}
-
-.main-logo3 .sample-images {
+  }
+  
+  .main-logo3 .sample-images {
     text-align: center;
-}
-
-.sample-images {
+  }
+  
+  .sample-images {
     margin-top: 45px;
-}
-
-.sample-images {
+  }
+  
+  .sample-images {
     display: flex;
     justify-content: center;
-}
-
-.image-group {
+  }
+  
+  .image-group {
     display: flex;
     position: relative;
-}
-
-.image-PC,
-.image-phone {
+  }
+  
+  .image-PC,
+  .image-phone {
     width: auto;
     max-width: 100%;
     height: auto;
-}
-
-.image-phone {
+  }
+  
+  .image-phone {
     position: absolute;
     z-index: 2;
     width: 23%;
     left: 437px;
     top: 130px;
-}
-
-.image-PC {
+  }
+  
+  .image-PC {
     z-index: 1;
     width: 95%;
     /* 画像1と3のサイズ */
-}
-
-
-
-
-/**********　料金プラン　レイアウト　**********/
-.main-logo4 {
+  }
+  
+  /**********　料金プラン　レイアウト　**********/
+  .main-logo4 {
     height: auto;
     background-color: white;
-}
-
-.main-logo4 p {
+  }
+  
+  .main-logo4 p {
     font-size: 14px;
-}
-
-.container5 {
+  }
+  
+  .container5 {
     display: flex;
     justify-content: center;
     align-items: center;
     height: 200px;
     margin-bottom: 70px;
-}
-
-.shapes-set {
+  }
+  
+  .shapes-set {
     display: flex;
     justify-content: space-around; /* 中央揃えから均等配置に変更 */
     flex-wrap: nowrap; /* 折り返しなし */
     max-width: 1200px; /* コンテナの最大幅を設定 */
     margin: 0 auto; /* 中央揃え */
     overflow-x: auto; /* 横スクロールを許可 */
-}
-
-.shape-container {
+  }
+  
+  .shape-container {
     flex: 0 0 30%; /* 成長はしないが縮小もしない、基本幅を30%に設定 */
     margin: 0 20px; /* より適切な間隔を設定 */
     min-width: 300px; /* 最小幅を300pxに設定 */
-}
-
-.plan-container1,
-.plan-container2,
-.plan-container3 {
+  }
+  
+  .plan-container1,
+  .plan-container2,
+  .plan-container3 {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -484,61 +468,48 @@ header nav {
     clip-path: polygon(0 0, 100% 0, 100% 75%, 50% 100%, 0 75%);
     height: 180px;
     letter-spacing: 0;
-
-}
-
-.plan-container1 {
-    background-color: #90FED0;
-}
-
-.plan-container2 {
-    background-color: #38B6FF;
-}
-
-.plan-container3 {
-    background-color: #FF7272;
-}
-
-.plan-container1 h3,
-.plan-container2 h3,
-.plan-container3 h3 {
+  }
+  
+  .plan-container1 {
+    background-color: #90fed0;
+  }
+  
+  .plan-container2 {
+    background-color: #38b6ff;
+  }
+  
+  .plan-container3 {
+    background-color: #ff7272;
+  }
+  
+  .plan-container1 h3,
+  .plan-container2 h3,
+  .plan-container3 h3 {
     margin: 0;
     padding: 25px 0 10px 0;
     font-size: 1.8vw;
     color: white;
-    text-shadow:
-        -1px -1px 0 #000,
-        /* 上と左 */
-        1px -1px 0 #000,
-        /* 上と右 */
-        -1px 1px 0 #000,
-        /* 下と左 */
-        1px 1px 0 #000;
+    text-shadow: -1px -1px 0 #000, /* 上と左 */ 1px -1px 0 #000,
+      /* 上と右 */ -1px 1px 0 #000, /* 下と左 */ 1px 1px 0 #000;
     /* 下と右 */
-}
-
-.plan-container1 p,
-.plan-container2 p,
-.plan-container3 p {
+  }
+  
+  .plan-container1 p,
+  .plan-container2 p,
+  .plan-container3 p {
     margin: 0;
     padding: 0 0 35px 0;
     color: white;
     font-size: 4vw;
     font-weight: bold;
-    text-shadow:
-        -1px -1px 0 #000,
-        /* 上と左 */
-        1px -1px 0 #000,
-        /* 上と右 */
-        -1px 1px 0 #000,
-        /* 下と左 */
-        1px 1px 0 #000;
+    text-shadow: -1px -1px 0 #000, /* 上と左 */ 1px -1px 0 #000,
+      /* 上と右 */ -1px 1px 0 #000, /* 下と左 */ 1px 1px 0 #000;
     /* 下と右 */
-}
-
-.rectangle1,
-.rectangle2,
-.rectangle3 {
+  }
+  
+  .rectangle1,
+  .rectangle2,
+  .rectangle3 {
     width: 100%; /* 幅を親要素に合わせる */
     box-sizing: border-box; /* パディングとボーダーを幅に含める */
     height: 100%;
@@ -547,34 +518,34 @@ header nav {
     border-radius: 20px;
     /* 角の丸み */
     border: solid 1px black;
-}
-
-.container8,
-.container9 {
+  }
+  
+  .container8,
+  .container9 {
     margin-top: 50px;
-}
-
-.container8 p,
-.container9 p {
+  }
+  
+  .container8 p,
+  .container9 p {
     display: flex;
     justify-content: center;
     align-items: center;
     font-size: 2vw;
     color: black;
     font-weight: bold;
-}
-
-.container8 span {
+  }
+  
+  .container8 span {
     display: block;
     position: relative;
     text-align: center;
     color: black;
     font-size: 2vw;
     padding: 20px 0;
-}
-
-.container8 span::before,
-.container8 span::after {
+  }
+  
+  .container8 span::before,
+  .container8 span::after {
     content: '';
     display: block;
     position: absolute;
@@ -585,33 +556,33 @@ header nav {
     background-color: black;
     top: 0;
     /* 上のボーダー */
-}
-
-.container8 span::after {
+  }
+  
+  .container8 span::after {
     top: auto;
     bottom: 0;
     /* 下のボーダー */
-}
-
-.container8 span::before {
+  }
+  
+  .container8 span::before {
     transform: translateX(-50%) translateY(-50%);
-}
-
-.container8 span::after {
+  }
+  
+  .container8 span::after {
     transform: translateX(-50%) translateY(50%);
-}
-
-.container9 span {
+  }
+  
+  .container9 span {
     display: block;
     position: relative;
     text-align: center;
     color: red;
     font-size: 2vw;
     padding: 20px 0;
-}
-
-.container9 span::before,
-.container9 span::after {
+  }
+  
+  .container9 span::before,
+  .container9 span::after {
     content: '';
     display: block;
     position: absolute;
@@ -622,51 +593,50 @@ header nav {
     background-color: black;
     top: 0;
     /* 上のボーダー */
-}
-
-.container9 span::after {
+  }
+  
+  .container9 span::after {
     top: auto;
     bottom: 0;
     /* 下のボーダー */
-}
-
-.container9 span::before {
+  }
+  
+  .container9 span::before {
     transform: translateX(-50%) translateY(-50%);
-}
-
-.container9 span::after {
+  }
+  
+  .container9 span::after {
     transform: translateX(-50%) translateY(50%);
-}
-
-.rectangle1 li,
-.rectangle2 li,
-.rectangle3 li {
+  }
+  
+  .rectangle1 li,
+  .rectangle2 li,
+  .rectangle3 li {
     list-style: inside;
     color: black;
-}
-
-.rectangle1 ul,
-.rectangle2 ul,
-.rectangle3 ul {
+  }
+  
+  .rectangle1 ul,
+  .rectangle2 ul,
+  .rectangle3 ul {
     padding-top: 7%;
     float: left;
     padding-inline-start: 20%;
-}
-
-
-.container6-1,
-.container6-2,
-.container6-3 {
+  }
+  
+  .container6-1,
+  .container6-2,
+  .container6-3 {
     padding-top: 40px;
     padding-bottom: 40px;
     margin-top: 296px;
     border-radius: 20px;
     clip-path: polygon(50% 0, 100% 25%, 100% 100%, 0 100%, 0 25%);
     /* 上辺から右辺、斜め下へカット、左辺へと形状を定義 */
-}
-
-/**********　対応可能なオプション　レイアウト　**********/
-.content-box-option {
+  }
+  
+  /**********　対応可能なオプション　レイアウト　**********/
+  .content-box-option {
     display: flex;
     justify-content: space-between;
     /* ここを修正 */
@@ -676,11 +646,11 @@ header nav {
     padding: 10px 0;
     background-color: #f8f7f7f5;
     border-radius: 10px;
-    border: 1px solid #000000
-        /* 黒い線を追加 */
-}
-
-.text-box-option {
+    border: 1px solid #000000;
+    /* 黒い線を追加 */
+  }
+  
+  .text-box-option {
     /* 他のスタイル */
     display: flex;
     /* フレックスコンテナとして設定 */
@@ -694,33 +664,31 @@ header nav {
     height: 100%;
     /* 親要素の高さに合わせて伸縮 */
     white-space: nowrap;
-}
-
-.text-box-option,
-.image-box-option {
+  }
+  
+  .text-box-option,
+  .image-box-option {
     width: 50%;
     /* テキストと画像が半分の幅を占めるように設定 */
-}
-
-.container {
+  }
+  
+  .container {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
     /* このプロパティは、アイテム間のスペースを均等にします。 */
     margin-top: 50px;
-}
-
-.image-box-option img {
+  }
+  
+  .image-box-option img {
     width: 40%;
     /* 画像の最大幅を40%に設定 */
     height: auto;
     /* 高さを自動調整 */
     padding-right: 50px;
-}
-
-
-
-.image-box-option {
+  }
+  
+  .image-box-option {
     display: flex;
     /* フレックスコンテナとして設定 */
     justify-content: flex-end;
@@ -731,33 +699,33 @@ header nav {
     /* コンテナ全体の幅を使用 */
     margin-left: auto;
     /* 右寄せ */
-}
-
-/**********　お申込みから完成までの流れ　レイアウト　**********/
-.main-logo5 {
+  }
+  
+  /**********　お申込みから完成までの流れ　レイアウト　**********/
+  .main-logo5 {
     background-color: #f5f1f1f3;
     border-radius: 40px;
     margin-bottom: 40px;
     padding-bottom: 40px;
-}
-
-.main-logo5 img {
+  }
+  
+  .main-logo5 img {
     width: 100%;
     max-width: none;
-}
-
-.mobile-break {
+  }
+  
+  .mobile-break {
     display: none;
-}
-
-.timeline-container {
+  }
+  
+  .timeline-container {
     position: relative;
     padding-left: 30px;
     /* 縦棒とアイコンの間のスペースを確保 */
     padding-top: 60px;
-}
-
-.timeline-container::before {
+  }
+  
+  .timeline-container::before {
     content: '';
     position: absolute;
     left: 159px;
@@ -770,18 +738,18 @@ header nav {
     /* 縦棒の色 */
     z-index: 0;
     /* 棒を他のコンテンツと同じレベルにする */
-}
-
-.timeline-item {
+  }
+  
+  .timeline-item {
     display: flex;
     align-items: center;
     /* アイコンとテキストを中央揃え */
     margin-bottom: 60px;
     /* 各アイテム間のスペース */
     margin-left: 80px;
-}
-
-.timeline-icon {
+  }
+  
+  .timeline-icon {
     width: 100px;
     /* アイコンのサイズ */
     height: 100px;
@@ -797,13 +765,13 @@ header nav {
     /* z-index を適用するために position を設定 */
     z-index: 1;
     /* アイコンを前面に */
-}
-
-.timeline-content h3 {
+  }
+  
+  .timeline-content h3 {
     font-size: 32px;
-}
-
-.timeline-content p {
+  }
+  
+  .timeline-content p {
     margin: 0;
     /* テキストの余白をなくす */
     padding-left: 15px;
@@ -811,130 +779,128 @@ header nav {
     word-wrap: break-word;
     /* 長い単語を途中で改行 */
     font-size: 14px;
-}
-
-
-/**********　よくある質問　レイアウト　**********/
-.main-logo6 {
+  }
+  
+  /**********　よくある質問　レイアウト　**********/
+  .main-logo6 {
     height: auto;
     background-color: white;
     color: black;
     padding-bottom: 60px;
-}
-
-.main-logo6 .FAQ-list {
+  }
+  
+  .main-logo6 .FAQ-list {
     margin: 0;
-}
-
-
-/********** お問い合わせフォームページ **********/
-/********** お問い合わせフォーム　レイアウト **********/
-.top-container {
+  }
+  
+  /********** お問い合わせフォームページ **********/
+  /********** お問い合わせフォーム　レイアウト **********/
+  .top-container {
     text-align: center;
     height: auto;
     margin-top: 150px;
-}
-
-.top-container h1 {
+  }
+  
+  .top-container h1 {
     display: inline-block;
     border-bottom: solid 4px black;
     padding-top: 50px;
     padding-bottom: 10px;
     width: 356px;
     font-size: 24px;
-}
-
-.top-container p {
+  }
+  
+  .top-container p {
     font-size: 15px;
-}
-
-.rectangle-container {
+  }
+  
+  .rectangle-container {
     height: auto;
     display: flex;
     justify-content: space-between;
-}
-
-.step {
+  }
+  
+  .step {
     display: flex;
     flex-direction: column;
     align-items: center;
     flex: 1;
     margin: 0 0;
     position: relative;
-}
-
-.step::after {
-    content: "";
+  }
+  
+  .step::after {
+    content: '';
     /* 擬似要素にはこれが必要 */
     position: absolute;
     top: 71%;
     /* 円の右側中央から始める */
     width: 190%;
     /* 必要に応じて調整 */
-    border-top: 10px solid #87CEFA;
+    border-top: 10px solid #87cefa;
     /* 線の色と太さ */
     z-index: -1;
     /* 円の下に線を表示 */
-}
-
-.step:first-child::after,
-.step:last-child::after {
+  }
+  
+  .step:first-child::after,
+  .step:last-child::after {
     content: none;
     /* 最初と最後の円では線を非表示にする */
-}
-
-.step-rectangle {
+  }
+  
+  .step-rectangle {
     position: relative;
     display: inline-block;
     margin: 1.5em 0;
     padding: 7px 10px;
     width: 180px;
-    background-color: #1E90FF;
+    background-color: #1e90ff;
     text-align: center;
     font-weight: bold;
-}
-
-.step-rectangle:before {
-    content: "";
+  }
+  
+  .step-rectangle:before {
+    content: '';
     position: absolute;
     top: 100%;
     left: 50%;
     margin-left: -15px;
     border: 15px solid transparent;
-    border-top: 15px solid #1E90FF;
-}
-
-.step-rectangle1 {
+    border-top: 15px solid #1e90ff;
+  }
+  
+  .step-rectangle1 {
     position: relative;
     display: inline-block;
     margin: 1.5em 0;
     padding: 7px 10px;
     width: 180px;
-    background-color: #87CEFA;
+    background-color: #87cefa;
     text-align: center;
     font-weight: bold;
-}
-
-.step-rectangle1:before {
-    content: "";
+  }
+  
+  .step-rectangle1:before {
+    content: '';
     position: absolute;
     top: 100%;
     left: 50%;
     margin-left: -15px;
     border: 15px solid transparent;
-    border-top: 15px solid #87CEFA;
-}
-
-.step-rectangle p,
-.step-rectangle1 p {
+    border-top: 15px solid #87cefa;
+  }
+  
+  .step-rectangle p,
+  .step-rectangle1 p {
     font-size: 25px;
-}
-
-.step-circle {
+  }
+  
+  .step-circle {
     width: 80px;
     height: 80px;
     border-radius: 50%;
-    background-color: #1E90FF;
+    background-color: #1e90ff;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -945,13 +911,13 @@ header nav {
     z-index: 1;
     /* 円を線の前面に表示 */
     margin-bottom: 50px;
-}
-
-.step-circle1 {
+  }
+  
+  .step-circle1 {
     width: 80px;
     height: 80px;
     border-radius: 50%;
-    background-color: #87CEFA;
+    background-color: #87cefa;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -962,11 +928,10 @@ header nav {
     z-index: 1;
     /* 円を線の前面に表示 */
     margin-bottom: 50px;
-}
-
-
-/********** 入力フォーム　レイアウト **********/
-.input-container {
+  }
+  
+  /********** 入力フォーム　レイアウト **********/
+  .input-container {
     margin-top: 10px;
     height: auto;
     padding: 0px; /* 左右に30pxずつ余白を追加 */
@@ -974,9 +939,9 @@ header nav {
     margin-left: auto; /* 中央寄せ */
     margin-right: auto; /* 中央寄せ */
     position: relative;
-}
-
-.input-container::before {
+  }
+  
+  .input-container::before {
     content: '';
     position: absolute;
     top: -1px;
@@ -986,63 +951,63 @@ header nav {
     border: 2px solid #000;
     pointer-events: none;
     z-index: 10;
-}
-
-.input-area, select, textarea {
+  }
+  
+  .input-area,
+  select,
+  textarea {
     border: 2px solid #d7d9da; /* 新しい枠線の色を指定 */
     border-radius: 4px; /* 角を少し丸くする（任意） */
     padding: 8px 10px; /* 内側のパディングを調整 */
     margin-top: 5px;
     width: 100%;
-}
-
-
-.text-area {
+  }
+  
+  .text-area {
     display: block; /* ラベルをブロック要素に */
     font-size: 15px;
     width: 751px;
-    background-color: #D3D3D3;
+    background-color: #d3d3d3;
     padding: 15px 10px; /* パディングの調整 */
-}
-
-.input-area {
+  }
+  
+  .input-area {
     width: 85%;
     height: 40px;
     padding: 5px 10px; /* パディングを調整 */
     margin: 3% 5%;
-}
-
-select {
+  }
+  
+  select {
     width: 40%;
     height: 40px;
     padding: 5px 10px; /* パディングを調整 */
     margin: 3% 5%;
-}
-
-textarea {
+  }
+  
+  textarea {
     width: 85%;
     height: 120px;
     padding: 5px 10px; /* パディングを調整 */
     margin: 3% 5%;
     resize: none;
-}
-
-.input-container span {
+  }
+  
+  .input-container span {
     color: red;
     font-size: 12px;
-}
-
-.bottom-container {
+  }
+  
+  .bottom-container {
     text-align: center;
-}
-
-.bottom-container p {
+  }
+  
+  .bottom-container p {
     margin-top: 50px;
-}
-
-
-/********** 同意チェックボックス **********/
-.agreement {
+  }
+  
+  /********** 同意チェックボックス **********/
+  .agreement {
     display: flex;
     justify-content: center;
     /* 水平方向の中央に配置 */
@@ -1050,16 +1015,16 @@ textarea {
     /* 垂直方向の中央に配置 */
     flex-direction: row;
     /* 横並びに配置 */
-}
-
-.agreement input[type="checkbox"] {
+  }
+  
+  .agreement input[type='checkbox'] {
     width: 40px;
     /* チェックボックスの幅を自動にしてデフォルトサイズを使用 */
     height: 40px;
     /* チェックボックスの高さを自動にしてデフォルトサイズを使用 */
-}
-
-.agreement label {
+  }
+  
+  .agreement label {
     cursor: pointer;
     /* カーソルをポインターに変更する */
     /* 不要なスタイルをリセット */
@@ -1068,173 +1033,169 @@ textarea {
     width: auto;
     /* コンテンツの幅に合わせる */
     margin: 0;
-}
-
-
-/********** 確認画面　レイアウト **********/
-
-.confirmationDetails-container {
+  }
+  
+  /********** 確認画面　レイアウト **********/
+  
+  .confirmationDetails-container {
     display: flex;
     justify-content: center;
     /* 水平方向の中央に配置 */
     align-items: center;
     /* 垂直方向の中央に配置 */
-}
-
-#confirmationDetails {
+  }
+  
+  #confirmationDetails {
     word-wrap: break-word;
     /* テキストを折り返す */
     max-width: 60%;
     /* 必要に応じてテキストの最大幅を設定 */
-}
-
-
-
-/********** 入力完了ページ　レイアウト **********/
-.input-complete {
+  }
+  
+  /********** 入力完了ページ　レイアウト **********/
+  .input-complete {
     text-align: center;
     margin-bottom: 50px;
     font-weight: bold;
     font-size: 25px;
     letter-spacing: 1.5;
-}
-
-.complete-text {
+  }
+  
+  .complete-text {
     text-align: center;
     letter-spacing: 0.5;
-}
-
-.container6 {
+  }
+  
+  .container6 {
     display: flex;
     justify-content: center;
     align-items: center;
     margin-bottom: 50px;
     margin-top: 50px;
-}
-
-/**********　よくある質問ページ　レイアウト　**********/
-.last-text {
+  }
+  
+  /**********　よくある質問ページ　レイアウト　**********/
+  .last-text {
     text-align: center;
     padding-top: 70px;
     margin: 0;
-}
-
-.FAQ-list {
+  }
+  
+  .FAQ-list {
     margin: 0 50px;
-}
-
-.question-list {
+  }
+  
+  .question-list {
     display: flex;
     padding-top: 25px;
-}
-
-.question-item {
+  }
+  
+  .question-item {
     margin-right: 35px;
-}
-
-.question-text {
+  }
+  
+  .question-text {
     flex-grow: 1;
     padding-top: 5px;
-}
-
-.answer-list {
+  }
+  
+  .answer-list {
     border-bottom: solid 2px black;
     padding-bottom: 25px;
     display: flex;
-}
-
-.answer-item {
+  }
+  
+  .answer-item {
     margin-right: 5px;
-}
-
-.answer-text {
+  }
+  
+  .answer-text {
     flex-grow: 1;
     padding-top: 10px;
-}
-
-/********** 料金ページ　表　レイアウト **********/
-.base-price {
+  }
+  
+  /********** 料金ページ　表　レイアウト **********/
+  .base-price {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
     height: auto;
-}
-
-.base-price h3 {
+  }
+  
+  .base-price h3 {
     margin-top: 5%;
-}
-
-.price-table {
+  }
+  
+  .price-table {
     border: solid 2px black;
     border-collapse: collapse;
     text-align: center;
     width: 70%;
     table-layout: fixed;
     margin-bottom: 5%;
-}
-
-/* 共通の行のスタイル */
-.price-row th,
-.price-row td {
+  }
+  
+  /* 共通の行のスタイル */
+  .price-row th,
+  .price-row td {
     height: 70px;
     /* 高さを50pxに設定 */
     border: solid 2px black;
-}
-
-.table-top {
+  }
+  
+  .table-top {
     height: 40px;
-}
-
-.table-right1 {
+  }
+  
+  .table-right1 {
     width: 40%;
-}
-
-
-/********** サンプル一覧ページ　レイアウト **********/
-.PC-img {
+  }
+  
+  /********** サンプル一覧ページ　レイアウト **********/
+  .PC-img {
     width: 100%;
     height: auto;
     object-fit: contain;
-}
-
-.sample-container {
+  }
+  
+  .sample-container {
     display: flex;
     justify-content: space-between;
-}
-
-.text-section,
-.img-section {
+  }
+  
+  .text-section,
+  .img-section {
     flex: 1;
-}
-
-.text-section {
+  }
+  
+  .text-section {
     text-align: center;
     padding-top: 13%;
     font-size: 20px;
     letter-spacing: 0.5;
-}
-
-.img-section img {
+  }
+  
+  .img-section img {
     width: 100%;
     height: 500px;
     object-fit: contain;
-}
-
-.sample-box {
+  }
+  
+  .sample-box {
     margin-bottom: 4%;
-}
-
-.sample1 {
+  }
+  
+  .sample1 {
     background-color: F8F8F8;
     border-radius: 15px;
     padding: 0 0 50px 0;
     margin-top: 70px;
-}
-
-/********** 運営者概要ページ　レイアウト **********/
-/* テーブルコンテナ */
-.table-container {
+  }
+  
+  /********** 運営者概要ページ　レイアウト **********/
+  /* テーブルコンテナ */
+  .table-container {
     width: 100%;
     max-width: 80%;
     /* 表の最大幅を変更 */
@@ -1242,10 +1203,10 @@ textarea {
     text-align: center;
     margin-top: 5%;
     margin-bottom: 10%;
-}
-
-/* 情報テーブルのスタイル */
-.info-table {
+  }
+  
+  /* 情報テーブルのスタイル */
+  .info-table {
     width: 100%;
     height: 540px;
     border-collapse: collapse;
@@ -1253,121 +1214,119 @@ textarea {
     table-layout: fixed;
     /* 列幅を均等にする */
     /* テーブルの全体のボーダーを定義しない */
-}
-
-/* テーブルのヘッダーセル */
-.info-table th,
-.info-table td {
+  }
+  
+  /* テーブルのヘッダーセル */
+  .info-table th,
+  .info-table td {
     border: 2px solid #000;
     /* 全てのセルにボーダーを適用 */
     padding: 8px;
     text-align: center;
     /* 中央寄せに */
-}
-
-/* 最初の列のセルの左側のボーダーを削除 */
-.info-table th:first-child,
-.info-table td:first-child {
+  }
+  
+  /* 最初の列のセルの左側のボーダーを削除 */
+  .info-table th:first-child,
+  .info-table td:first-child {
     border-left: none;
-}
-
-/* 最後の列のセルの右側のボーダーを削除 */
-.info-table th:last-child,
-.info-table td:last-child {
+  }
+  
+  /* 最後の列のセルの右側のボーダーを削除 */
+  .info-table th:last-child,
+  .info-table td:last-child {
     border-right: none;
-}
-
-/* テーブルのヘッダーセル */
-.info-table th {
+  }
+  
+  /* テーブルのヘッダーセル */
+  .info-table th {
     background-color: #f5f5f5;
     /* 見出しの背景色を明るい灰色に */
     font-weight: bold;
     /* 見出しを太字に */
-}
-
-.contact-spacing {
+  }
+  
+  .contact-spacing {
     display: block;
     margin-top: 3%;
-}
-
-/********** お知らせ一覧ページ　レイアウト *********/
-.content-area {
+  }
+  
+  /********** お知らせ一覧ページ　レイアウト *********/
+  .content-area {
     margin-top: 105px;
     margin-bottom: 105px;
-    
+  
     font-size: 33px;
-}
-
-
-.content-area a {
+  }
+  
+  .content-area a {
     font-size: 18px;
     color: black;
     text-decoration: auto;
     font-weight: 700;
-}
-
-.content-area a:hover {
+  }
+  
+  .content-area a:hover {
     opacity: 0.7;
     transition: 0.5s;
     color: #474747;
-}
-
-.content-area p {
+  }
+  
+  .content-area p {
     font-size: 18px;
-}
-
-
-ul.news-list {
+  }
+  
+  ul.news-list {
     padding: 0.5em 3.5em;
     margin: 2em 2em;
     color: #474747;
-}
-
-.news-list li {
+  }
+  
+  .news-list li {
     padding: 12px 46px;
     text-align: center;
     background: whitesmoke;
-    border: 1px solid #EEEEEE;
+    border: 1px solid #eeeeee;
     border-radius: 10px;
     margin-bottom: 10px;
-}
-
-.column_btn {
+  }
+  
+  .column_btn {
     position: absolute;
     margin-top: -100px;
     right: 200px;
-}
-
-.post-date-last {
+  }
+  
+  .post-date-last {
     position: absolute;
     left: 220px;
     font-size: 15px;
     margin-top: -90px;
     color: #0bdd;
     font-weight: 700;
-}
-
-/********** お知らせ　レイアウト *********/
-
-.post-content {
+  }
+  
+  /********** お知らせ　レイアウト *********/
+  
+  .post-content {
     font-size: 20px;
     margin-top: -163px;
-}
-
-main#main-content {
+  }
+  
+  main#main-content {
     margin-top: 238px;
     margin-bottom: 78px;
-}
-
-main#main-content h1 {
+  }
+  
+  main#main-content h1 {
     font-size: 24px;
     padding: 13px 42px;
     position: relative;
     top: -172px;
     left: -5%;
-}
-
-main#main-content h1:after {
+  }
+  
+  main#main-content h1:after {
     content: '';
     /* 必須: 疑似要素の内容 */
     position: absolute;
@@ -1382,154 +1341,152 @@ main#main-content h1:after {
     /* ここで下線の長さを固定 */
     background-color: #000;
     /* 下線の色 */
-}
-
-.date-last-news {
+  }
+  
+  .date-last-news {
     position: absolute;
     font-size: 18px;
     top: 200px;
     left: 117px;
     color: #0bdd;
     font-weight: bold;
-}
-
-.news-box {
+  }
+  
+  .news-box {
     margin: 0 5em;
     /* ボックスの余白 */
     padding: 8em 2em 2em;
     /* ボックス内側余白 */
     position: relative;
     /* 配置(ここを基準に)*/
-}
-
-/********** お役立ち情報一覧　レイアウト *********/
-
-.entry-title {
+  }
+  
+  /********** お役立ち情報一覧　レイアウト *********/
+  
+  .entry-title {
     margin-top: 70px;
-}
-
-.entry-title a {
+  }
+  
+  .entry-title a {
     font-size: 25px;
     color: black;
     text-decoration: none;
-}
-
-
-.entry-container {
+  }
+  
+  .entry-container {
     padding: 3.5em; /* 左右のパディングを削除 */
     margin: 5em auto; /* 左右のマージンを自動調整に */
     color: #474747;
-}
-
-.column-date-last {
+  }
+  
+  .column-date-last {
     position: absolute;
     font-size: 18px;
     margin-top: -48px;
     color: #0bdd;
     font-weight: 700;
-}
-
-.row {
+  }
+  
+  .row {
     display: flex;
     justify-content: space-between;
     margin-bottom: 50px;
-}
-
-.column {
+  }
+  
+  .column {
     flex: 0 0 45%; /* 各カラムを画面の約半分の幅で表示 */
     margin: 0 2.5%; /* 左右にマージンを追加 */
-}
-
-.entry-box {
-    border: 1px solid #EEEEEE;
+  }
+  
+  .entry-box {
+    border: 1px solid #eeeeee;
     border-top: none; /* 上辺のボーダーを削除 */
     border-radius: 0 0 10px 10px;
     padding: 0 10px 20px 10px;
-}
-
-.post-thumbnail img {
+  }
+  
+  .post-thumbnail img {
     display: block;
     width: 100%;
     height: auto; /* 高さをautoに設定すると、画像の比率はそのままに幅に合わせて高さが自動調整されます */
     aspect-ratio: 3 / 2; /* アスペクト比を3:2に保つ */
-    margin-bottom: .5em;
+    margin-bottom: 0.5em;
     object-fit: cover; /* サイズがコンテナを超えた場合には、はみ出た部分が切り取られる */
-}
-
-
-/**********　フッター　レイアウト　**********/
-footer {
+  }
+  
+  /**********　フッター　レイアウト　**********/
+  footer {
     background-color: #bdbdbd;
     height: auto;
     padding: 5px 20px 40px 20px;
     /* 必要に応じて余白を追加 */
-}
-
-.footer-container {
+  }
+  
+  .footer-container {
     display: flex;
     width: 100%;
     height: auto;
-}
-
-.footer-right {
+  }
+  
+  .footer-right {
     flex: auto;
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
     padding-left: 50px;
     padding-top: 8%;
-}
-
-.container1,
-.container2,
-.container3 {
+  }
+  
+  .container1,
+  .container2,
+  .container3 {
     display: flex;
     /* コンテナ内の要素を横並びにする */
     flex-direction: column;
     width: 210px;
     align-self: flex-start;
     /* 各要素を上揃えにする */
-}
-
-/* .container1 {
-    background-color: red;
-}
-
-.container2 {
-    background-color: blue;
-}
-
-.container3 {
-    background-color: green;
-} */
-
-/* .container1 ul {
-    padding-left: 60px;
-}
-
-.container2 ul {
-    padding-left: 76px;
-}
-
-.container3 ul {
-    padding-left: 13px;
-} */
-
-.footer-right ul {
+  }
+  
+  /* .container1 {
+      background-color: red;
+  }
+  
+  .container2 {
+      background-color: blue;
+  }
+  
+  .container3 {
+      background-color: green;
+  } */
+  
+  /* .container1 ul {
+      padding-left: 60px;
+  }
+  
+  .container2 ul {
+      padding-left: 76px;
+  }
+  
+  .container3 ul {
+      padding-left: 13px;
+  } */
+  
+  .footer-right ul {
     list-style: none;
     /* 箇条書きのマーカーを非表示にする */
     display: flex;
     /* コンテナ内の要素を横並びにする */
     flex-direction: column;
-}
-
-.container-title {
+  }
+  
+  .container-title {
     font-size: 20px;
     padding-bottom: 10px;
     position: relative;
-}
-
-.container-title:after {
+  }
+  
+  .container-title:after {
     content: '';
     /* 必須: 疑似要素の内容 */
     position: absolute;
@@ -1544,56 +1501,63 @@ footer {
     /* ここで下線の長さを固定 */
     background-color: #000;
     /* 下線の色 */
-}
-
-.container-list {
+  }
+  
+  .container-list {
     font-size: 14px;
     padding-top: 5px;
     padding-bottom: 10px;
     font-weight: 400;
-}
-
-.container-list:hover {
+  }
+  
+  .container-list:hover {
     opacity: 0.6;
     transition: 0.5s;
-}
-
-.footer-left {
+  }
+  
+  .footer-left {
     flex: 0 0 200px;
     align-items: center;
     display: flex;
     flex-direction: column;
     margin-left: 5%;
-}
-
-.footer-logo {
+  }
+  
+  .footer-logo {
     width: 100%;
-}
-
-.info-container {
+  }
+  
+  .info-container {
     display: flex;
     flex-direction: column;
     padding-bottom: 13px;
     margin-left: 35%;
-}
-
-.sns-icon {
+  }
+  
+  .sns-icon {
     display: flex;
     position: relative;
     left: -14%;
-}
-
-.sns-icon img {
+  }
+  
+  .sns-icon img {
     height: auto;
-}
-
-.insta-logo {
+  }
+  
+  .insta-logo {
     padding-left: 25px;
     width: 40px;
     position: absolute;
     bottom: 1px;
-}
-
-.X-logo {
+  }
+  
+  .X-logo {
     width: 30px;
-}
+  }
+  
+  audio {
+    width: 50%;
+    height: 50px; /* 高さを調整 */
+  }
+  
+  

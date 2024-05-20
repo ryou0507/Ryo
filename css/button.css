@@ -25,7 +25,6 @@
   align-items: center; /* 中央揃えにする */
 }
 
-
 /* アイコンリンクのスタイル */
 .icon-link {
   display: inline-block;
@@ -38,20 +37,17 @@
   transition: border-color 0.3s; /* 色変更のアニメーションを追加 */
 }
 
-
 /* 電話アイコンのスタイル */
 .phone-icon {
-  color: #4CAF50; /* アイコンの色 */
-  border-color: #4CAF50;
+  color: #4caf50; /* アイコンの色 */
+  border-color: #4caf50;
 }
-
 
 /* メールアイコンのスタイル */
 .email-icon {
-  color: #2196F3; /* アイコンの色 */
-  border-color: #2196F3;
+  color: #2196f3; /* アイコンの色 */
+  border-color: #2196f3;
 }
-
 
 /* フォントアイコンのサイズ */
 .fas {
@@ -60,15 +56,16 @@
 
 /**********　ハンバーガーボタン　**********/
 .hamburger-menu-container {
+  position: relative;
   height: auto;
   padding-left: 7%;
 }
 .menu-icon {
   display: inline-block;
   cursor: pointer;
-  position: fixed;
-  top: 56px;
-  left: 1%;
+  position: absolute; /* 変更 */
+  top: -11px; /* 固定値から変更可能 */
+  left: -17px;
   z-index: 2001; /* 他の要素より上に表示させる */
   padding: 20px;
 }
@@ -129,17 +126,17 @@
 /* ナビゲーションメニューのスタイリング */
 .menu {
   position: absolute;
-  top: 50px;
-  left: 0;
-  width: 20%;
-  height: 500%;
+  top: -20px; /* ヘッダーなどの高さに合わせて調整 */
+  left: -10px;
+  width: 200px; /* ビューポートに合わせて100%に変更 */
+  height: calc(100vh - 60px); /* ヘッダーの高さを差し引いた高さ */
   background: #333;
-  box-shadow: 0 3px 5px rgba(0,0,0,0.2);
+  box-shadow: 0 3px 5px rgba(0, 0, 0, 0.2);
   transform: scaleY(0);
   transform-origin: top;
   transition: transform 0.3s ease-in-out;
   z-index: 2000;
-  opacity: 0.95;
+  overflow-y: auto; /* 内容が多い場合はスクロール可能に */
 }
 
 .menu ul {
@@ -193,44 +190,41 @@
   left: -40px;
 }
 
-
 .insta-logo-hamburger {
   position: relative;
-    width: 40px;
-    top: -10px;
-    left: -5px;
+  width: 40px;
+  top: -10px;
+  left: -5px;
 }
 
 /**********　無料相談はこちら　ボタン　**********/
 a.btn_25 {
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	position: relative;
-	overflow: hidden;
-	text-decoration: none;
-	height: 4rem;
-	width: 128px;
-	margin: auto;
-	padding: 0 4rem;
-	border-radius: 100vw;
-	background: black;
-	background-size: 400%;
-	color: #fff;
-
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  overflow: hidden;
+  text-decoration: none;
+  height: 4rem;
+  width: 128px;
+  margin: auto;
+  padding: 0 4rem;
+  border-radius: 100vw;
+  background: black;
+  background-size: 400%;
+  color: #fff;
 }
 a.btn_25:hover::before {
   transform: scaleX(1);
 }
 a.btn_25:hover {
-	color: #fff;
+  color: #fff;
 }
 
 a.btn_25 span {
   position: relative;
   z-index: 1;
   white-space: nowrap;
-
 }
 a.btn_25::before {
   content: '';
@@ -255,33 +249,33 @@ a.btn_25::before {
 .container6-1 a.btn_25,
 .container6-2 a.btn_25,
 .container6-3 a.btn_25 {
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	position: relative;
-	overflow: hidden;
-	text-decoration: none;
-	height: 3rem;
-	width: 100px;
-	margin: auto;
-	padding: 0 2rem;
-	border-radius: 100vw;
-	background: black;
-	background-size: 400%;
-	color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  overflow: hidden;
+  text-decoration: none;
+  height: 3rem;
+  width: 100px;
+  margin: auto;
+  padding: 0 2rem;
+  border-radius: 100vw;
+  background: black;
+  background-size: 400%;
+  color: #fff;
 }
 
 .container6-1 span,
 .container6-2 span,
 .container6-3 span {
-    font-size: 75%;
+  font-size: 75%;
 }
 
 /**********　完成までの流れ無料相談　ボタン　**********/
 .container5 {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 /**********　サンプル一覧、その他質問はこちら　ボタン　**********/
@@ -297,7 +291,6 @@ a.btn_25::before {
 .circle_btn05 {
   position: relative;
   display: inline-block;
-  
 }
 
 .circle_btn05 .circle_btn05-txt {
@@ -319,12 +312,12 @@ a.btn_25::before {
 }
 
 .circle_btn05 .circle_btn05-icon .circle_btn05-circle {
-  transition: transform 1s cubic-bezier(.23,1,.32,1);
+  transition: transform 1s cubic-bezier(0.23, 1, 0.32, 1);
   height: 48px;
 }
 
 .circle_btn05 .circle_btn05-icon .circle_btn05-circle svg {
-  transition: transform .75s cubic-bezier(.215,.61,.355,1);
+  transition: transform 0.75s cubic-bezier(0.215, 0.61, 0.355, 1);
   width: 100%;
   height: 100%;
   position: relative;
@@ -332,7 +325,7 @@ a.btn_25::before {
 
 .circle_btn05 .circle_btn05-icon .circle_btn05-circle svg path {
   stroke-width: 2;
-  transition: stroke-width .75s cubic-bezier(.215,.61,.355,1);
+  transition: stroke-width 0.75s cubic-bezier(0.215, 0.61, 0.355, 1);
 }
 
 .circle_btn05 .circle_btn05-icon .circle_btn05-arrow {
@@ -347,35 +340,33 @@ a.btn_25::before {
 
 .circle_btn05 .circle_btn05-icon .circle_btn05-arrow svg path {
   stroke-width: 2;
-  stroke: #4D9BC1; /* 矢印の色 */
+  stroke: #4d9bc1; /* 矢印の色 */
 }
 
 .circle_btn05 .circle_btn05-circle-itm {
-  background-color: #4D9BC1; /* 丸の色 */
-  height:48px;
+  background-color: #4d9bc1; /* 丸の色 */
+  height: 48px;
 }
 
 /* マウスオーバーした際のデザイン */
 .circle_btn05:hover .circle_btn05-txt {
   transform: translateX(-12px);
-  transition: transform .5s cubic-bezier(.39,.575,.565,1);
+  transition: transform 0.5s cubic-bezier(0.39, 0.575, 0.565, 1);
 }
 
 .circle_btn05:hover .circle_btn05-icon .circle_btn05-circle {
   transform: rotate(1turn);
-  transition: transform .75s cubic-bezier(.23,1,.32,1);
+  transition: transform 0.75s cubic-bezier(0.23, 1, 0.32, 1);
 }
 
 .circle_btn05:hover .circle_btn05-icon .circle_btn05-circle svg {
   transform: scale(1.5);
 }
 
-
-
 /********** お問い合わせフォームページ **********/
 /********** 入力確認へ　ボタン **********/
 
-button {
+.button1 button {
   width: 200px;
   height: 50px;
   background-color: black;
@@ -411,8 +402,8 @@ button {
   width: 100%;
   max-width: 110px; /* ボタン幅 */
   position: relative;
-  background: #4D9BC1; /* 背景色 */
-  border: 2px solid #4D9BC1;
+  background: #4d9bc1; /* 背景色 */
+  border: 2px solid #4d9bc1;
   padding: 0.4em 2em;
   font-weight: bold;
   color: #fff; /* 文字色 */
@@ -426,7 +417,7 @@ button {
   width: 8px;
   height: 8px;
   border: 0;
- 
+
   position: absolute;
   top: 50%;
   left: 25px;
@@ -436,7 +427,7 @@ button {
 /* マウスオーバーした際のデザイン */
 .button2:hover {
   background: #fff; /* 背景色 */
-  color: #4D9BC1; /* 文字色 */
+  color: #4d9bc1; /* 文字色 */
 }
 
 /********** お知らせ一覧に戻る　ボタン **********/

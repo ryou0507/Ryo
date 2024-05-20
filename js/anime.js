@@ -203,3 +203,122 @@ window.addEventListener('scroll', () => {
 
 
 
+/********** 質問フォーム　動き ***********/
+// document.addEventListener('DOMContentLoaded', function() {
+//   // すべての選択肢を取得
+//   const choices = document.querySelectorAll('.simulator-step-choices-item');
+//   // 各選択肢にクリックイベントを設定
+//   choices.forEach((choice, index) => {
+//       choice.addEventListener('click', function() {
+//           // 現在のステップを取得
+//           const currentStep = this.closest('.simulator-container');
+//           // 現在のステップ番号を取得
+//           const currentStepNumber = parseInt(currentStep.id.replace('step', ''));
+//           // 次のステップに進む
+//           showNextStep(currentStepNumber);
+//       });
+//   });
+// });
+
+// // 次のステップを表示する関数
+// function showNextStep(currentStepNumber) {
+//   const currentStep = document.getElementById(`step${currentStepNumber}`);
+//   const nextStep = document.getElementById(`step${currentStepNumber + 1}`);
+
+//   // 現在のステップを非表示にし、次のステップを表示
+//   if (currentStep && nextStep) {
+//       currentStep.classList.remove('active');
+//       nextStep.classList.add('active');
+//   }
+// }
+
+document.addEventListener("DOMContentLoaded", function() {
+  const modals = document.querySelectorAll('.modal-section');
+  let currentModalIndex = 0;
+
+  function showModal(index) {
+      modals.forEach((modal, idx) => {
+          modal.style.display = (idx === index) ? 'block' : 'none';
+      });
+  }
+
+  document.querySelectorAll('.simulator-step2-choices-item-btn').forEach(button => {
+      button.addEventListener('click', function() {
+          if (currentModalIndex < modals.length - 1) {
+              currentModalIndex++;
+              showModal(currentModalIndex);
+          }
+      });
+  });
+
+  document.querySelectorAll('.simulator-step2-back').forEach(button => {
+      button.addEventListener('click', function() {
+          if (currentModalIndex > 0) {
+              currentModalIndex--;
+              showModal(currentModalIndex);
+          }
+      });
+  });
+
+  showModal(currentModalIndex);
+});
+
+
+
+
+
+document.addEventListener("DOMContentLoaded", function() {
+  const modals = document.querySelectorAll('.modal-section');
+  let currentModalIndex = 0;
+
+  function showModal(index) {
+    modals.forEach((modal, idx) => {
+      modal.style.display = (idx === index) ? 'block' : 'none';
+    });
+    updateIndicators(index);
+    updateRemainingQuestions(modals.length - index - 1);
+  }
+
+  function updateIndicators(index) {
+    const indicatorLists = document.querySelectorAll('.simulator-indicator-list');
+    indicatorLists.forEach((indicatorList) => {
+      const indicators = indicatorList.querySelectorAll('.simulator-indicator-list-item');
+      indicators.forEach((indicator, idx) => {
+        indicator.classList.remove('active', 'completed');
+
+        if (idx < index) {
+          indicator.classList.add('completed');
+        } else if (idx === index) {
+          indicator.classList.add('active');
+        }
+      });
+    });
+  }
+
+  function updateRemainingQuestions(remaining) {
+    const remainingQuestionsSpan = document.querySelectorAll('.remaining-questions');
+    remainingQuestionsSpan.forEach(span => {
+      span.textContent = remaining + 1; // 残りの質問数を1つ追加する
+    });
+  }
+
+  document.querySelectorAll('.simulator-step2-choices-item-btn').forEach(button => {
+    button.addEventListener('click', function() {
+      if (currentModalIndex < modals.length - 1) {
+        currentModalIndex++;
+        showModal(currentModalIndex);
+      }
+    });
+  });
+
+  document.querySelectorAll('.simulator-step2-back').forEach(button => {
+    button.addEventListener('click', function() {
+      if (currentModalIndex > 0) {
+        currentModalIndex--;
+        showModal(currentModalIndex);
+      }
+    });
+  });
+
+  showModal(currentModalIndex);
+});

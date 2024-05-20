@@ -9,9 +9,9 @@ Template Name: blog
 <div id="primary" class="content-area-blog">
     <main id="main" class="site-main">
 
-    <div class="top-container">
-    <h1>コラム一覧</h1>
-</div>
+        <div class="top-container">
+            <h1>コラム一覧</h1>
+        </div>
 
         <div class="entry-container"> <!-- コンテナをループの外に移動 -->
             <?php
@@ -37,17 +37,17 @@ Template Name: blog
                                     </div>
                                 <?php endif; ?>
                                 <div class="entry-box">
-                                <header class="entry-header">
-                                <?php
-                                if (function_exists('get_the_last_modified_info')) {
-                                    echo '<div class="column-date-last">' . get_post_modified_time('Y.n.j') . '</div>';
-                                }
-                                ?>
-                                    <h2 class="entry-title"><a href="<?php the_permalink(); ?>" rel="bookmark"><?php the_title(); ?></a></h2>
-                                </header><!-- .entry-header -->
-                                <div class="entry-content">
-                                    <?php echo wp_trim_words(get_the_content(), 40, '...'); ?>
-                                </div>
+                                    <header class="entry-header">
+                                        <?php
+                                        if (function_exists('get_the_last_modified_info')) {
+                                            echo '<div class="column-date-last">' . get_post_modified_time('Y.n.j') . '</div>';
+                                        }
+                                        ?>
+                                        <h2 class="entry-title"><a href="<?php the_permalink(); ?>" rel="bookmark"><?php the_title(); ?></a></h2>
+                                    </header><!-- .entry-header -->
+                                    <div class="entry-content">
+                                        <?php echo wp_trim_words(get_the_content(), 40, '...'); ?>
+                                    </div>
                                 </div>
                             </article><!-- #post-<?php the_ID(); ?> -->
                         </div><!-- .column -->

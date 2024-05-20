@@ -1,9 +1,7 @@
-.post-date>.post-modified-info {
+.post-modified-info {
     font-size: 18px;
     position: absolute;
-    top: 42%;
-    font-weight: 700;
-    color: #4c9ac0;
+    top: 46%;
 }
 
 /**********  **********/
@@ -53,6 +51,7 @@
 
 .entry-content img {
     margin-bottom: 2.2rem;
+    width: 100%;
 }
 
 /*********** 目次デザイン **********/
@@ -134,7 +133,7 @@
     font-size: 1.7vw;
 }
 
-/*********** h2,h3デザイン **********/
+/*********** h2,h3,h4デザイン **********/
 
 .entry-content h2 {
     padding: 0.5em 1em;
@@ -154,6 +153,12 @@
     /*左線*/
     border-bottom: solid 3px #d7d7d7;
     /*下線*/
+}
+
+.blog-container h4{
+  /*線の種類（二重線）太さ 色*/
+  border-bottom: double 5px #7db4e6;
+  padding-bottom: 10px;
 }
 
 /*********** 埋め込みインスタ　中央寄せ **********/
@@ -192,58 +197,6 @@
 
 
 
-
-
-
-#snsShareBottom {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-#snsShareBottomInner {
-    display: flex;
-    align-items: center;
-}
-
-.o--sns-share-inner {
-    list-style: none;
-    padding: 0;
-    display: flex;
-    align-items: center;
-}
-
-.c--sns-share-item {
-    margin: 0 10px;
-}
-
-.c--sns-share-item a {
-    color: inherit;
-    text-decoration: none;
-}
-
-.d--facebook {
-    color: #1877f2;
-}
-
-.d--twitter {
-    color: #1DA1F2;
-}
-
-.d--line {
-    color: #00B900;
-}
-
-.d--copy i {
-    color: #000;
-    /* Copy icon color */
-}
-
-/* Font Awesome icons size */
-.fab {
-    font-size: 24px;
-    /* Adjust icon size as needed */
-}
 
 /*********** 関連記事 **********/
 
@@ -299,8 +252,8 @@
 }
 
 @media (max-width: 1000px) and (orientation: portrait) {
-    .post-date>.post-modified-info {
-        top: 380px;
+    .post-modified-info {
+        top: 360px;
         font-size: 20px;
     }
 

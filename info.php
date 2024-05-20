@@ -48,6 +48,7 @@ get_header(); // ヘッダーの読み込み
         </div>
 
 
+    </div>
 </main>
 
 </body>

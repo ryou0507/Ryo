@@ -2,832 +2,880 @@
 
 /*********** ハンバーガーボタン　レスポンシブ　縦向きかつ1000px以下に適用 **********/
 @media (max-width: 1000px) and (orientation: portrait) {
-  .menu-icon {
-    width: 5%;
-  }
+    .menu-icon {
+        top: 4.5% !important;
+        width: 5%;
 
-  .menu-icon-line {
-    width: 55px;
-    height: 7px;
-  }
+    }
 
-  .menu-icon-line:before,
-  .menu-icon-line:after {
-    height: 7px;
-  }
+    .menu-icon-line {
+        width: 55px;
+        height: 7px;
+    }
 
-  .menu-icon-line:before {
-    top: -20px;
-  }
+    .menu-icon-line:before,
+    .menu-icon-line:after {
+        height: 7px;
+    }
 
-  .menu-icon-line:after {
-    top: 20px;
-  }
+    .menu-icon-line:before {
+        top: -20px;
+    }
 
-  .menu {
-    width: 330px;
-    height: 100vh;
-    top: -34px;
-    left: -20px;
-  }
+    .menu-icon-line:after {
+        top: 20px;
+    }
 
-  .menu-option-top {
-    height: 5%;
-  }
+    .menu {
+        width: 35%;
+        height: 770%;
+    }
 
-  .menu-option a {
-    font-size: 2.3em;
-  }
+    .menu-option-top {
+        height: 5%;
+    }
+
+    .menu-option a {
+        font-size: 2.3em;
+    }
 }
 
 /*********** お問い合わせフォームページ　レスポンシブ　縦向きかつ1080px以下かつ高さが500px以上に適用　**********/
-/* @media (max-width: 1080px) and (min-height: 500px) {
-  .menu-icon {
-    top: -15px;
-  }
-} */
+@media (max-width: 1080px) and (min-height: 500px) {
+    .menu-icon {
+        top: 58px;
+    }
+}
 
 /*********** ヘッダー レスポンシブ　縦向きかつ1000px以下に適用 **********/
 @media (max-width: 1000px) and (orientation: portrait) {
-  .header {
-    position: fixed;
-    /* ヘッダーを固定 */
-    top: 0;
-    /* 上端から0の位置に */
-    left: 0;
-    /* 左端から0の位置に */
-    width: 100%;
-    /* 幅を100%に設定 */
-    height: 250px;
-    /* ヘッダーの高さを250pxに設定 */
-    z-index: 1000;
-    /* 他の要素より前面に表示 */
-  }
+    .header {
+        position: fixed;
+        /* ヘッダーを固定 */
+        top: 0;
+        /* 上端から0の位置に */
+        left: 0;
+        /* 左端から0の位置に */
+        width: 100%;
+        /* 幅を100%に設定 */
+        height: 250px;
+        /* ヘッダーの高さを250pxに設定 */
+        z-index: 1000;
+        /* 他の要素より前面に表示 */
+    }
 
-  .site-header {
-    position: absolute;
-    /* ナビゲーションをヘッダー内で絶対位置指定 */
-    top: auto;
-    /* topの値をautoにしてデフォルト位置に */
-    bottom: 0;
-    /* ヘッダーの下端にナビゲーションを配置 */
-    margin-top: 0;
-    /* margin-topの設定をクリア */
-  }
+    .site-header {
+        position: absolute;
+        /* ナビゲーションをヘッダー内で絶対位置指定 */
+        top: auto;
+        /* topの値をautoにしてデフォルト位置に */
+        bottom: 0;
+        /* ヘッダーの下端にナビゲーションを配置 */
+        margin-top: 0;
+        /* margin-topの設定をクリア */
+    }
 
-  .head-wrapper {
-    padding: 20px;
-    /* パディングを調整 */
-  }
 
-  .center img {
-    max-height: 180px;
-    /* ロゴの高さを増やす */
-    width: auto;
-    /* 幅を自動調整 */
-  }
+    .head-wrapper {
+        padding: 20px;
+        /* パディングを調整 */
+    }
 
-  .header-bottom {
-    width: 100%;
-    box-sizing: border-box;
-    /* パディングとボーダーを幅に含める */
-  }
 
-  .header-bottom ul {
-    padding: 10px;
-    /* パディングを調整 */
-    justify-content: space-between;
-    /* アイテムを均等に分散させる */
-  }
+    .center img {
+        max-height: 180px;
+        /* ロゴの高さを増やす */
+        width: auto;
+        /* 幅を自動調整 */
+    }
 
-  .header-bottom ul li {
-    margin: 10px 10px;
-    /* ナビゲーションアイテム間のマージンを調整 */
-  }
+    .header-bottom {
+        width: 100%;
+        box-sizing: border-box;
+        /* パディングとボーダーを幅に含める */
+    }
 
-  .header-bottom ul li a {
-    font-size: 3.2vw;
-    /* ナビゲーションテキストのフォントサイズを大きくする */
-    padding: 3px 15px;
-    /* パディングを調整してタップしやすくする */
-  }
+    .header-bottom ul {
+        padding: 10px;
+        /* パディングを調整 */
+        justify-content: space-between;
+        /* アイテムを均等に分散させる */
+    }
 
-  /*********** ヘッダーお問い合わせボタン  **********/
+    .header-bottom ul li {
+        margin: 10px 10px;
+        /* ナビゲーションアイテム間のマージンを調整 */
+    }
 
-  /* フォントアイコンのサイズ */
-  .fas {
-    font-size: 330%;
-    /* アイコンのサイズ */
-  }
+    .header-bottom ul li a {
+        font-size: 3.2vw;
+        /* ナビゲーションテキストのフォントサイズを大きくする */
+        padding: 3px 15px;
+        /* パディングを調整してタップしやすくする */
+    }
+
+    
+
+
+    /*********** ヘッダーお問い合わせボタン  **********/
+
+    /* フォントアイコンのサイズ */
+    .fas {
+        font-size: 330%;
+        /* アイコンのサイズ */
+    }
+
 }
 
 /********** ハンバーガー　SNSアイコン　レスポンシブ ***********/
 @media (max-width: 1000px) and (orientation: portrait) {
-  .X-logo-hamburger {
-    position: absolute;
-    top: 362px;
-    left: 159px;
-    width: 48px;
-  }
+    .X-logo-hamburger {
+        position: absolute;
+        top: 359px;
+        left: 129px;
+        width: 70px;
+    }
 
-  .insta-logo-hamburger {
-    position: absolute;
-    top: 353px;
-    left: 250px;
-    width: 60px;
-  }
+    .insta-logo-hamburger {
+        position: absolute;
+        top: 353px;
+        left: 250px;
+        width: 80px;
+    }
 }
+
+
 
 /*********** トップに戻るボタン **********/
 
 @media (max-width: 1000px) and (orientation: portrait) {
-  .top-link {
-    padding: 14px 30px;
-    /* パディングを増やしてボタンを大きくする */
-    font-size: 1.3em;
-    /* フォントサイズを大きくする */
-    bottom: 30px;
-    /* ボタンの位置を調整 */
-    right: 30px;
-    /* ボタンの位置を調整 */
-    border-radius: 10px;
-    /* ボーダーの角をより丸くする */
-  }
+    .top-link {
+        padding: 14px 30px;
+        /* パディングを増やしてボタンを大きくする */
+        font-size: 1.3em;
+        /* フォントサイズを大きくする */
+        bottom: 30px;
+        /* ボタンの位置を調整 */
+        right: 30px;
+        /* ボタンの位置を調整 */
+        border-radius: 10px;
+        /* ボーダーの角をより丸くする */
+    }
 
-  /*********** h2と下線 **********/
+    /*********** h2と下線 **********/
 
-  .h2title {
-    font-size: 4.9vw;
-  }
 
-  .h2title:after {
-    width: 99%;
-    /* ここで下線の長さを固定 */
-  }
+    .h2title {
+        font-size: 4.9vw;
+    }
 
-  /*********** 無料相談はこちらボタン **********/
+    .h2title:after {
+        width: 99%;
+        /* ここで下線の長さを固定 */
+    }
 
-  a.btn_25 {
-    height: 6rem;
-    /* ボタンの高さを大きくする */
-    width: 288px;
-    /* ボタンの幅を内容に応じて自動調整する */
-    padding: 0 5rem;
-    /* 左右のパディングを増やし、より大きなタッチターゲットを提供 */
-    border-radius: 100vw;
-    /* ボーダーの丸みを保持 */
-    font-size: 1.5em;
-    /* ボタン内テキストのフォントサイズを大きくする */
-  }
+    /*********** 無料相談はこちらボタン **********/
 
-  a.btn_25 span {
-    font-size: 1.5em;
-    /* スパン内のテキストサイズを大きく（もし必要なら） */
-  }
 
-  /***********サンプル一覧、料金一覧、その他質問はこちらボタン **********/
+    a.btn_25 {
+        height: 6rem;
+        /* ボタンの高さを大きくする */
+        width: 288px;
+        /* ボタンの幅を内容に応じて自動調整する */
+        padding: 0 5rem;
+        /* 左右のパディングを増やし、より大きなタッチターゲットを提供 */
+        border-radius: 100vw;
+        /* ボーダーの丸みを保持 */
+        font-size: 1.5em;
+        /* ボタン内テキストのフォントサイズを大きくする */
+    }
 
-  .circle_btn05 .circle_btn05-txt {
-    height: 60px;
-    /* ボタンの高さを大きく */
-    line-height: 60px;
-    /* テキストの行の高さをボタンの高さに合わせる */
-    padding-right: 92px;
-    /* アイコンのための右パディングを増やす */
-    font-size: 2em;
-    /* フォントサイズを大きく */
-  }
+    a.btn_25 span {
+        font-size: 1.5em;
+        /* スパン内のテキストサイズを大きく（もし必要なら） */
+    }
 
-  .circle_btn05 .circle_btn05-icon {
-    width: 60px;
-    /* アイコンの幅を大きく */
-    height: 60px;
-    /* アイコンの高さを大きく */
-  }
 
-  .circle_btn05 .circle_btn05-icon .circle_btn05-circle,
-  .circle_btn05 .circle_btn05-icon .circle_btn05-circle-itm {
-    width: 60px;
-    /* 円のサイズを大きく */
-    height: 60px;
-    /* 円のサイズを大きく */
-  }
 
-  .circle_btn05 .circle_btn05-icon .circle_btn05-arrow svg {
-    width: 24px;
-    /* 矢印のSVGの幅を大きく */
-    height: auto;
-    /* 矢印のSVGの高さを自動調整 */
-  }
+    /***********サンプル一覧、料金一覧、その他質問はこちらボタン **********/
+
+    .circle_btn05 .circle_btn05-txt {
+        height: 60px;
+        /* ボタンの高さを大きく */
+        line-height: 60px;
+        /* テキストの行の高さをボタンの高さに合わせる */
+        padding-right: 92px;
+        /* アイコンのための右パディングを増やす */
+        font-size: 2em;
+        /* フォントサイズを大きく */
+    }
+
+    .circle_btn05 .circle_btn05-icon {
+        width: 60px;
+        /* アイコンの幅を大きく */
+        height: 60px;
+        /* アイコンの高さを大きく */
+    }
+
+    .circle_btn05 .circle_btn05-icon .circle_btn05-circle,
+    .circle_btn05 .circle_btn05-icon .circle_btn05-circle-itm {
+        width: 60px;
+        /* 円のサイズを大きく */
+        height: 60px;
+        /* 円のサイズを大きく */
+    }
+
+    .circle_btn05 .circle_btn05-icon .circle_btn05-arrow svg {
+        width: 24px;
+        /* 矢印のSVGの幅を大きく */
+        height: auto;
+        /* 矢印のSVGの高さを自動調整 */
+    }
+
 }
+
 
 /*********** トップページ **********/
 
 /*********** ファーストビュー レスポンシブ　縦向きかつ1000px以下に適用 **********/
 @media (max-width: 1000px) and (orientation: portrait) {
-  .top-wrapper {
-    padding-top: 250px;
-    /* ヘッダーの高さに応じて調整 */
-  }
+    .top-wrapper {
+        padding-top: 250px;
+        /* ヘッダーの高さに応じて調整 */
+    }
 
-  .top-wrapper img {
-    top: 0;
-    /* モバイルでは追加のずれを解消 */
-    left: 30%;
-    /* 画像を中央に */
-    transform: translateX(-50%);
-    /* 左50%分を補正 */
-    width: 80%;
-    /* モバイルでの画像の幅を調整 */
-    height: auto;
-    /* アスペクト比を維持 */
-  }
+    .top-wrapper img {
+        top: 0;
+        /* モバイルでは追加のずれを解消 */
+        left: 30%;
+        /* 画像を中央に */
+        transform: translateX(-50%);
+        /* 左50%分を補正 */
+        width: 80%;
+        /* モバイルでの画像の幅を調整 */
+        height: auto;
+        /* アスペクト比を維持 */
+    }
 
-  .top-wrapper h1 {
-    top: 30%;
-    /* モバイルでの位置を調整 */
-    transform: translateX(-50%);
-    /* 位置補正 */
-    font-size: 7vw;
-    /* フォントサイズを調整 */
-  }
+    .top-wrapper h1 {
+        top: 30%;
+        /* モバイルでの位置を調整 */
+        transform: translateX(-50%);
+        /* 位置補正 */
+        font-size: 7vw;
+        /* フォントサイズを調整 */
+    }
 
-  .top-wrapper p {
-    top: 80%;
-    /* モバイルでの位置を調整 */
-    transform: translateX(-50%);
-    /* 位置補正 */
-    width: 80%;
-    /* テキストブロックの幅を調整 */
-    font-size: 3vw;
-    /* フォントサイズを調整 */
-    white-space: nowrap;
-  }
+    .top-wrapper p {
+        top: 80%;
+        /* モバイルでの位置を調整 */
+        transform: translateX(-50%);
+        /* 位置補正 */
+        width: 80%;
+        /* テキストブロックの幅を調整 */
+        font-size: 3vw;
+        /* フォントサイズを調整 */
+        white-space: nowrap;
+    }
 }
+
+
+
+
 
 /*********** こんな事思ったことありませんか レスポンシブ　縦向きかつ1000px以下に適用 **********/
 @media (max-width: 1000px) and (orientation: portrait) {
-  .text {
-    white-space: normal;
-    /* テキストを折り返し表示 */
-    font-size: 1.8em;
-    /* フォントサイズを大きく */
-  }
+    .text {
+        white-space: normal;
+        /* テキストを折り返し表示 */
+        font-size: 1.8em;
+        /* フォントサイズを大きく */
+    }
 
-  .text-part {
-    align-items: flex-start;
-    /* テキストを左揃え */
-  }
+    .text-part {
+        align-items: flex-start;
+        /* テキストを左揃え */
+    }
 
-  .large-letter {
-    position: relative;
-    top: -40px;
-    /* 文字を上に少し移動させる */
-    display: inline-block;
-    margin-right: 0.5em;
-    font-size: 2.4em;
-  }
+    .large-letter {
+        position: relative;
+        top: -40px;
+        /* 文字を上に少し移動させる */
+        display: inline-block;
+        margin-right: 0.5em;
+        font-size: 2.4em;
+    }
 }
+
+
 
 /*********** 他とここが違う レスポンシブ　縦向きかつ1000px以下に適用 **********/
 @media (max-width: 1000px) and (orientation: portrait) {
-  /* すべてのコンテンツボックスを縦方向に並べ替える */
-  .content-box {
-    flex-direction: column;
-  }
 
-  /* 画像ボックスを常に先頭に */
-  .image-box1,
-  .image-box2 {
-    order: -1;
-    /* これにより画像がテキストより先に表示される */
-    width: 100%;
-    /* フル幅で表示 */
-    /* 画像を中央に配置 */
-    display: flex;
-    justify-content: center;
-    float: none;
-    /* floatスタイルを解除 */
-    margin: 0 auto 20px auto;
-    /* 上下に余白を設け、左右のマージンで中央寄せ */
-  }
+    /* すべてのコンテンツボックスを縦方向に並べ替える */
+    .content-box {
+        flex-direction: column;
+    }
 
-  /* 画像サイズとマージン調整 */
-  .image-box1 img,
-  .image-box2 img {
-    width: 70% !important;
-    height: auto !important;
-    margin: 0 auto !important;
-    /* 画像を中央に表示 */
-  }
+    /* 画像ボックスを常に先頭に */
+    .image-box1,
+    .image-box2 {
+        order: -1;
+        /* これにより画像がテキストより先に表示される */
+        width: 100%;
+        /* フル幅で表示 */
+        /* 画像を中央に配置 */
+        display: flex;
+        justify-content: center;
+        float: none;
+        /* floatスタイルを解除 */
+        margin: 0 auto 20px auto;
+        /* 上下に余白を設け、左右のマージンで中央寄せ */
+    }
 
-  /* テキストボックスのスタイル調整 */
-  .text-box1,
-  .text-box2 {
-    width: 100%;
-    /* フル幅で表示 */
-    margin-bottom: 120px;
-  }
+    /* 画像サイズとマージン調整 */
+    .image-box1 img,
+    .image-box2 img {
+        width: 70% !important;
+        height: auto !important;
+        margin: 0 auto !important;
+        /* 画像を中央に表示 */
+    }
 
-  /* テキストのフォントサイズ調整 */
-  .content-box p,
-  .content-box h3 {
-    text-align: left;
-    /* 必要に応じて左揃えまたは中央揃え */
-  }
+    /* テキストボックスのスタイル調整 */
+    .text-box1,
+    .text-box2 {
+        width: 100%;
+        /* フル幅で表示 */
+        margin-bottom: 120px;
+    }
 
-  .content-box h3 {
-    font-size: 4.9vw;
-    /* h3タグのフォントサイズを大きく */
-  }
+    /* テキストのフォントサイズ調整 */
+    .content-box p,
+    .content-box h3 {
+        text-align: left;
+        /* 必要に応じて左揃えまたは中央揃え */
+    }
 
-  .content-box p {
-    font-size: 1.5em;
-    /* pタグのフォントサイズを大きく */
-  }
+    .content-box h3 {
+        font-size: 4.9vw;
+        /* h3タグのフォントサイズを大きく */
+    }
+
+    .content-box p {
+        font-size: 1.5em;
+        /* pタグのフォントサイズを大きく */
+    }
+
 }
 
 /*********** お問い合わせフォームページ　レスポンシブ　縦向きかつ1080px以下かつ高さが500px以上に適用　**********/
 @media (max-width: 1080px) and (min-height: 500px) {
-  .image-phone {
-    width: 23%;
-    left: 363px;
-    top: 92px;
-  }
+    .image-phone {
+        width: 23%;
+        left: 363px;
+        top: 92px;
+    }
 }
 
 /*********** サンプル レスポンシブ　縦向きかつ1000px以下に適用 **********/
 @media (max-width: 1000px) and (orientation: portrait) {
-  .main-logo3 p {
-    font-size: 1.5em;
-    /* pタグのフォントサイズを大きく */
-  }
+    .main-logo3 p {
+        font-size: 1.5em;
+        /* pタグのフォントサイズを大きく */
+    }
 
-  .sample-images {
-    margin-bottom: 100px;
-    display: block;
-    justify-content: center;
-  }
+    .sample-images {
+        margin-bottom: 100px;
+        display: block;
+        justify-content: center;
+    }
 
-  .image-group {
-    margin-top: 60px;
-  }
+    .image-group {
+        margin-top: 60px;
+    }
 
-  .image-PC {
-    width: 92%;
-    margin-top: 60px;
-  }
+    .image-PC {
+        width: 92%;
+        margin-top: 60px;
+    }
 
-  .image-phone {
-    left: 70%;
-    top: 30%;
-    width: 25%;
-  }
+    .image-phone {
+        left: 70%;
+        top: 30%;
+        width: 25%;
+    }
+
 }
+
+
 
 /*********** 料金プラン レスポンシブ　縦向きかつ1000px以下に適用 **********/
 @media (max-width: 1000px) and (orientation: portrait) {
-  .main-logo4 p {
-    font-size: 2.4vw;
-  }
+    .main-logo4 p {
+        font-size: 2.4vw;
+    }
 
-  .shapes-set p {
-    font-size: 5vw;
-  }
 
-  .container8 p,
-  .container9 p,
-  .container8 span,
-  .container9 span {
-    font-size: 3vw;
-  }
+    .shapes-set p {
+        font-size: 5vw;
+    }
 
-  .container8 ul,
-  .container9 ul {
-    font-size: 2vw;
-  }
+    .container8 p,
+    .container9 p,
+    .container8 span,
+    .container9 span {
+        font-size: 3vw;
+    }
 
-  .container6-1,
-  .container6-2,
-  .container6-3 {
-    margin-top: 350px;
-  }
+    .container8 ul,
+    .container9 ul {
+        font-size: 2vw;
 
-  .rectangle1,
-  .rectangle2,
-  .rectangle3 {
-    height: 100%;
-  }
+    }
 
-  /*********** 料金プラン 無料相談ボタン　**********/
+    .container6-1,
+    .container6-2,
+    .container6-3 {
+        margin-top: 350px;
 
-  .container6-1 a.btn_25,
-  .container6-2 a.btn_25,
-  .container6-3 a.btn_25 {
-    height: 4rem;
-    /* ボタンの高さを大きく */
-    width: 45%;
-    /* 幅を内容に応じて自動調整 */
-    padding: 0 15%;
-    /* ボタン内のパディングを増やし、テキストに余裕を持たせる */
-    font-size: 1.5vw;
-    /* フォントサイズを大きく */
-    margin-top: 30px;
-    white-space: nowrap;
-  }
+    }
 
-  .container6-1 span,
-  .container6-2 span,
-  .container6-3 span {
-    font-size: 100%;
-    /* span内のテキストのフォントサイズを大きく */
-  }
+    .rectangle1,
+    .rectangle2,
+    .rectangle3 {
+        height: 100%;
+    }
 
-  .rectangle1 ul,
-  .rectangle2 ul,
-  .rectangle3 ul {
-    padding-inline-start: 40px;
-  }
+    /*********** 料金プラン 無料相談ボタン　**********/
+
+    .container6-1 a.btn_25,
+    .container6-2 a.btn_25,
+    .container6-3 a.btn_25 {
+        height: 4rem;
+        /* ボタンの高さを大きく */
+        width: 45%;
+        /* 幅を内容に応じて自動調整 */
+        padding: 0 15%;
+        /* ボタン内のパディングを増やし、テキストに余裕を持たせる */
+        font-size: 1.5vw;
+        /* フォントサイズを大きく */
+        margin-top: 30px;
+        white-space: nowrap;
+    }
+
+    .container6-1 span,
+    .container6-2 span,
+    .container6-3 span {
+        font-size: 100%;
+        /* span内のテキストのフォントサイズを大きく */
+    }
+
+    .rectangle1 ul,
+    .rectangle2 ul,
+    .rectangle3 ul {
+        padding-inline-start: 40px;
+    }
 }
+
 
 /*********** 対応可能なオプション レスポンシブ　縦向きかつ1000px以下に適用　**********/
 @media (max-width: 1000px) and (orientation: portrait) {
-  .container {
-    flex-direction: column;
-    /* コンテナ内のアイテムを縦に並べる */
-    align-items: center;
-    /* アイテムを中央寄せに */
-    margin-bottom: 30px;
-  }
+    .container {
+        flex-direction: column;
+        /* コンテナ内のアイテムを縦に並べる */
+        align-items: center;
+        /* アイテムを中央寄せに */
+        margin-bottom: 30px;
+    }
 
-  .content-box-option {
-    width: 100%;
-    /* 各コンテナの幅を100%に設定してフル幅に */
-    margin-bottom: 50px;
-    /* コンテナ間に適度な余白を設ける */
-  }
+    .content-box-option {
+        width: 100%;
+        /* 各コンテナの幅を100%に設定してフル幅に */
+        margin-bottom: 50px;
+        /* コンテナ間に適度な余白を設ける */
+    }
 
-  .text-box-option,
-  .image-box-option {
-    /* コンテナ内のテキストボックスと画像ボックスのスタイル調整が必要な場合はここに追加 */
-    width: 100%;
-    /* モバイル表示ではコンテンツをフル幅に */
-  }
+    .text-box-option,
+    .image-box-option {
+        /* コンテナ内のテキストボックスと画像ボックスのスタイル調整が必要な場合はここに追加 */
+        width: 100%;
+        /* モバイル表示ではコンテンツをフル幅に */
+    }
 
-  .image-box-option img {
-    width: 50%;
-    /* モバイル表示では画像のサイズを調整 */
-    margin: 20px auto;
-    /* 画像を中央寄せにし、上下に余白を設ける */
-  }
+    .image-box-option img {
+        width: 50%;
+        /* モバイル表示では画像のサイズを調整 */
+        margin: 20px auto;
+        /* 画像を中央寄せにし、上下に余白を設ける */
+    }
 
-  .text-box-option h3 {
-    font-size: 2.4em;
-  }
+    .text-box-option h3 {
+        font-size: 2.4em;
+    }
 
-  .text-box-option p {
-    font-size: 2.5em;
-    margin-top: 0;
-  }
+    .text-box-option p {
+        font-size: 2.5em;
+        margin-top: 0;
+    }
 }
+
+
 
 /*********** 完成までの流れ レスポンシブ　縦向きかつ1000px以下に適用　**********/
 @media (max-width: 1000px) and (orientation: portrait) {
-  h3.timeline-title {
-    font-size: 2.8em;
-  }
+    h3.timeline-title {
+        font-size: 2.8em;
+    }
 
-  .mobile-break {
-    display: inline;
-    /* モバイルビューでのみ改行を表示する */
-  }
+    .mobile-break {
+        display: inline;
+        /* モバイルビューでのみ改行を表示する */
+    }
 
-  .timeline-icon {
-    margin-right: 50px;
-    width: 190px;
-    height: 190px;
-    flex-shrink: 0;
-  }
+    .timeline-icon {
+        margin-right: 50px;
+        width: 190px;
+        height: 190px;
+        flex-shrink: 0;
+    }
 
-  .timeline-item {
-    margin-left: 35px;
-    margin-right: 40px;
-    height: 320px;
-  }
+    .timeline-item {
+        margin-left: 35px;
+        margin-right: 40px;
+        height: 320px;
+    }
 
-  .timeline-container::before {
-    top: 150px;
-  }
+    .timeline-container::before {
+        top: 150px;
+    }
 
-  .timeline-content p {
-    font-size: 2em;
-  }
+    .timeline-content p {
+        font-size: 2em;
+    }
+
 }
+
 
 /*********** よくある質問　レスポンシブ　縦向きかつ1000px以下に適用　**********/
 @media (max-width: 1000px) and (orientation: portrait) {
-  .question-list {
-    font-size: 2em;
-  }
+    .question-list {
+        font-size: 2em;
+    }
 
-  .question-item {
-    font-size: 1.5em;
-  }
+    .question-item {
+        font-size: 1.5em;
+    }
 
-  .answer-item {
-    font-size: 2em;
-  }
+    .answer-item {
+        font-size: 2em;
+    }
 
-  .answer-list {
-    font-size: 1.5em;
-  }
+    .answer-list {
+        font-size: 1.5em;
+    }
+
 }
+
 
 /*********** トップページ以外h1,p　縦向きかつ1000px以下に適用　**********/
 @media (max-width: 1000px) and (orientation: portrait) {
-  .top-container h1 {
-    padding-top: 150px;
-    font-size: 2.9em;
-    white-space: nowrap;
-    width: 70%;
-  }
+    .top-container h1 {
+        padding-top: 150px;
+        font-size: 2.9em;
+        white-space: nowrap;
+        width: 70%;
+    }
 
-  .top-container p {
-    font-size: 30px;
-  }
+    .top-container p {
+        font-size: 30px;
+    }
+
 }
 
 /*********** サンプルページ　レスポンシブ　縦向きかつ1000px以下に適用　**********/
 @media (max-width: 1000px) and (orientation: portrait) {
-  .text-section {
-    font-size: 1.7em;
-  }
+    .text-section {
+        font-size: 1.7em;
+    }
+
 }
 
 /*********** 料金表ページ　レスポンシブ　縦向きかつ1000px以下に適用　**********/
 @media (max-width: 1000px) and (orientation: portrait) {
-  .price-table {
-    width: 100%;
-    font-size: 1.7em;
-  }
+    .price-table {
+        width: 100%;
+        font-size: 1.7em;
+    }
 
-  .price-row th,
-  .price-row td {
-    height: 90px;
-  }
+    .price-row th,
+    .price-row td {
+        height: 90px;
+    }
 
-  .table-right {
-    font-size: 0.9em;
-  }
+    .table-right {
+        font-size: 0.9em;
+    }
 
-  .base-price h3 {
-    font-size: 2em;
-  }
+    .base-price h3 {
+        font-size: 2em;
+    }
 
-  .plan-container1 h3,
-  .plan-container2 h3,
-  .plan-container3 h3 {
-    font-size: 1.7em;
-  }
+    .plan-container1 h3,
+    .plan-container2 h3,
+    .plan-container3 h3 {
+        font-size: 1.7em;
+    }
+
 }
 
 /*********** よくある質問ページ　レスポンシブ　縦向きかつ1000px以下に適用　**********/
 @media (max-width: 1000px) and (orientation: portrait) {
-  .last-text {
-    font-size: 2.3em;
-  }
+    .last-text {
+        font-size: 2.3em;
+    }
 
-  .answer-text {
-    font-size: 1.3em;
-    padding-bottom: 40px;
-  }
+    .answer-text {
+        font-size: 1.3em;
+        padding-bottom: 40px;
+    }
 
-  .question-list {
-    font-size: 2.5em;
-    padding-top: 40px;
-  }
+    .question-list {
+        font-size: 2.5em;
+        padding-top: 40px;
+    }
 
-  .answer-list {
-    padding-top: 10px;
-  }
+    .answer-list {
+        padding-top: 10px;
+    }
 }
+
+
 
 /*********** お問い合わせフォームページ　レスポンシブ　縦向きかつ1080px以下かつ高さが500px以上に適用　**********/
 @media (max-width: 1080px) and (min-height: 500px) {
-  .step::after {
-    width: 640px;
-    /* 横幅を640pxに設定 */
-    /* 必要に応じて他のスタイルプロパティもここに追加 */
-  }
+    .step::after {
+        width: 640px;
+        /* 横幅を640pxに設定 */
+        /* 必要に応じて他のスタイルプロパティもここに追加 */
+    }
 }
+
+
 
 /*********** お問い合わせフォームページ　レスポンシブ　縦向きかつ1000px以下に適用　**********/
-@media (max-width: 1000px) and (orientation: portrait) {
-  .step::after {
-    width: 580px;
-  }
+@media (max-width:1000px) and (orientation: portrait) {
+    .step::after {
+        width: 580px;
+    }
 }
 
 @media (max-width: 1000px) and (orientation: portrait) {
-  button {
-    font-size: 2.5em;
-    /* 送信ボタンのフォントサイズ */
-    width: 300px;
-    /* 送信ボタンの幅 */
-    height: 75px;
-    /* 送信ボタンの高さ */
-  }
 
-  .input-container {
-    padding: 0 20px;
-    /* モバイル表示の時のサイドパディングを調整 */
-    margin: 10px auto 0 auto;
-    max-width: 882px;
-    /* フォーム全体の幅を固定、必要に応じて調整 */
-  }
+    button {
+        font-size: 2.5em;
+        /* 送信ボタンのフォントサイズ */
+        width: 300px;
+        /* 送信ボタンの幅 */
+        height: 75px;
+        /* 送信ボタンの高さ */
+    }
 
-  .text-area {
-    width: 861px;
-  }
+    .input-container {
+        padding: 0 20px;
+        /* モバイル表示の時のサイドパディングを調整 */
+        margin: 10px auto 0 auto;
+        max-width: 882px;
+        /* フォーム全体の幅を固定、必要に応じて調整 */
+    }
 
-  input,
-  select,
-  textarea {
-    height: 80px;
-    /* モバイルでの高さを自動調整に */
-    font-size: 0.8em;
-    /* モバイルでのフォントサイズを大きく */
-  }
+    .text-area {
+        width: 861px;
+    }
 
-  input[type='text'],
-  input[type='tel'],
-  input[type='email'],
-  textarea {
-    font-size: 2em;
-    /* 入力テキストのフォントサイズ */
-    height: 80px;
-    /* 入力フィールドの高さ */
-  }
+    input,
+    select,
+    textarea {
+        height: 80px;
+        /* モバイルでの高さを自動調整に */
+        font-size: 0.8em;
+        /* モバイルでのフォントサイズを大きく */
+    }
 
-  select {
-    font-size: 2em !important;
-    /* 選択リストのフォントサイズ */
-  }
+    input[type="text"],
+    input[type="tel"],
+    input[type="email"],
+    textarea {
+        font-size: 2em;
+        /* 入力テキストのフォントサイズ */
+        height: 80px;
+        /* 入力フィールドの高さ */
+    }
 
-  label {
-    width: 98%;
-    /* ラベルの幅を自動調整に */
-    padding-left: 20px;
-    /* モバイル表示でのパディング調整 */
-    font-size: 2.2em;
-    /* ラベルのフォントサイズを調整 */
-  }
+    select {
+        font-size: 2em !important;
+        /* 選択リストのフォントサイズ */
+    }
 
-  ::placeholder {
-    font-size: 1em;
-    /* プレースホルダーのフォントサイズを大きく */
-  }
+    label {
+        width: 98%;
+        /* ラベルの幅を自動調整に */
+        padding-left: 20px;
+        /* モバイル表示でのパディング調整 */
+        font-size: 2.2em;
+        /* ラベルのフォントサイズを調整 */
+    }
 
-  #inquiryDetails {
-    height: 150px;
-    /* お問い合わせ詳細入力欄の高さを指定 */
-  }
+    ::placeholder {
+        font-size: 1em;
+        /* プレースホルダーのフォントサイズを大きく */
+    }
 
-  .input-container::before {
-    right: 20px;
-    /* モバイル表示の時の右パディングを調整 */
-    left: 20px;
-    /* モバイル表示の時の左パディングを調整 */
-  }
+    #inquiryDetails {
+        height: 150px;
+        /* お問い合わせ詳細入力欄の高さを指定 */
+    }
 
-  /********** 同意チェックボックス 　レスポンシブ　**********/
-  .agreement input[type='checkbox'] {
-    width: 50px;
-    /* チェックボックスの幅を自動にしてデフォルトサイズを使用 */
-    height: 50px;
-    /* チェックボックスの高さを自動にしてデフォルトサイズを使用 */
-  }
+    .input-container::before {
+        right: 20px;
+        /* モバイル表示の時の右パディングを調整 */
+        left: 20px;
+        /* モバイル表示の時の左パディングを調整 */
+    }
 
-  .agreement label {
-    font-size: 1.8em;
-    /* 同意ラベルのフォントサイズを調整 */
-    padding-left: 20px;
-  }
+    /********** 同意チェックボックス 　レスポンシブ　**********/
+    .agreement input[type="checkbox"] {
+        width: 50px;
+        /* チェックボックスの幅を自動にしてデフォルトサイズを使用 */
+        height: 50px;
+        /* チェックボックスの高さを自動にしてデフォルトサイズを使用 */
+    }
+
+    .agreement label {
+        font-size: 1.8em;
+        /* 同意ラベルのフォントサイズを調整 */
+        padding-left: 20px;
+    }
+
 }
+
 
 /*********** 入力確認ページ　レスポンシブ　縦向きかつ1000px以下に適用　**********/
 @media (max-width: 1000px) and (orientation: portrait) {
-  .input-complete {
-    font-size: 2em;
-  }
+    .input-complete {
+        font-size: 2em;
+    }
 
-  .complete-text {
-    font-size: 1.5em;
-  }
+    .complete-text {
+        font-size: 1.5em;
+    }
 }
 
 /*********** 入力完了ページ　レスポンシブ　縦向きかつ1000px以下に適用　**********/
 @media (max-width: 1000px) and (orientation: portrait) {
-  #confirmationDetails p {
-    font-size: 1.7em;
-  }
+    #confirmationDetails p {
+        font-size: 1.7em;
+    }
 
-  .button2 {
-    font-size: 1.7em;
-    white-space: nowrap;
-    max-width: 18%;
-  }
+    .button2 {
+        font-size: 1.7em;
+        white-space: nowrap;
+        max-width: 18%;
+
+    }
 }
 
 /*********** 運営者概要　レスポンシブ　縦向きかつ1000px以下に適用　**********/
 @media (max-width: 1000px) and (orientation: portrait) {
-  .info-table {
-    font-size: 3vw;
-    height: 900px;
-  }
+    .info-table {
+        font-size: 3vw;
+        height: 900px;
+    }
 
-  .table-container {
-    max-width: 100%;
-    /* 表の最大幅を変更 */
-  }
+
+
+    .table-container {
+        max-width: 100%;
+        /* 表の最大幅を変更 */
+    }
 }
 
 /*********** コラム一覧　レスポンシブ　縦向きかつ1000px以下に適用　**********/
 @media (max-width: 1000px) and (orientation: portrait) {
-  .row {
-    flex-direction: column;
-  }
+    .row {
+        flex-direction: column;
+    }
 
-  .column {
-    margin: 3% 2.5%;
-  }
+    .column {
+        margin: 3% 2.5%;
+    }
 
-  .entry-title a {
-    font-size: 50px;
-  }
+    .entry-title a {
+        font-size: 50px;
+    }
 
-  .entry-content {
-    font-size: 22px;
-  }
+    .entry-content {
+        font-size: 22px;
+    }
 
-  .column-date-last {
-    font-size: 30px;
-  }
+    .column-date-last {
+        font-size: 30px;
+    }
 }
 
 @media (max-width: 600px) {
-  .post-thumbnail img {
-    aspect-ratio: 2 / 1;
-    /* スマートフォンなどの狭い画面では異なるアスペクト比を設定することもできます */
-  }
+    .post-thumbnail img {
+        aspect-ratio: 2 / 1;
+        /* スマートフォンなどの狭い画面では異なるアスペクト比を設定することもできます */
+    }
 }
 
 /********** お知らせ一覧ページ　レスポンシブ　縦向きかつ1000px以下に適用 **********/
 @media (max-width: 1000px) and (orientation: portrait) {
-  ul.news-list {
-    padding: 0.5em 0;
-    margin: 2em 0.8em;
-  }
+    ul.news-list {
+        padding: 0.5em 0;
+        margin: 2em 0.8em;
+    }
 
-  .column_btn {
-    right: 60px;
-  }
+    .column_btn {
+        right: 60px;
+    }
 
-  .post-date-last {
-    left: 47px;
-    font-size: 25px;
-    margin-top: -155px;
-  }
+    .post-date-last {
+        left: 47px;
+        font-size: 25px;
+        margin-top: -155px;
+    }
 
-  .content-area p {
-    font-size: 20px;
-  }
+    .content-area p {
+        font-size: 20px;
+    }
 
-  .content-area a {
-    font-size: 40px;
-  }
+    .content-area a {
+        font-size: 40px;
+    }
 }
 
 /********** お知らせページ　レスポンシブ　縦向きかつ1000px以下に適用 **********/
 @media (max-width: 1000px) and (orientation: portrait) {
-  .date-last-news {
-    top: 280px;
-    font-size: 25px;
-  }
+    .date-last-news {
+        top: 280px;
+        font-size: 25px;
+    }
 
-  .post-content {
-    margin-top: -95px;
-    font-size: 30px;
-  }
+    .post-content {
+        margin-top: -95px;
+        font-size: 30px;
+    }
 
-  main#main-content h1 {
-    top: -85px;
-    font-size: 50px;
-  }
+    main#main-content h1 {
+        top: -85px;
+        font-size: 50px;
+    }
 
-  main#main-content h1:after {
-    width: 100%;
-  }
+    main#main-content h1:after {
+        width: 100%;
+    }
 }
 
 /*********** フッター　レスポンシブ　縦向きかつ1000px以下に適用　**********/
@@ -868,126 +916,129 @@
 /* padding-left: 50px; */
 /* } */
 
+
+
 /* } */
 
 @media screen and (max-width: 1000px) {
-  .footer-container {
-    display: flex;
-    flex-direction: column;
-    /* それぞれのセクションを縦積みにする */
-    align-items: center;
-    width: 100%;
-  }
+    .footer-container {
+        display: flex;
+        flex-direction: column;
+        /* それぞれのセクションを縦積みにする */
+        align-items: center;
+        width: 100%;
+    }
 
-  /* 主要セクション（事業概要、運営情報、お客様ページ）を最上部に横並びで配置 */
-  .footer-right {
-    display: flex;
-    flex-direction: row;
-    /* 横並びにする */
-    justify-content: space-around;
-    width: 100%;
-    margin-top: 20px;
-    padding-left: 0;
-    flex-wrap: wrap;
-    order: 1;
-    /* 最上部に配置 */
-  }
+    /* 主要セクション（事業概要、運営情報、お客様ページ）を最上部に横並びで配置 */
+    .footer-right {
+        display: flex;
+        flex-direction: row;
+        /* 横並びにする */
+        justify-content: space-around;
+        width: 100%;
+        margin-top: 20px;
+        padding-left: 0;
+        flex-wrap: wrap;
+        order: 1;
+        /* 最上部に配置 */
+    }
 
-  .footer-right ul {
-    padding-inline-start: 0;
-  }
+    .footer-right ul {
+        padding-inline-start: 0;
+    }
 
-  /* その下に連絡先情報とロゴを横並びで配置 */
-  .footer-left {
-    display: flex;
-    flex-direction: row;
-    /* 横並びにする */
-    justify-content: space-between;
-    align-items: center;
-    width: 90%;
-    /* 幅を狭めて中央に寄せる */
-    margin-top: 20px;
-    margin-bottom: 20px;
-    /* SNSアイコンとの間に余白を設ける */
-    margin-left: 0;
-    order: 2;
-    /* 2番目に配置 */
-  }
+    /* その下に連絡先情報とロゴを横並びで配置 */
+    .footer-left {
+        display: flex;
+        flex-direction: row;
+        /* 横並びにする */
+        justify-content: space-between;
+        align-items: center;
+        width: 90%;
+        /* 幅を狭めて中央に寄せる */
+        margin-top: 20px;
+        margin-bottom: 20px;
+        /* SNSアイコンとの間に余白を設ける */
+        margin-left: 0;
+        order: 2;
+        /* 2番目に配置 */
+    }
 
-  .footer-logo {
-    width: 50%;
-    /* 必要に応じてサイズを調整 */
-    max-width: 260px;
-    height: auto;
-    margin-right: 20px;
-    /* 右端にスペースを確保する */
-  }
+    .footer-logo {
+        width: 50%;
+        /* 必要に応じてサイズを調整 */
+        max-width: 260px;
+        height: auto;
+        margin-right: 20px;
+        /* 右端にスペースを確保する */
+    }
 
-  .info-container {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    margin-left: 28px;
-  }
+    .info-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin-left: 28px;
+    }
 
-  /* SNSアイコンを最下部に独立した行で配置 */
-  .sns-icon {
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    margin-top: 15px;
-    /* ロゴと連絡先情報の下に十分な余白を設ける */
-    left: 3%;
-    order: 3;
-    /* 最下部に配置 */
-  }
+    /* SNSアイコンを最下部に独立した行で配置 */
+    .sns-icon {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        margin-top: 15px;
+        /* ロゴと連絡先情報の下に十分な余白を設ける */
+        left: 3%;
+        order: 3;
+        /* 最下部に配置 */
+    }
 
-  .sns-icon img {
-    margin: 0 10px;
-    /* SNSアイコン同士の余白 */
-  }
+    .sns-icon img {
+        margin: 0 10px;
+        /* SNSアイコン同士の余白 */
+    }
 
-  .X-logo {
-    width: 62px;
-    bottom: -3px;
-    right: 80px;
-    position: absolute;
-  }
+    .X-logo {
+        width: 62px;
+        bottom: -3px;
+        right: 80px;
+        position: absolute;
+    }
 
-  .insta-logo {
-    width: 73px;
-    bottom: -3px;
-    right: -27px;
-  }
+    .insta-logo {
+        width: 73px;
+        bottom: -3px;
+        right: -27px;
+    }
 
-  .container-title {
-    font-size: 35px;
-    white-space: nowrap;
-  }
+    .container-title {
+        font-size: 35px;
+        white-space: nowrap;
+    }
 
-  .container-title:after {
-    content: '';
-    /* 必須: 疑似要素の内容 */
-    position: absolute;
-    /* 絶対位置指定: h1要素に対する相対位置 */
-    left: -5px;
-    /* h1要素の左端からの位置 */
-    bottom: 7px;
-    /* 下線の位置を調整 */
-    height: 2px;
-    /* 下線の厚み */
-    width: 106%;
-    /* ここで下線の長さを固定 */
-    background-color: #000;
-    /* 下線の色 */
-  }
+    .container-title:after {
+        content: '';
+        /* 必須: 疑似要素の内容 */
+        position: absolute;
+        /* 絶対位置指定: h1要素に対する相対位置 */
+        left: -5px;
+        /* h1要素の左端からの位置 */
+        bottom: 7px;
+        /* 下線の位置を調整 */
+        height: 2px;
+        /* 下線の厚み */
+        width: 106%;
+        /* ここで下線の長さを固定 */
+        background-color: #000;
+        /* 下線の色 */
+    }
 
-  .container-list {
-    font-size: 25px;
-    padding-bottom: 20px;
-  }
+    .container-list {
+        font-size: 25px;
+        padding-bottom: 20px;
+    }
 
-  .info-container {
-    font-size: 25px;
-  }
+    .info-container {
+        font-size: 25px;
+    }
+
 }

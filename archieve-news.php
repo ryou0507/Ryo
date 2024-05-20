@@ -25,7 +25,7 @@ get_header(); // ヘッダーの読み込み
         <?php
         if (function_exists('get_the_last_modified_info')) {
           echo '<div class="post-date-last">' . get_post_modified_time('Y.n.j') . '</div>';
-      }
+        }
         ?>
       <?php endwhile; ?>
     </div>

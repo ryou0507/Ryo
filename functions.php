@@ -66,11 +66,12 @@ function custom_news_list_shortcode()
 }
 add_shortcode('news_list', 'custom_news_list_shortcode');
 
-if ( function_exists( 'add_theme_support' ) ) {
-    add_theme_support( 'post-thumbnails' );
+if (function_exists('add_theme_support')) {
+    add_theme_support('post-thumbnails');
 }
 
-function custom_excerpt_length($content, $length = 40) {
+function custom_excerpt_length($content, $length = 20)
+{
     $content = strip_tags($content); // HTMLタグを削除
     if (mb_strlen($content) > $length) {
         $content = mb_substr($content, 0, $length) . '...'; // 内容を指定の長さで切り取り

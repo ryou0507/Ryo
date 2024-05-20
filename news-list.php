@@ -73,7 +73,7 @@ get_header(); // ヘッダーの読み込み
         wp_reset_postdata();
         ?>
 
-        
+
     </main><!-- #main -->
 </div><!-- #primary -->
 

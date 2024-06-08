@@ -10,7 +10,6 @@ function getCurrentUrl()
 ?>
 
 <!DOCTYPE html>
-
 <html lang="ja">
 
 <head>
@@ -37,6 +36,7 @@ function getCurrentUrl()
     <!-- End Google Tag Manager -->
 
     <meta name="keywords" content="ホームページ">
+
     <script src="anime.js"></script>
     <link rel="icon" type="image/png" href="<?php echo esc_url(get_template_directory_uri()); ?>/images/homcri-logo2.png" sizes="32x32">
     <link rel="apple-touch-icon" sizes="180x180" href="<?php echo esc_url(get_template_directory_uri()); ?>/images/homcri-logo2.png">

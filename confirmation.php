@@ -52,10 +52,16 @@ get_header(); // ヘッダーの読み込み
 
 <script>
     document.addEventListener('DOMContentLoaded', function() {
+        // PHPのhome_url()が正しく評価されているか確認
+        console.log('Home URL:', '<?php echo home_url(); ?>');
+
         // 送信ボタンのクリックイベントリスナーを追加
         document.getElementById('confirmSubmit').addEventListener('click', function() {
             // セッションストレージからフォームデータを取得
             var formData = JSON.parse(sessionStorage.getItem('formData'));
+
+            // デバッグ: フォームデータの確認
+            console.log('Form Data:', formData);
 
             // サーバーにフォームデータを送信する関数
             function sendFormData(formData) {
@@ -69,6 +75,8 @@ get_header(); // ヘッダーの読み込み
                     })
                     .then(response => {
                         if (response.ok) {
+                            // デバッグ: 成功時のレスポンス確認
+                            console.log('Response OK:', response);
                             // 送信が成功した場合の処理
                             window.location.href = '<?php echo home_url(); ?>/thankyou'; // 送信完了ページへのリダイレクト
                         } else {
@@ -109,6 +117,7 @@ get_header(); // ヘッダーの読み込み
                 `;
     });
 </script>
+
 
 </body>
 

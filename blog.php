@@ -18,7 +18,9 @@ Template Name: blog
             // カスタムクエリの設定
             $custom_query = new WP_Query(array(
                 'post_type' => 'post', // 投稿タイプが通常の投稿
-                'posts_per_page' => 10 // 1ページに表示する投稿数
+                'posts_per_page' => 10, // 1ページに表示する投稿数
+                'orderby' => 'modified', // 最終更新日順に並べ替え
+                'order' => 'DESC' // 降順
             ));
             if ($custom_query->have_posts()) :
                 $post_count = 0; // 追加したカウンター

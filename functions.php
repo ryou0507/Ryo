@@ -78,3 +78,21 @@ function custom_excerpt_length($content, $length = 40)
     }
     return $content;
 }
+
+
+//検索結果の画像プレビューをnoneに
+add_filter('wpseo_robots', function ($robots) {
+    // 文字列を配列に変換
+    $robots_array = explode(',', $robots);
+
+    // max-image-preview 設定を置き換え
+    $robots_array = array_map(function ($item) {
+        if (strpos($item, 'max-image-preview') !== false) {
+            return 'max-image-preview:none';
+        }
+        return trim($item);
+    }, $robots_array);
+
+    // 配列を文字列に戻す
+    return implode(', ', $robots_array);
+});

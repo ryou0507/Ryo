@@ -2,7 +2,7 @@
 header('Content-Type: application/json');
 header('Access-Control-Allow-Origin: *');
 
-$url = 'https://script.google.com/macros/s/AKfycbw_b332tD3ePKmGA3KKBtjeHoBXXDkOh3UXaxG9PWkPqvfnSH4QUvc_pK0aNCnWWhLE/exec';
+$url = 'https://script.google.com/macros/s/AKfycbwH2NWJgLROKc8uTjb5Cxpz38NKvj4bElixqICPIbgp5rodj4fMfkCKsjyEec_bESZt/exec';
 
 // リクエストの本体を取得
 $data = file_get_contents('php://input');
